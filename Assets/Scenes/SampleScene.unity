@@ -96,6 +96,7 @@ LightmapSettings:
     m_PVRFilteringAtrousPositionSigmaAO: 1
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
+    m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
   m_UseShadowmask: 1
 --- !u!196 &4
@@ -1318,7 +1319,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 1.2100296, y: 19.119995}
+  m_AnchoredPosition: {x: 1.210022, y: 19.119995}
   m_SizeDelta: {x: -24, y: -62}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1363903908
@@ -1358,7 +1359,8 @@ MonoBehaviour:
 
     Siia tuleb NPC tekst.
 
-    Siia tuleb NPC tekst.
+    Siia
+    tuleb NPC tekst.
 
     Siia tuleb NPC tekst.'
 --- !u!222 &1363903909
@@ -1692,6 +1694,7 @@ GameObject:
   - component: {fileID: 1962830378}
   - component: {fileID: 1962830380}
   - component: {fileID: 1962830379}
+  - component: {fileID: 1962830381}
   m_Layer: 5
   m_Name: NPC
   m_TagString: Untagged
@@ -1755,6 +1758,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1962830377}
   m_CullTransparentMesh: 0
+--- !u!114 &1962830381
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1962830377}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb5baf0c9a000bd458c2a23731909b01, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DialogueDataFilePath: test_dia.xml
 --- !u!1 &1978800626
 GameObject:
   m_ObjectHideFlags: 0
