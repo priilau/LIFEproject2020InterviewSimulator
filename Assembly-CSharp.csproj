@@ -65,6 +65,7 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\DialogueSystem\NPCDialogue.cs" />
     <None Include="Assets\Resources\Dialogues\test_dia.xml" />
+    <None Include="Assets\Resources\Dialogues\dialogue_judy.xml" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>C:/Users/Priit/Desktop/ELUprojekt/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>

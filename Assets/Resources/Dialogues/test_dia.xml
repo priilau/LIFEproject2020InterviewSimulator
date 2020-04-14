@@ -3,89 +3,89 @@
     <Nodes>
         <DialogueNode>
             <NodeID>0</NodeID>
-            <Text>NPCtext0</Text>
+            <Text>NPCText0</Text>
             <Options>
                 <DialogueOption>
                     <Text>Question0-1</Text>
-                    <DestinationNodeID>1</DestinationNodeID>
+                    <DestNodeID>1</DestNodeID>
                 </DialogueOption>
                 <DialogueOption>
                     <Text>Question0-2</Text>
-                    <DestinationNodeID>2</DestinationNodeID>
+                    <DestNodeID>2</DestNodeID>
                 </DialogueOption>
                 <DialogueOption>
                     <Text>Question0-3</Text>
-                    <DestinationNodeID>3</DestinationNodeID>
+                    <DestNodeID>3</DestNodeID>
                 </DialogueOption>
                 <DialogueOption>
                     <Text>Question0-4</Text>
-                    <DestinationNodeID>3</DestinationNodeID>
+                    <DestNodeID>3</DestNodeID>
                 </DialogueOption>
             </Options>
         </DialogueNode>
         <DialogueNode>
             <NodeID>1</NodeID>
-            <Text>NPCtext1</Text>
+            <Text>NPCText1</Text>
             <Options>
                 <DialogueOption>
                     <Text>Question1-1</Text>
-                    <DestinationNodeID>1</DestinationNodeID>
+                    <DestNodeID>1</DestNodeID>
                 </DialogueOption>
                 <DialogueOption>
                     <Text>Question1-2</Text>
-                    <DestinationNodeID>2</DestinationNodeID>
+                    <DestNodeID>2</DestNodeID>
                 </DialogueOption>
                 <DialogueOption>
                     <Text>Question1-3</Text>
-                    <DestinationNodeID>3</DestinationNodeID>
+                    <DestNodeID>3</DestNodeID>
                 </DialogueOption>
                 <DialogueOption>
                     <Text>Question1-4</Text>
-                    <DestinationNodeID>3</DestinationNodeID>
+                    <DestNodeID>3</DestNodeID>
                 </DialogueOption>
             </Options>
         </DialogueNode>
         <DialogueNode>
             <NodeID>2</NodeID>
-            <Text>NPCtext2</Text>
+            <Text>NPCText2</Text>
             <Options>
                 <DialogueOption>
                     <Text>Question2-1</Text>
-                    <DestinationNodeID>1</DestinationNodeID>
+                    <DestNodeID>1</DestNodeID>
                 </DialogueOption>
                 <DialogueOption>
                     <Text>Question2-2</Text>
-                    <DestinationNodeID>2</DestinationNodeID>
+                    <DestNodeID>2</DestNodeID>
                 </DialogueOption>
                 <DialogueOption>
                     <Text>Question2-3</Text>
-                    <DestinationNodeID>3</DestinationNodeID>
+                    <DestNodeID>3</DestNodeID>
                 </DialogueOption>
                 <DialogueOption>
                     <Text>Question2-4</Text>
-                    <DestinationNodeID>3</DestinationNodeID>
+                    <DestNodeID>3</DestNodeID>
                 </DialogueOption>
             </Options>
         </DialogueNode>
         <DialogueNode>
             <NodeID>3</NodeID>
-            <Text>NPCtext3</Text>
+            <Text>NPCText3</Text>
             <Options>
                 <DialogueOption>
                     <Text>Question3-1</Text>
-                    <DestinationNodeID>1</DestinationNodeID>
+                    <DestNodeID>1</DestNodeID>
                 </DialogueOption>
                 <DialogueOption>
                     <Text>Question3-2</Text>
-                    <DestinationNodeID>2</DestinationNodeID>
+                    <DestNodeID>2</DestNodeID>
                 </DialogueOption>
                 <DialogueOption>
                     <Text>Question3-3</Text>
-                    <DestinationNodeID>3</DestinationNodeID>
+                    <DestNodeID>3</DestNodeID>
                 </DialogueOption>
                 <DialogueOption>
                     <Text>Question3-4</Text>
-                    <DestinationNodeID>3</DestinationNodeID>
+                    <DestNodeID>3</DestNodeID>
                 </DialogueOption>
             </Options>
         </DialogueNode>
