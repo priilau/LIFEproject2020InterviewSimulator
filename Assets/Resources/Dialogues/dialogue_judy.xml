@@ -130,7 +130,7 @@
     <DialogueNode>
       <NodeID>4</NodeID>
       <Text>Of course, thanks for inviting me.</Text>
-      <Thoughts>Wow they are so informal. I'm not sure how i feel about this.</Thoughts>
+      <Thoughts></Thoughts>
       <ScaleValue>0</ScaleValue>
       <PlayerText></PlayerText>
       <Options>
@@ -157,7 +157,7 @@
     <DialogueNode>
       <NodeID>5</NodeID>
       <Text>Yes, alright.</Text>
-      <Thoughts>Wow they are so informal. I'm not sure how i feel about this.</Thoughts>
+      <Thoughts></Thoughts>
       <ScaleValue>0</ScaleValue>
       <PlayerText></PlayerText>
       <Options>
@@ -503,6 +503,27 @@
       </Options>
     </DialogueNode>
     <DialogueNode>
+      <NodeID>20</NodeID>
+      <Text>I am getting below average wage.</Text>
+      <Thoughts></Thoughts>
+      <ScaleValue>0</ScaleValue>
+      <PlayerText></PlayerText>
+      <Options>
+        <DialogueOption>
+          <Text>Thank you for telling me this. Perhaps you can start telling me about your shopping habits. How often do you do grocery shopping online?</Text>
+          <SpecialInteractionItems></SpecialInteractionItems>
+          <RightOption>true</RightOption>
+          <DestNodeID>23</DestNodeID>
+        </DialogueOption>
+        <DialogueOption>
+          <Text>With such low income, you must not do much online shopping. How often do you shop in online grocery stores?</Text>
+          <SpecialInteractionItems></SpecialInteractionItems>
+          <RightOption>false</RightOption>
+          <DestNodeID>71</DestNodeID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
       <NodeID>70</NodeID>
       <Text>...</Text>
       <Thoughts>I am not comfortable with this.</Thoughts>
@@ -525,7 +546,7 @@
     </DialogueNode>
     <DialogueNode>
       <NodeID>22</NodeID>
-      <Text>Okay. I am getting below average wage.</Text>
+      <Text>Okay. Salary wise, I am getting below average wage.</Text>
       <Thoughts></Thoughts>
       <ScaleValue>-1</ScaleValue>
       <PlayerText></PlayerText>
@@ -567,7 +588,7 @@
     </DialogueNode>
     <DialogueNode>
       <NodeID>21</NodeID>
-      <Text>No.</Text>
+      <Text>No, unfortunately not.</Text>
       <Thoughts></Thoughts>
       <ScaleValue>0</ScaleValue>
       <PlayerText></PlayerText>
