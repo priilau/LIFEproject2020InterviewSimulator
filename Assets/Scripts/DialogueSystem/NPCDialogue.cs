@@ -1,10 +1,13 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
 using DialogueTree;
+using Assets.Scripts.UI.JSONReader;
+using UnityEngine.SceneManagement;
+using System.Linq;
 using System;
+using System.Text;
 
 public class NPCDialogue : MonoBehaviour
 {
@@ -134,8 +137,13 @@ public class NPCDialogue : MonoBehaviour
 
     private void SetOptionBtn(GameObject btn, DialogueOption opt)
     {
+        string optText = SetOptionText(opt);
+        if (optText.Length == 0)
+        {
+            return;
+        }
         btn.SetActive(true);
-        btn.GetComponentInChildren<Text>().text = opt.Text;
+        btn.GetComponentInChildren<Text>().text = optText;
         btn.GetComponent<Button>().onClick.AddListener(delegate
         {
             SetSelectedOption(opt.DestNodeID);
@@ -145,9 +153,52 @@ public class NPCDialogue : MonoBehaviour
             }
             if(opt.DestNodeID == -1) 
             {
-                // TODO: go to feedback screen
+                SceneManager.LoadScene("Feedback");
             }
         });
+    }
+
+    private string SetOptionText(DialogueOption opt)
+    {
+        string optionText;
+        string specialItemsString = "";
+        bool neededItemExists = false;
+        if (opt.SpecialInteractionItems.Length > 0)
+        {
+            string[] specialItemsList = opt.SpecialInteractionItems.Split(',');
+            foreach(Item item in PlayerData.SelectedItems)
+            {
+                if(Array.IndexOf(specialItemsList, item.itemName) > -1)
+                {
+                    neededItemExists = true;
+                    specialItemsString += item.itemName + ", ";
+                }
+            }
+            if(specialItemsString.Length > 0)
+            {
+                specialItemsString = specialItemsString.Remove(specialItemsString.Length - 2);
+            }
+            if (neededItemExists)
+            {
+                if (opt.Text.Contains("[ITEM_LIST]"))
+                {
+                    optionText = opt.Text.Replace("[ITEM_LIST]", specialItemsString);
+                }
+                else
+                {
+                    optionText = opt.Text;
+                }
+            } 
+            else
+            {
+                optionText = "";
+            }
+        }
+        else 
+        {
+            optionText = opt.Text;
+        }
+        return optionText;
     }
 
     public IEnumerator Run()

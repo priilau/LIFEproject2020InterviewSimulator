@@ -85,7 +85,7 @@
         </DialogueOption>
         <DialogueOption>
           <Text>Is it okay that i record our conversation? Only I will see this later to make sure i don’t miss any details.</Text>
-          <SpecialInteractionItems>item1,item2</SpecialInteractionItems>
+          <SpecialInteractionItems>camera,dictaphone</SpecialInteractionItems>
           <RightOption>true</RightOption>
           <DestNodeID>5</DestNodeID>
         </DialogueOption>
@@ -141,14 +141,14 @@
           <DestNodeID>74</DestNodeID>
         </DialogueOption>
         <DialogueOption>
-          <Text>Is it okay that i record our conversation? Only I will see this later to make sure i don’t miss any details.</Text>
-          <SpecialInteractionItems>item1,item2</SpecialInteractionItems>
+          <Text>Is it okay that i record our conversation? Only I will use this later to make sure i don’t miss any details.</Text>
+          <SpecialInteractionItems>camera,dictaphone</SpecialInteractionItems>
           <RightOption>true</RightOption>
           <DestNodeID>5</DestNodeID>
         </DialogueOption>
         <DialogueOption>
           <Text>(Set up your [ITEM_LIST]) Let's begin.</Text>
-          <SpecialInteractionItems>item1,item2</SpecialInteractionItems>
+          <SpecialInteractionItems>camera,dictaphone</SpecialInteractionItems>
           <RightOption>true</RightOption>
           <DestNodeID>68</DestNodeID>
         </DialogueOption>
@@ -163,7 +163,7 @@
       <Options>
         <DialogueOption>
           <Text>Thank you! Let’s begin.</Text>
-          <SpecialInteractionItems>item1,item2</SpecialInteractionItems>
+          <SpecialInteractionItems></SpecialInteractionItems>
           <RightOption>true</RightOption>
           <DestNodeID>74</DestNodeID>
         </DialogueOption>

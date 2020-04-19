@@ -65,6 +65,10 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\DialogueSystem\NPCDialogue.cs" />
     <Compile Include="Assets\Scripts\NPC\ComfortSlider.cs" />
+    <Compile Include="Assets\Scripts\Player\PlayerData.cs" />
+    <Compile Include="Assets\Scripts\UI\ItemSelection.cs" />
+    <Compile Include="Assets\Scripts\UI\JSONReader\Item.cs" />
+    <Compile Include="Assets\Scripts\UI\JSONReader\Items.cs" />
     <None Include="Assets\Resources\Dialogues\test_dia.xml" />
     <None Include="Assets\Resources\Dialogues\dialogue_judy.xml" />
     <Reference Include="Unity.Timeline.Editor">

@@ -1,0 +1,59 @@
+{
+"items": 
+    [
+        {
+            "gameObjectName": "Notepad",
+            "itemName": "notepad",
+            "required": true,
+            "distracting": false
+        },
+        {
+            "gameObjectName": "EmergencyKit",
+            "itemName": "emergency kit",
+            "required": false,
+            "distracting": true
+        },
+        {
+            "gameObjectName": "Violin",
+            "itemName": "violin",
+            "required": false,
+            "distracting": true
+        },
+        {
+            "gameObjectName": "Book",
+            "itemName": "book",
+            "required": false,
+            "distracting": true
+        },
+        {
+            "gameObjectName": "Camera",
+            "itemName": "camera",
+            "required": true,
+            "distracting": false
+        },
+        {
+            "gameObjectName": "Coffee",
+            "itemName": "coffee",
+            "required": false,
+            "distracting": false
+        },
+        {
+            "gameObjectName": "Grapes",
+            "itemName": "grapes",
+            "required": false,
+            "distracting": false
+        },
+        {
+            "gameObjectName": "Dictaphone",
+            "itemName": "dictaphone",
+            "required": true,
+            "distracting": false
+        },
+        {
+            "gameObjectName": "Chips",
+            "itemName": "chips",
+            "required": false,
+            "distracting": false
+        }
+    ]
+}
