@@ -63,12 +63,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\DialogueSystem\NPCDialogue.cs" />
-    <Compile Include="Assets\Scripts\NPC\ComfortSlider.cs" />
+    <Compile Include="Assets\Scripts\Dialogue\DialogueCreator.cs" />
+    <Compile Include="Assets\Scripts\NPC\NPCData.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerData.cs" />
-    <Compile Include="Assets\Scripts\UI\ItemSelection.cs" />
-    <Compile Include="Assets\Scripts\UI\JSONReader\Item.cs" />
-    <Compile Include="Assets\Scripts\UI\JSONReader\Items.cs" />
+    <Compile Include="Assets\Scripts\UI\Introduction\Introduction.cs" />
+    <Compile Include="Assets\Scripts\UI\ItemSelection\Item.cs" />
+    <Compile Include="Assets\Scripts\UI\ItemSelection\ItemSelection.cs" />
+    <Compile Include="Assets\Scripts\UI\ItemSelection\Items.cs" />
     <None Include="Assets\Resources\Dialogues\test_dia.xml" />
     <None Include="Assets\Resources\Dialogues\dialogue_judy.xml" />
     <Reference Include="Unity.Timeline.Editor">
@@ -282,7 +283,7 @@
       <HintPath>C:/Program Files/Unity/2019.3.10f1/Editor/Data/Managed/UnityEngine/UnityEngine.XRModule.dll</HintPath>
     </Reference>
     <Reference Include="DialogueTree">
-      <HintPath>C:/Users/Priit/Desktop/ELUprojekt/Assets/Scripts/DialogueSystem/DialogueTree.dll</HintPath>
+      <HintPath>C:/Users/Priit/Desktop/ELUprojekt/Assets/Scripts/Dialogue/DialogueTree.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
       <HintPath>C:/Program Files/Unity/2019.3.10f1/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll</HintPath>

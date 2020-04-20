@@ -5,11 +5,9 @@ using UnityEngine.UI;
 using DialogueTree;
 using Assets.Scripts.UI.JSONReader;
 using UnityEngine.SceneManagement;
-using System.Linq;
 using System;
-using System.Text;
 
-public class NPCDialogue : MonoBehaviour
+public class DialogueCreator : MonoBehaviour
 {
     private Dialogue dia;
 
@@ -107,7 +105,7 @@ public class NPCDialogue : MonoBehaviour
 
         if(node.ScaleValue != 0)
         {
-            comfortSlider.GetComponent<ComfortSlider>().SetComfortValue(node.ScaleValue);
+            comfortSlider.GetComponent<NPCData>().SetComfortValue(node.ScaleValue);
         }
 
         option1.SetActive(false);
