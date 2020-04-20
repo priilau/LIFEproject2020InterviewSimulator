@@ -1,4 +1,4 @@
-﻿using Assets.Scripts.UI.JSONReader;
+﻿using Assets.Scripts.UI.ItemSelection;
 using System.Collections.Generic;
 
 public static class PlayerData

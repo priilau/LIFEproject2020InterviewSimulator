@@ -147,7 +147,7 @@
           <DestNodeID>5</DestNodeID>
         </DialogueOption>
         <DialogueOption>
-          <Text>(Set up your [ITEM_LIST]) Let's begin.</Text>
+          <Text>*set up your [ITEM_LIST]* Let's begin.</Text>
           <SpecialInteractionItems>camera,dictaphone</SpecialInteractionItems>
           <RightOption>true</RightOption>
           <DestNodeID>68</DestNodeID>

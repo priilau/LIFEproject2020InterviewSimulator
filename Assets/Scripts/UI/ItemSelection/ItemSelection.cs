@@ -1,4 +1,4 @@
-﻿using Assets.Scripts.UI.JSONReader;
+﻿using Assets.Scripts.UI.ItemSelection;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,25 +12,21 @@ public class ItemSelection : MonoBehaviour
     public Items itemList;
     public List<Item> selectedItems;
 
-    private bool continueBtnClicked = false;
     private GameObject continueBtn;
+    private bool itemCheckFinished;
 
-    // Start is called before the first frame update
     void Start()
     {
         itemList = JsonUtility.FromJson<Items>(jsonFile.text);
         continueBtn = GameObject.Find("ContinueButton");
         continueBtn.GetComponent<Button>().onClick.AddListener(delegate
         {
-            continueBtnClicked = true;
-            PlayerData.SelectedItems = selectedItems;
-            SceneManager.LoadScene("Interview");
+            StartCoroutine(WaitUntilItemCheckFinished());
         });
-        RunSelection();
     }
-
-    public void CheckForSelectedItems() // if the items are spammed, it wont register the toggle value quick enough to add it to the list
+    public void CheckForSelectedItems()
     {
+        itemCheckFinished = false;
         foreach (Item item in itemList.items)
         {
             GameObject itemGameObject = GameObject.Find(item.gameObjectName);
@@ -43,26 +39,28 @@ public class ItemSelection : MonoBehaviour
                 else
                 {
                     Item itemToRemove = itemList.items.SingleOrDefault(i => i.gameObjectName == item.gameObjectName);
-                    if(itemToRemove != null)
+                    if (itemToRemove != null)
                     {
                         selectedItems.Remove(itemToRemove);
                     }
                 }
             }
         }
+        itemCheckFinished = true;
     }
 
-    public void RunSelection()
+    private IEnumerator WaitUntilItemCheckFinished() 
     {
-        StartCoroutine(Run());
-    }
-
-    private IEnumerator Run()
-    {
-        while(!continueBtnClicked)
+        while (!itemCheckFinished)
         {
-            CheckForSelectedItems();
-            yield return new WaitForSeconds(0.001f);
+            yield return null;
         }
+        PlayerData.SelectedItems = selectedItems;
+        SceneManager.LoadScene("Interview");
+    }
+
+    void Update()
+    {
+        CheckForSelectedItems();
     }
 }

@@ -3,7 +3,7 @@ using UnityEngine;
 using UnityEngine.UI;
 
 using DialogueTree;
-using Assets.Scripts.UI.JSONReader;
+using Assets.Scripts.UI.ItemSelection;
 using UnityEngine.SceneManagement;
 using System;
 
@@ -24,12 +24,10 @@ public class DialogueCreator : MonoBehaviour
     private GameObject comfortSlider;
     private IEnumerator displayTextCoroutine;
     private bool isCoroutineRunning = false;
-
     private int selectedOption = -2;  // exit node is -1
     
     public string DialogueDataFilePath;
 
-    // Start is called before the first frame update
     void Start()
     {
         dia = Dialogue.LoadDialogue("Assets/Resources/Dialogues/" + DialogueDataFilePath);
@@ -66,7 +64,7 @@ public class DialogueCreator : MonoBehaviour
         string newText;
         
         textChars = text.ToCharArray(0, text.Length);
-        for (int i = 0; i < textChars.Length; i++)
+        for (int i = 0; i < textChars.Length; i++)  // TODO: pause for ~3 seconds when "[PAUSE]" is encountered
         {
             newText = npcText.GetComponent<Text>().text;
             textObject.GetComponent<Text>().text = newText + textChars[i];
@@ -195,6 +193,10 @@ public class DialogueCreator : MonoBehaviour
         else 
         {
             optionText = opt.Text;
+        }
+        if (opt.Text.Contains("[PLAYER_NAME]"))
+        {
+            optionText = opt.Text.Replace("[PLAYER_NAME]", PlayerData.playerName);
         }
         return optionText;
     }
