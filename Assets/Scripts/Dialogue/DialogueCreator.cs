@@ -1,11 +1,12 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
 
 using DialogueTree;
-using Assets.Scripts.UI.ItemSelection;
 using UnityEngine.SceneManagement;
-using System;
+using Assets.Scripts.UI.ItemSelection;
+using Assets.Scripts.UI.Feedback.FeedbackInfo;
 
 public class DialogueCreator : MonoBehaviour
 {
@@ -25,12 +26,15 @@ public class DialogueCreator : MonoBehaviour
     private IEnumerator displayTextCoroutine;
     private bool isCoroutineRunning = false;
     private int selectedOption = -2;  // exit node is -1
-    
+    private FeedbackData feedbackData;
+
     public string DialogueDataFilePath;
+    public TextAsset feedbackDataJsonFile;
 
     void Start()
     {
         dia = Dialogue.LoadDialogue("Assets/Resources/Dialogues/" + DialogueDataFilePath);
+        feedbackData = JsonUtility.FromJson<FeedbackData>(feedbackDataJsonFile.text);
 
         npcSpeechBubble = GameObject.Find("SpeechBubble");
         npcText = GameObject.Find("SpeechBubbleText");
@@ -72,8 +76,8 @@ public class DialogueCreator : MonoBehaviour
         }
         isCoroutineRunning = false;
     }
-
-    private void DisplayNode(DialogueNode node)
+    
+    private void NodeActions(DialogueNode node)
     {
         playerTextBubble.SetActive(false);
         if (node.PlayerText.Length > 0)
@@ -86,7 +90,7 @@ public class DialogueCreator : MonoBehaviour
         }
 
         npcSpeechBubble.SetActive(false);
-        if(node.Text.Length > 0)
+        if (node.Text.Length > 0)
         {
             npcText.GetComponent<Text>().text = "";
             npcSpeechBubble.SetActive(true);
@@ -101,10 +105,51 @@ public class DialogueCreator : MonoBehaviour
             npcThoughtsBubble.SetActive(true);
         }
 
-        if(node.ScaleValue != 0)
+        if (node.ScaleValue != 0)
         {
             comfortSlider.GetComponent<NPCData>().SetComfortValue(node.ScaleValue);
         }
+
+        if (node.Pro.Length > 0)
+        {
+            string[] proIds = node.Pro.Split(',');
+            foreach (InfoPro pro in feedbackData.pros)
+            {
+                if(Array.IndexOf(proIds, pro.id) > -1)
+                {
+                    PlayerData.Pros.Add(pro);
+                }
+            }
+        }
+
+        if (node.Con.Length > 0)
+        {
+            string[] conIds = node.Con.Split(',');
+            foreach (InfoCon con in feedbackData.cons)
+            {
+                if (Array.IndexOf(conIds, con.id) > -1)
+                {
+                    PlayerData.Cons.Add(con);
+                }
+            }
+        }
+
+        if (node.Info.Length > 0)
+        {
+            string[] infoIds = node.Pro.Split(',');
+            foreach (Info info in feedbackData.info)
+            {
+                if (Array.IndexOf(infoIds, info.id) > -1)
+                {
+                    PlayerData.Info.Add(info);
+                }
+            }
+        }
+    }
+
+    private void DisplayNode(DialogueNode node)
+    {
+        NodeActions(node);
 
         option1.SetActive(false);
         option2.SetActive(false);
@@ -142,6 +187,30 @@ public class DialogueCreator : MonoBehaviour
         btn.GetComponentInChildren<Text>().text = optText;
         btn.GetComponent<Button>().onClick.AddListener(delegate
         {
+            if (opt.Pro.Length > 0)
+            {
+                string[] proIds = opt.Pro.Split(',');
+                foreach (InfoPro pro in feedbackData.pros)
+                {
+                    if (Array.IndexOf(proIds, pro.id) > -1)
+                    {
+                        PlayerData.Pros.Add(pro);
+                    }
+                }
+            }
+
+            if (opt.Con.Length > 0)
+            {
+                string[] conIds = opt.Con.Split(',');
+                foreach (InfoCon con in feedbackData.cons)
+                {
+                    if (Array.IndexOf(conIds, con.id) > -1)
+                    {
+                        PlayerData.Cons.Add(con);
+                    }
+                }
+            }
+
             SetSelectedOption(opt.DestNodeID);
             if (isCoroutineRunning)
             {

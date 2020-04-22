@@ -66,6 +66,11 @@
     <Compile Include="Assets\Scripts\Dialogue\DialogueCreator.cs" />
     <Compile Include="Assets\Scripts\NPC\NPCData.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerData.cs" />
+    <Compile Include="Assets\Scripts\UI\Feedback\Feedback.cs" />
+    <Compile Include="Assets\Scripts\UI\Feedback\FeedbackInfo\FeedbackData.cs" />
+    <Compile Include="Assets\Scripts\UI\Feedback\FeedbackInfo\Info.cs" />
+    <Compile Include="Assets\Scripts\UI\Feedback\FeedbackInfo\InfoCon.cs" />
+    <Compile Include="Assets\Scripts\UI\Feedback\FeedbackInfo\InfoPro.cs" />
     <Compile Include="Assets\Scripts\UI\Introduction\Introduction.cs" />
     <Compile Include="Assets\Scripts\UI\ItemSelection\Item.cs" />
     <Compile Include="Assets\Scripts\UI\ItemSelection\ItemSelection.cs" />
