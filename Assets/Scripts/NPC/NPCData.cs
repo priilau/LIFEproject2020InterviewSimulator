@@ -1,16 +1,27 @@
-﻿using UnityEngine;
-using UnityEngine.UI;
-
-public class NPCData : MonoBehaviour
+﻿public static class NPCData
 {
-    private GameObject comfortSlider;
-    // Start is called before the first frame update
-    void Start()
+    private static int npcComfort = 0;
+    public static void AddToComfortValue(int additionalVal)
     {
-        comfortSlider = GameObject.Find("ComfortSlider");
+        if (npcComfort >= -4 && npcComfort <= 4)
+        {
+            npcComfort += additionalVal;
+        }
     }
-    public void SetComfortValue(int value)
+
+    public static string GetComfortValue()
     {
-        comfortSlider.GetComponent<Slider>().value += value;
+        if (npcComfort > 0 && npcComfort <= 4)
+        {
+            return "-" + npcComfort;
+        }
+        else if (npcComfort == 0) 
+        {
+            return "" + npcComfort;
+        }
+        else
+        {
+            return "+" + npcComfort;
+        }
     }
 }

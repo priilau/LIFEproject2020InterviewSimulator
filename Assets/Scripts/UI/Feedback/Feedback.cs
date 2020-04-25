@@ -14,6 +14,7 @@ public class Feedback : MonoBehaviour
 
         foreach (InfoPro pro in PlayerData.Pros)
         {
+            Debug.Log(pro.info);
             textObject = new GameObject("Text");
             prosAndConsContent.transform.SetParent(this.transform);
             textObject.AddComponent<Text>().text = pro.info;

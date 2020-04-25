@@ -4,10 +4,10 @@ using System.Collections.Generic;
 
 public static class PlayerData
 {
-    private static List<Item> selectedItems;
-    private static List<InfoCon> cons;
-    private static List<InfoPro> pros;
-    private static List<Info> info;
+    public static List<Item> selectedItems = new List<Item>();
+    public static List<InfoCon> cons = new List<InfoCon>();
+    public static List<InfoPro> pros = new List<InfoPro>();
+    public static List<Info> info = new List<Info>();
     public static string playerName;
     public static List<Item> SelectedItems
     {

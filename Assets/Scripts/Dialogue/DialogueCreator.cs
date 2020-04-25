@@ -25,6 +25,7 @@ public class DialogueCreator : MonoBehaviour
     private GameObject comfortSlider;
     private IEnumerator displayTextCoroutine;
     private bool isCoroutineRunning = false;
+    private bool optionsCreated = false;
     private int selectedOption = -2;  // exit node is -1
     private FeedbackData feedbackData;
 
@@ -59,6 +60,7 @@ public class DialogueCreator : MonoBehaviour
     public void SetSelectedOption(int x)
     {
         selectedOption = x;
+        optionsCreated = false;
     }
 
     private IEnumerator DisplayText(string text, GameObject textObject)
@@ -107,7 +109,7 @@ public class DialogueCreator : MonoBehaviour
 
         if (node.ScaleValue != 0)
         {
-            comfortSlider.GetComponent<NPCData>().SetComfortValue(node.ScaleValue);
+            NPCData.AddToComfortValue(node.ScaleValue);
         }
 
         if (node.Pro.Length > 0)
@@ -136,7 +138,7 @@ public class DialogueCreator : MonoBehaviour
 
         if (node.Info.Length > 0)
         {
-            string[] infoIds = node.Pro.Split(',');
+            string[] infoIds = node.Info.Split(',');
             foreach (Info info in feedbackData.info)
             {
                 if (Array.IndexOf(infoIds, info.id) > -1)
@@ -187,6 +189,7 @@ public class DialogueCreator : MonoBehaviour
         btn.GetComponentInChildren<Text>().text = optText;
         btn.GetComponent<Button>().onClick.AddListener(delegate
         {
+            Debug.LogWarning("Inside option clicked");
             if (opt.Pro.Length > 0)
             {
                 string[] proIds = opt.Pro.Split(',');
@@ -270,18 +273,27 @@ public class DialogueCreator : MonoBehaviour
         return optionText;
     }
 
+    void Update()
+    {
+        
+    }
+
     public IEnumerator Run()
     {
         int nodeId = 0;
 
         while (nodeId != -1)
         {
-            for(int i = 0; i < dia.Nodes.Count; i++)
+            if (!optionsCreated)
             {
-                if (nodeId == dia.Nodes[i].NodeID)
+                for (int i = 0; i < dia.Nodes.Count; i++)
                 {
-                    DisplayNode(dia.Nodes[i]);
+                    if (nodeId == dia.Nodes[i].NodeID)
+                    {
+                        DisplayNode(dia.Nodes[i]);
+                    }
                 }
+                optionsCreated = true;
             }
             selectedOption = -2;
             while (selectedOption == -2)
