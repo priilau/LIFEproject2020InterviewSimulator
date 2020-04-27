@@ -115,7 +115,11 @@ MonoBehaviour:
   m_MinSize: {x: 679, y: 492}
   m_MaxSize: {x: 14002, y: 14042}
   vertical: 0
+<<<<<<< HEAD
   controlID: 1568
+=======
+  controlID: 2961
+>>>>>>> d92feacbc2ece23d3f0b4426abe8f2eae330c3e8
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -140,7 +144,11 @@ MonoBehaviour:
   m_MinSize: {x: 403, y: 492}
   m_MaxSize: {x: 10001, y: 14042}
   vertical: 1
+<<<<<<< HEAD
   controlID: 1546
+=======
+  controlID: 2966
+>>>>>>> d92feacbc2ece23d3f0b4426abe8f2eae330c3e8
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -165,7 +173,11 @@ MonoBehaviour:
   m_MinSize: {x: 403, y: 221}
   m_MaxSize: {x: 8003, y: 4021}
   vertical: 0
+<<<<<<< HEAD
   controlID: 1547
+=======
+  controlID: 2967
+>>>>>>> d92feacbc2ece23d3f0b4426abe8f2eae330c3e8
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -393,9 +405,15 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
+<<<<<<< HEAD
       m_SelectedIDs: b2310000
       m_LastClickedID: 0
       m_ExpandedIDs: 32f7ffff6cfbffff4a3400005e3400008a340000ca340000a2370000b4370000e0370000fa370000
+=======
+      m_SelectedIDs: 5c470000
+      m_LastClickedID: 18268
+      m_ExpandedIDs: 9eedffffdaeeffff6cfbffff5e3400008834000098340000a83400006a46000096460000b046000032470000424700005c4700006c4700007e470000
+>>>>>>> d92feacbc2ece23d3f0b4426abe8f2eae330c3e8
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: Hitsa
@@ -455,9 +473,15 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
+<<<<<<< HEAD
     m_Target: {x: 604.78723, y: 283.73294, z: -45.75}
     speed: 2
     m_Value: {x: 604.78723, y: 283.73294, z: -45.75}
+=======
+    m_Target: {x: 620.0547, y: 218.79869, z: -22.869028}
+    speed: 2
+    m_Value: {x: 623.76044, y: 220.07346, z: -21.61484}
+>>>>>>> d92feacbc2ece23d3f0b4426abe8f2eae330c3e8
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -507,9 +531,15 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
+<<<<<<< HEAD
     m_Target: 314.9809
     speed: 2
     m_Value: 314.9809
+=======
+    m_Target: 332.81967
+    speed: 2
+    m_Value: 348.5023
+>>>>>>> d92feacbc2ece23d3f0b4426abe8f2eae330c3e8
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -605,14 +635,21 @@ MonoBehaviour:
   m_LastFolders:
   - Assets/Scripts/UI/Introduction
   m_LastFoldersGridSize: -1
-  m_LastProjectPath: C:\Users\Priit\Desktop\ELUprojekt
+  m_LastProjectPath: C:\Users\0000\Desktop\Kool\ELU
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
+<<<<<<< HEAD
     scrollPos: {x: 0, y: 119}
     m_SelectedIDs: 42350000
     m_LastClickedID: 13634
     m_ExpandedIDs: 0000000010350000123500001435000016350000183500001a3500001c35000000ca9a3b
+=======
+    scrollPos: {x: 0, y: 79}
+    m_SelectedIDs: 0e350000
+    m_LastClickedID: 13582
+    m_ExpandedIDs: 00000000ee340000f0340000f2340000f4340000f6340000f8340000fa34000000ca9a3b
+>>>>>>> d92feacbc2ece23d3f0b4426abe8f2eae330c3e8
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -640,7 +677,11 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
+<<<<<<< HEAD
     m_ExpandedIDs: 0000000010350000123500001435000016350000183500001a3500001c35000000ca9a3b
+=======
+    m_ExpandedIDs: 00000000ee340000f0340000f2340000f4340000f6340000f8340000fa34000000ca9a3b
+>>>>>>> d92feacbc2ece23d3f0b4426abe8f2eae330c3e8
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -684,7 +725,7 @@ MonoBehaviour:
       m_IsRenaming: 0
       m_OriginalEventType: 11
       m_IsRenamingFilename: 1
-      m_ClientGUIView: {fileID: 0}
+      m_ClientGUIView: {fileID: 10}
     m_CreateAssetUtility:
       m_EndAction: {fileID: 0}
       m_InstanceID: 0
@@ -695,7 +736,7 @@ MonoBehaviour:
     m_ScrollPosition: {x: 0, y: 0}
     m_GridSize: 64
   m_SkipHiddenPackages: 0
-  m_DirectoriesAreaWidth: 115
+  m_DirectoriesAreaWidth: 213
 --- !u!114 &17
 MonoBehaviour:
   m_ObjectHideFlags: 52
