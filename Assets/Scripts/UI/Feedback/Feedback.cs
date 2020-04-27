@@ -15,12 +15,12 @@ public class Feedback : MonoBehaviour
         font = (Font)Resources.GetBuiltinResource(typeof(Font), "Arial.ttf");
         prosContent = GameObject.Find("ProsContent");
         consContent = GameObject.Find("ConsContent");
-        infoContent = GameObject.Find("InfoContent");
+        infoContent = GameObject.Find("InfoContent");/*
         RectTransform prosScrollRect = GameObject.Find("Pros").GetComponent<ScrollRect>();
         DefaultControls.Resources TempResource = new DefaultControls.Resources();
         GameObject NewText = DefaultControls.CreateButton(TempResource);
         NewText.AddComponent<LayoutElement>();
-        NewText.transform.SetParent(FindContent(prosScrollRect));
+        NewText.transform.SetParent(FindContent(prosScrollRect));*/
 
         foreach (InfoPro pro in PlayerData.Pros)
         {
