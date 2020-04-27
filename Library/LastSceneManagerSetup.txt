@@ -1,5 +1,9 @@
 sceneSetups:
+<<<<<<< HEAD
 - path: Assets/Scenes/ItemSelection.unity
+=======
+- path: Assets/Scenes/MainMenu.unity
+>>>>>>> f9159675483ce6b4938fea28849d31356ab9b46c
   isLoaded: 1
   isActive: 1
   isSubScene: 0
