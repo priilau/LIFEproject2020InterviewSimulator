@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Scenes/Interview.unity
+- path: Assets/Scenes/ItemSelection.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0

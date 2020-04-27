@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{F6775EC8-5D93-69D8-275E-D5323A920364}</ProjectGuid>
+    <ProjectGuid>{0EA6C310-5EC8-E43D-C42C-D5369EEA3E86}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -79,37 +79,37 @@
     <None Include="Assets\Resources\Dialogues\test_dia.xml" />
     <None Include="Assets\Resources\Dialogues\dialogue_judy.xml" />
     <Reference Include="Unity.Timeline.Editor">
-      <HintPath>C:/Users/priit/Desktop/ELUprojekt/Interview Simulator/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+      <HintPath>C:/Users/Priit/Desktop/ELUprojekt/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VSCode.Editor">
-      <HintPath>C:/Users/priit/Desktop/ELUprojekt/Interview Simulator/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+      <HintPath>C:/Users/Priit/Desktop/ELUprojekt/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>C:/Users/priit/Desktop/ELUprojekt/Interview Simulator/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>C:/Users/Priit/Desktop/ELUprojekt/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
-      <HintPath>C:/Users/priit/Desktop/ELUprojekt/Interview Simulator/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+      <HintPath>C:/Users/Priit/Desktop/ELUprojekt/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline">
-      <HintPath>C:/Users/priit/Desktop/ELUprojekt/Interview Simulator/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+      <HintPath>C:/Users/Priit/Desktop/ELUprojekt/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
     </Reference>
     <Reference Include="Unity.CollabProxy.Editor">
-      <HintPath>C:/Users/priit/Desktop/ELUprojekt/Interview Simulator/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+      <HintPath>C:/Users/Priit/Desktop/ELUprojekt/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Rider.Editor">
-      <HintPath>C:/Users/priit/Desktop/ELUprojekt/Interview Simulator/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+      <HintPath>C:/Users/Priit/Desktop/ELUprojekt/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Sprite.Editor">
-      <HintPath>C:/Users/priit/Desktop/ELUprojekt/Interview Simulator/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
+      <HintPath>C:/Users/Priit/Desktop/ELUprojekt/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Tilemap.Editor">
-      <HintPath>C:/Users/priit/Desktop/ELUprojekt/Interview Simulator/Library/ScriptAssemblies/Unity.2D.Tilemap.Editor.dll</HintPath>
+      <HintPath>C:/Users/Priit/Desktop/ELUprojekt/Library/ScriptAssemblies/Unity.2D.Tilemap.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>C:/Users/priit/Desktop/ELUprojekt/Interview Simulator/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>C:/Users/Priit/Desktop/ELUprojekt/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
-      <HintPath>C:/Users/priit/Desktop/ELUprojekt/Interview Simulator/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+      <HintPath>C:/Users/Priit/Desktop/ELUprojekt/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity/2019.3.10f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -289,7 +289,7 @@
       <HintPath>C:/Program Files/Unity/2019.3.10f1/Editor/Data/Managed/UnityEngine/UnityEngine.XRModule.dll</HintPath>
     </Reference>
     <Reference Include="DialogueTree">
-      <HintPath>C:/Users/priit/Desktop/ELUprojekt/Interview Simulator/Assets/Scripts/Dialogue/DialogueTree.dll</HintPath>
+      <HintPath>C:/Users/Priit/Desktop/ELUprojekt/Assets/Scripts/Dialogue/DialogueTree.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
       <HintPath>C:/Program Files/Unity/2019.3.10f1/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll</HintPath>
