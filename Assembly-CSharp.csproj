@@ -11,11 +11,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-<<<<<<< HEAD
-    <ProjectGuid>{0EA6C310-5EC8-E43D-C42C-D5369EEA3E86}</ProjectGuid>
-=======
     <ProjectGuid>{103A69C7-474F-5D5A-0B17-472145F98254}</ProjectGuid>
->>>>>>> f9159675483ce6b4938fea28849d31356ab9b46c
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -83,39 +79,6 @@
     <None Include="Assets\Resources\Dialogues\test_dia.xml" />
     <None Include="Assets\Resources\Dialogues\dialogue_judy.xml" />
     <Reference Include="Unity.Timeline.Editor">
-<<<<<<< HEAD
-      <HintPath>C:/Users/Priit/Desktop/ELUprojekt/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.VSCode.Editor">
-      <HintPath>C:/Users/Priit/Desktop/ELUprojekt/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>C:/Users/Priit/Desktop/ELUprojekt/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.UI">
-      <HintPath>C:/Users/Priit/Desktop/ELUprojekt/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Timeline">
-      <HintPath>C:/Users/Priit/Desktop/ELUprojekt/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.CollabProxy.Editor">
-      <HintPath>C:/Users/Priit/Desktop/ELUprojekt/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Rider.Editor">
-      <HintPath>C:/Users/Priit/Desktop/ELUprojekt/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.2D.Sprite.Editor">
-      <HintPath>C:/Users/Priit/Desktop/ELUprojekt/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.2D.Tilemap.Editor">
-      <HintPath>C:/Users/Priit/Desktop/ELUprojekt/Library/ScriptAssemblies/Unity.2D.Tilemap.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.TextMeshPro">
-      <HintPath>C:/Users/Priit/Desktop/ELUprojekt/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEditor.UI">
-      <HintPath>C:/Users/Priit/Desktop/ELUprojekt/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
-=======
       <HintPath>C:/Users/0000/Desktop/Kool/ELU/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VSCode.Editor">
@@ -147,7 +110,6 @@
     </Reference>
     <Reference Include="UnityEditor.UI">
       <HintPath>C:/Users/0000/Desktop/Kool/ELU/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
->>>>>>> f9159675483ce6b4938fea28849d31356ab9b46c
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.10f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -327,11 +289,7 @@
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.10f1/Editor/Data/Managed/UnityEngine/UnityEngine.XRModule.dll</HintPath>
     </Reference>
     <Reference Include="DialogueTree">
-<<<<<<< HEAD
-      <HintPath>C:/Users/Priit/Desktop/ELUprojekt/Assets/Scripts/Dialogue/DialogueTree.dll</HintPath>
-=======
       <HintPath>C:/Users/0000/Desktop/Kool/ELU/Assets/Scripts/Dialogue/DialogueTree.dll</HintPath>
->>>>>>> f9159675483ce6b4938fea28849d31356ab9b46c
     </Reference>
     <Reference Include="netstandard">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.10f1/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll</HintPath>
