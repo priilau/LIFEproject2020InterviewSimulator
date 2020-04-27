@@ -22,7 +22,6 @@ public class DialogueCreator : MonoBehaviour
     private GameObject option2;
     private GameObject option3;
     private GameObject option4;
-    private GameObject comfortSlider;
     private IEnumerator displayTextCoroutine;
     private bool isCoroutineRunning = false;
     private bool optionsCreated = false;
@@ -47,7 +46,6 @@ public class DialogueCreator : MonoBehaviour
         option2 = GameObject.Find("Option2");
         option3 = GameObject.Find("Option3");
         option4 = GameObject.Find("Option4");
-        comfortSlider = GameObject.Find("ComfortSlider");
 
         RunDialogue();
     }
