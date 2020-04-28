@@ -12,12 +12,21 @@ public class InterviewBehaviour : MonoBehaviour
         foreach (Item item in itemList.items)
         {
             GameObject itemGameObject = GameObject.Find(item.gameObjectName);
+            // for some reason this doesn't work here but works in ItemSelection.cs line 34
+            /*
+            if (itemGameObject && PlayerData.selectedItems.Contains(item))
+            {
+                itemGameObject.SetActive(false);
+            }
+             */
             if (itemGameObject)
             {
-                Debug.Log(itemGameObject);
-                if (!PlayerData.selectedItems.Contains(item))
+                foreach(Item selectedItem in PlayerData.selectedItems)
                 {
-                    itemGameObject.SetActive(false);
+                    if(selectedItem.itemName != item.itemName)
+                    {
+                        itemGameObject.SetActive(false);
+                    }
                 }
             }
         }
