@@ -9,7 +9,7 @@ public class MainMenuBehaviour : MonoBehaviour
     private GameObject playBtn;
     private GameObject aboutBtn;
     private GameObject backBtn;
-    private GameObject aboutMenu;
+    private GameObject about;
 
 
     void Start()
@@ -21,17 +21,17 @@ public class MainMenuBehaviour : MonoBehaviour
         });
 
         aboutBtn = GameObject.Find("AboutBtn");
-        aboutMenu = GameObject.Find("AboutMenu");
+        about = GameObject.Find("About");
         aboutBtn.GetComponent<Button>().onClick.AddListener(delegate
         {
-            aboutMenu.SetActive(true);
+            about.SetActive(true);
         });
 
         backBtn = GameObject.Find("BackBtn");
         backBtn.GetComponent<Button>().onClick.AddListener(delegate
         {
-            aboutMenu.SetActive(false);
+            about.SetActive(false);
         });
+        about.SetActive(false);
     }
-
 }
