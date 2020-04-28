@@ -1,9 +1,5 @@
 sceneSetups:
-<<<<<<< HEAD
-- path: Assets/Scenes/Interview.unity
-=======
 - path: Assets/Scenes/Introduction.unity
->>>>>>> c8ab3b29ea79a254e82e4cc9b72785c20d077678
   isLoaded: 1
   isActive: 1
   isSubScene: 0
