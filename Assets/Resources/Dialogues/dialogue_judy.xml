@@ -9,7 +9,6 @@
       <Con></Con>
       <Thoughts></Thoughts>
       <ScaleValue>0</ScaleValue>
-      <PlayerText></PlayerText>
       <Options>
         <DialogueOption>
           <Text>Hello! I’m [PLAYER_NAME].</Text>
@@ -21,7 +20,7 @@
         </DialogueOption>
         <DialogueOption>
           <Text> Hi! I'm [PLAYER_NAME]. Lovely day for an interview, isn't it?</Text>
-          <Pro></Pro>
+          <Pro>1</Pro>
           <Con></Con>
           <SpecialInteractionItems></SpecialInteractionItems>
           <RightOption>false</RightOption>
@@ -30,7 +29,7 @@
         <DialogueOption>
           <Text>Yo! What's up?</Text>
           <Pro></Pro>
-          <Con></Con>
+          <Con>2</Con>
           <SpecialInteractionItems></SpecialInteractionItems>
           <RightOption>false</RightOption>
           <DestNodeID>66</DestNodeID>
@@ -47,17 +46,16 @@
     </DialogueNode>
     <DialogueNode>
       <NodeID>2</NodeID>
-      <Info></Info>
+      <Info>1</Info>
       <Text>Hello! I'm Judy. And yes it is quite nice! Would like to be out there already.</Text>
       <Pro></Pro>
       <Con></Con>
       <Thoughts></Thoughts>
       <ScaleValue>0</ScaleValue>
-      <PlayerText></PlayerText>
       <Options>
         <DialogueOption>
           <Text>Yes, indeed. Which is why I appreciate it even more so that you are here for this interview. Thank you!</Text>
-          <Pro></Pro>
+          <Pro>11</Pro>
           <Con></Con>
           <SpecialInteractionItems></SpecialInteractionItems>
           <RightOption>false</RightOption>
@@ -66,7 +64,7 @@
         <DialogueOption>
           <Text>Alright, let's get out of here then!</Text>
           <Pro></Pro>
-          <Con></Con>
+          <Con>9</Con>
           <SpecialInteractionItems></SpecialInteractionItems>
           <RightOption>false</RightOption>
           <DestNodeID>67</DestNodeID>
@@ -81,7 +79,6 @@
       <Con></Con>
       <Thoughts>Wow, that was unexpected!</Thoughts>
       <ScaleValue>0</ScaleValue>
-      <PlayerText></PlayerText>
       <Options>
         <DialogueOption>
           <Text>*end interview*</Text>
@@ -101,7 +98,6 @@
       <Con></Con>
       <Thoughts></Thoughts>
       <ScaleValue>0</ScaleValue>
-      <PlayerText></PlayerText>
       <Options>
         <DialogueOption>
           <Text>Let’s begin.</Text>
@@ -131,17 +127,16 @@
     </DialogueNode>
     <DialogueNode>
       <NodeID>66</NodeID>
-      <Info></Info>
+      <Info>1</Info>
       <Text>Hi! I’m Judy, nice to meet you!</Text>
       <Pro></Pro>
       <Con></Con>
       <Thoughts>Wow they are so informal. I'm not sure how i feel about this.</Thoughts>
-      <ScaleValue>1</ScaleValue>
-      <PlayerText></PlayerText>
+      <ScaleValue>-1</ScaleValue>
       <Options>
         <DialogueOption>
           <Text>Nice to meet you too! Thank you for agreeing to participate in the interview.</Text>
-          <Pro></Pro>
+          <Pro>11</Pro>
           <Con></Con>
           <SpecialInteractionItems></SpecialInteractionItems>
           <RightOption>true</RightOption>
@@ -151,13 +146,12 @@
     </DialogueNode>
     <DialogueNode>
       <NodeID>1</NodeID>
-      <Info></Info>
+      <Info>1</Info>
       <Text>Hi! I’m Judy, nice to meet you!</Text>
       <Pro></Pro>
       <Con></Con>
       <Thoughts></Thoughts>
       <ScaleValue>0</ScaleValue>
-      <PlayerText></PlayerText>
       <Options>
         <DialogueOption>
           <Text>Nice to meet you too! Thank you for agreeing to participate in the interview.</Text>
@@ -177,19 +171,18 @@
       <Con></Con>
       <Thoughts></Thoughts>
       <ScaleValue>0</ScaleValue>
-      <PlayerText></PlayerText>
       <Options>
         <DialogueOption>
           <Text>Let’s begin.</Text>
           <Pro></Pro>
-          <Con></Con>
+          <Con>16</Con>
           <SpecialInteractionItems></SpecialInteractionItems>
           <RightOption>false</RightOption>
           <DestNodeID>74</DestNodeID>
         </DialogueOption>
         <DialogueOption>
           <Text>Is it okay that i record our conversation? Only I will use this later to make sure i don’t miss any details.</Text>
-          <Pro></Pro>
+          <Pro>2</Pro>
           <Con></Con>
           <SpecialInteractionItems>camera,dictaphone</SpecialInteractionItems>
           <RightOption>true</RightOption>
@@ -198,7 +191,7 @@
         <DialogueOption>
           <Text>*set up your [ITEM_LIST]* Let's begin.</Text>
           <Pro></Pro>
-          <Con></Con>
+          <Con>17</Con>
           <SpecialInteractionItems>camera,dictaphone</SpecialInteractionItems>
           <RightOption>true</RightOption>
           <DestNodeID>68</DestNodeID>
@@ -213,11 +206,10 @@
       <Con></Con>
       <Thoughts></Thoughts>
       <ScaleValue>0</ScaleValue>
-      <PlayerText></PlayerText>
       <Options>
         <DialogueOption>
           <Text>Thank you! Let’s begin.</Text>
-          <Pro></Pro>
+          <Pro>11</Pro>
           <Con></Con>
           <SpecialInteractionItems></SpecialInteractionItems>
           <RightOption>true</RightOption>
@@ -232,8 +224,7 @@
       <Pro></Pro>
       <Con></Con>
       <Thoughts>Are they recording me? Shouldn't they ask my permission?</Thoughts>
-      <ScaleValue>1</ScaleValue>
-      <PlayerText>I am doing this interview to create a new online shopping application so anything you can tell me about your experience with any such applications will be of tremendous use.</PlayerText>
+      <ScaleValue>-1</ScaleValue>
       <Options>
         <DialogueOption>
           <Text>Firstly, I would like to know a little bit about you. Can you tell me, what is your age group?</Text>
@@ -252,8 +243,7 @@
       <Pro></Pro>
       <Con></Con>
       <Thoughts>Right to business? A bit rude perhaps.</Thoughts>
-      <ScaleValue>1</ScaleValue>
-      <PlayerText></PlayerText>
+      <ScaleValue>-1</ScaleValue>
       <Options>
         <DialogueOption>
           <Text>I'm terribly sorry! Did I just start the interview without like that? It must be the nerves. I am [PLAYER_NAME]</Text>
@@ -280,8 +270,7 @@
       <Pro></Pro>
       <Con></Con>
       <Thoughts></Thoughts>
-      <ScaleValue>-1</ScaleValue>
-      <PlayerText></PlayerText>
+      <ScaleValue>1</ScaleValue>
       <Options>
         <DialogueOption>
           <Text>Thank you! Firstly, I would like to know a little bit about you. Can you tell me, what is your age group?</Text>
@@ -301,7 +290,41 @@
       <Con></Con>
       <Thoughts></Thoughts>
       <ScaleValue>0</ScaleValue>
-      <PlayerText>I am doing this interview to create a new online shopping application so anything you can tell me about your experience with any such applications will be of tremendous use.</PlayerText>
+      <Options>
+        <DialogueOption>
+          <Text>I am doing this interview to create a new online shopping application so anything you can tell me about your experience with any such applications will be of tremendous use.</Text>
+          <Pro>3</Pro>
+          <Con></Con>
+          <SpecialInteractionItems></SpecialInteractionItems>
+          <RightOption>true</RightOption>
+          <DestNodeID>77</DestNodeID>
+        </DialogueOption>
+        <DialogueOption>
+          <Text>Online shopping. Go.</Text>
+          <Pro></Pro>
+          <Con></Con>
+          <SpecialInteractionItems></SpecialInteractionItems>
+          <RightOption>false</RightOption>
+          <DestNodeID>6</DestNodeID>
+        </DialogueOption>
+        <DialogueOption>
+          <Text>Firstly, I would like to know a little bit about you. Can you tell me, what is your age group?</Text>
+          <Pro></Pro>
+          <Con></Con>
+          <SpecialInteractionItems></SpecialInteractionItems>
+          <RightOption>true</RightOption>
+          <DestNodeID>7</DestNodeID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>77</NodeID>
+      <Info></Info>
+      <Text>Oh, good to know!</Text>
+      <Pro></Pro>
+      <Con></Con>
+      <Thoughts></Thoughts>
+      <ScaleValue>0</ScaleValue>
       <Options>
         <DialogueOption>
           <Text>Online shopping. Go.</Text>
@@ -328,8 +351,7 @@
       <Pro></Pro>
       <Con></Con>
       <Thoughts>That's straight to business. More info about this interview would be nice.</Thoughts>
-      <ScaleValue>1</ScaleValue>
-      <PlayerText></PlayerText>
+      <ScaleValue>-1</ScaleValue>
       <Options>
         <DialogueOption>
           <Text>I'm sorry, I should have told you a bit more information about the interview. Allow me to explain.</Text>
@@ -356,8 +378,7 @@
       <Pro></Pro>
       <Con></Con>
       <Thoughts></Thoughts>
-      <ScaleValue>-1</ScaleValue>
-      <PlayerText>I am doing this interview to create a new online shopping application so anything you can tell me about your experience with any such applications will be of tremendous use.</PlayerText>
+      <ScaleValue>1</ScaleValue>
       <Options>
         <DialogueOption>
           <Text>Firstly, I would like to know a little bit about you. Can you tell me, what is your age group?</Text>
@@ -377,7 +398,6 @@
       <Con></Con>
       <Thoughts></Thoughts>
       <ScaleValue>0</ScaleValue>
-      <PlayerText></PlayerText>
       <Options>
         <DialogueOption>
           <Text>Do you have a family? A husband or kids?</Text>
@@ -404,8 +424,7 @@
       <Pro></Pro>
       <Con></Con>
       <Thoughts>Did they seriously just insult me?</Thoughts>
-      <ScaleValue>1</ScaleValue>
-      <PlayerText></PlayerText>
+      <ScaleValue>-1</ScaleValue>
       <Options>
         <DialogueOption>
           <Text>I'm sorry! It wasn't meant as an insult, more of a compliment. </Text>
@@ -432,8 +451,7 @@
       <Pro></Pro>
       <Con></Con>
       <Thoughts>I hope they won't make a habit of insulting.</Thoughts>
-      <ScaleValue>-1</ScaleValue>
-      <PlayerText></PlayerText>
+      <ScaleValue>1</ScaleValue>
       <Options>
         <DialogueOption>
           <Text>Do you have a family? A husband or kids?</Text>
@@ -461,7 +479,6 @@
       <Con></Con>
       <Thoughts></Thoughts>
       <ScaleValue>0</ScaleValue>
-      <PlayerText></PlayerText>
       <Options>
         <DialogueOption>
           <Text>What kind of work do you do?</Text>
@@ -489,7 +506,6 @@
       <Con></Con>
       <Thoughts></Thoughts>
       <ScaleValue>0</ScaleValue>
-      <PlayerText></PlayerText>
       <Options>
         <DialogueOption>
           <Text>Oh, she just lost her job and the kid is a menace.</Text>
@@ -516,8 +532,7 @@
       <Pro></Pro>
       <Con></Con>
       <Thoughts>What a horrible thing to hear. Wait why am I here?</Thoughts>
-      <ScaleValue>1</ScaleValue>
-      <PlayerText></PlayerText>
+      <ScaleValue>-1</ScaleValue>
       <Options>
         <DialogueOption>
           <Text> I'm sorry, I went a little off topic. Let's get back to the interview.</Text>
@@ -552,8 +567,7 @@
       <Pro></Pro>
       <Con></Con>
       <Thoughts>What a horrible thing to hear. Wait why am I here?</Thoughts>
-      <ScaleValue>-1</ScaleValue>
-      <PlayerText></PlayerText>
+      <ScaleValue>1</ScaleValue>
       <Options>
         <DialogueOption>
           <Text>What kind of work do you do?</Text>
@@ -572,8 +586,7 @@
       <Pro></Pro>
       <Con></Con>
       <Thoughts>They are just making assumptions about me!</Thoughts>
-      <ScaleValue>1</ScaleValue>
-      <PlayerText></PlayerText>
+      <ScaleValue>-1</ScaleValue>
       <Options>
         <DialogueOption>
           <Text>I'm sorry, I shouldn't be making assumptions. let's get back to the interview instead.</Text>
@@ -600,8 +613,7 @@
       <Pro></Pro>
       <Con></Con>
       <Thoughts></Thoughts>
-      <ScaleValue>-1</ScaleValue>
-      <PlayerText></PlayerText>
+      <ScaleValue>1</ScaleValue>
       <Options>
         <DialogueOption>
           <Text>What kind of work do you do?</Text>
@@ -621,7 +633,6 @@
       <Con></Con>
       <Thoughts></Thoughts>
       <ScaleValue>0</ScaleValue>
-      <PlayerText></PlayerText>
       <Options>
         <DialogueOption>
           <Text>What kind of work do you do?</Text>
@@ -641,7 +652,6 @@
       <Con></Con>
       <Thoughts></Thoughts>
       <ScaleValue>0</ScaleValue>
-      <PlayerText></PlayerText>
       <Options>
         <DialogueOption>
           <Text>Do you earn above average wage?</Text>
@@ -677,7 +687,6 @@
       <Con></Con>
       <Thoughts></Thoughts>
       <ScaleValue>0</ScaleValue>
-      <PlayerText></PlayerText>
       <Options>
         <DialogueOption>
           <Text>Thank you for telling me this. Perhaps you can start telling me about your shopping habits. How often do you do grocery shopping online?</Text>
@@ -704,8 +713,7 @@
       <Pro></Pro>
       <Con></Con>
       <Thoughts>I am not comfortable with this.</Thoughts>
-      <ScaleValue>1</ScaleValue>
-      <PlayerText></PlayerText>
+      <ScaleValue>-1</ScaleValue>
       <Options>
         <DialogueOption>
           <Text>Sorry, I didn't mean to make you uncomfortable.</Text>
@@ -732,8 +740,7 @@
       <Pro></Pro>
       <Con></Con>
       <Thoughts></Thoughts>
-      <ScaleValue>-1</ScaleValue>
-      <PlayerText></PlayerText>
+      <ScaleValue>1</ScaleValue>
       <Options>
         <DialogueOption>
           <Text>Thank you for telling me this. Perhaps you can start telling me about your shopping habits. How often do you do grocery shopping online?</Text>
@@ -760,8 +767,7 @@
       <Pro></Pro>
       <Con></Con>
       <Thoughts>I don't need them to insult me like that.</Thoughts>
-      <ScaleValue>1</ScaleValue>
-      <PlayerText></PlayerText>
+      <ScaleValue>-1</ScaleValue>
       <Options>
         <DialogueOption>
           <Text>Sorry, I didn't mean to make you uncomfortable.</Text>
@@ -789,7 +795,6 @@
       <Con></Con>
       <Thoughts></Thoughts>
       <ScaleValue>0</ScaleValue>
-      <PlayerText></PlayerText>
       <Options>
         <DialogueOption>
           <Text>Thank you for telling me this. Perhaps you can start telling me about your shopping habits. How often do you do grocery shopping online?</Text>
@@ -817,7 +822,6 @@
       <Con></Con>
       <Thoughts></Thoughts>
       <ScaleValue>0</ScaleValue>
-      <PlayerText></PlayerText>
       <Options>
         <DialogueOption>
           <Text>Which applications do you use for your shopping?</Text>
@@ -844,8 +848,7 @@
       <Pro></Pro>
       <Con></Con>
       <Thoughts></Thoughts>
-      <ScaleValue>-1</ScaleValue>
-      <PlayerText></PlayerText>
+      <ScaleValue>1</ScaleValue>
       <Options>
         <DialogueOption>
           <Text>Do you use FoodDelivery?</Text>
@@ -873,7 +876,6 @@
       <Con></Con>
       <Thoughts></Thoughts>
       <ScaleValue>0</ScaleValue>
-      <PlayerText></PlayerText>
       <Options>
         <DialogueOption>
           <Text>Do you also frequent the physical store?</Text>
@@ -901,7 +903,6 @@
       <Con></Con>
       <Thoughts></Thoughts>
       <ScaleValue>0</ScaleValue>
-      <PlayerText></PlayerText>
       <Options>
         <DialogueOption>
           <Text>Which applications do you use for your shopping?</Text>
@@ -937,7 +938,6 @@
       <Con></Con>
       <Thoughts>Just thinking about Freshly now.</Thoughts>
       <ScaleValue>0</ScaleValue>
-      <PlayerText></PlayerText>
       <Options>
         <DialogueOption>
           <Text>Tell me about Freshly. What do you like about this application?</Text>
@@ -965,7 +965,6 @@
       <Con></Con>
       <Thoughts></Thoughts>
       <ScaleValue>0</ScaleValue>
-      <PlayerText></PlayerText>
       <Options>
         <DialogueOption>
           <Text>Do you think online shopping helps you save money, by buying items that aren’t readily necessary?</Text>
@@ -993,7 +992,6 @@
       <Con></Con>
       <Thoughts></Thoughts>
       <ScaleValue>0</ScaleValue>
-      <PlayerText></PlayerText>
       <Options>
         <DialogueOption>
           <Text>What times do you usually like your deliveries?</Text>
@@ -1029,7 +1027,6 @@
       <Con></Con>
       <Thoughts></Thoughts>
       <ScaleValue>0</ScaleValue>
-      <PlayerText></PlayerText>
       <Options>
         <DialogueOption>
           <Text>Do you think this is one of the reasons why you like online shopping?</Text>
@@ -1057,7 +1054,6 @@
       <Con></Con>
       <Thoughts></Thoughts>
       <ScaleValue>0</ScaleValue>
-      <PlayerText></PlayerText>
       <Options>
         <DialogueOption>
           <Text>What other reasons, do you think, make online grocery shopping appealing to you?</Text>
@@ -1072,12 +1068,11 @@
     <DialogueNode>
       <NodeID>32</NodeID>
       <Info></Info>
-      <Text>Well, this is the main reason... [PAUSE] I also like shopping online, because I can do it from my own home and there are no distractions. I often get distracted when going to a store and buy things I don’t need.</Text>
+      <Text>Well, this is the main reason...[PAUSE] I also like shopping online, because I can do it from my own home and there are no distractions. I often get distracted when going to a store and buy things I don’t need.</Text>
       <Pro></Pro>
       <Con></Con>
       <Thoughts></Thoughts>
       <ScaleValue>0</ScaleValue>
-      <PlayerText></PlayerText>
       <Options>
         <DialogueOption>
           <Text>Do you think online shopping helps you save money, by buying items that aren’t readily necessary?</Text>
@@ -1092,12 +1087,11 @@
     <DialogueNode>
       <NodeID>33</NodeID>
       <Info></Info>
-      <Text>Well, this is the main reason... [PAUSE] I also like shopping online, because I can do it from my own home and there are no distractions. I often get distracted when going to a store and buy things I don’t need.</Text>
+      <Text>Well, this is the main reason...[PAUSE] I also like shopping online, because I can do it from my own home and there are no distractions. I often get distracted when going to a store and buy things I don’t need.</Text>
       <Pro></Pro>
       <Con></Con>
       <Thoughts></Thoughts>
       <ScaleValue>0</ScaleValue>
-      <PlayerText></PlayerText>
       <Options>
         <DialogueOption>
           <Text>Let’s take Freshly as an example. Tell me about what makes shopping there comfortable?</Text>
@@ -1124,8 +1118,7 @@
       <Pro></Pro>
       <Con></Con>
       <Thoughts>This feels uncomfortable.</Thoughts>
-      <ScaleValue>1</ScaleValue>
-      <PlayerText></PlayerText>
+      <ScaleValue>-1</ScaleValue>
       <Options>
         <DialogueOption>
           <Text>Anyway, let’s take Freshly as an example. Tell me about what makes shopping there comfortable?</Text>
@@ -1153,7 +1146,6 @@
       <Con></Con>
       <Thoughts></Thoughts>
       <ScaleValue>0</ScaleValue>
-      <PlayerText></PlayerText>
       <Options>
         <DialogueOption>
           <Text>No, don't worry about it at all. You're doing great!</Text>
@@ -1172,8 +1164,7 @@
       <Pro></Pro>
       <Con></Con>
       <Thoughts></Thoughts>
-      <ScaleValue>-1</ScaleValue>
-      <PlayerText></PlayerText>
+      <ScaleValue>1</ScaleValue>
       <Options>
         <DialogueOption>
           <Text>Let’s take Freshly as an example. Tell me about what makes shopping there comfortable?</Text>
@@ -1193,7 +1184,6 @@
       <Con></Con>
       <Thoughts></Thoughts>
       <ScaleValue>0</ScaleValue>
-      <PlayerText></PlayerText>
       <Options>
         <DialogueOption>
           <Text>When you start shopping online, do you use search a lot?</Text>
@@ -1221,7 +1211,6 @@
       <Con></Con>
       <Thoughts></Thoughts>
       <ScaleValue>0</ScaleValue>
-      <PlayerText></PlayerText>
       <Options>
         <DialogueOption>
           <Text>What items do you usually add to your cart?</Text>
@@ -1256,8 +1245,7 @@
       <Pro></Pro>
       <Con></Con>
       <Thoughts>It's a bit uncomfortable. I lost my train of thought.</Thoughts>
-      <ScaleValue>1</ScaleValue>
-      <PlayerText></PlayerText>
+      <ScaleValue>-1</ScaleValue>
       <Options>
         <DialogueOption>
           <Text>Sorry, didn't mean to interrupt. I just had promised you it would take an hour.</Text>
@@ -1292,11 +1280,10 @@
       <Pro></Pro>
       <Con></Con>
       <Thoughts></Thoughts>
-      <ScaleValue>-1</ScaleValue>
-      <PlayerText>Alright. At the start you also mentioned visiting a physical store when you can’t find the items you need.</PlayerText>
+      <ScaleValue>1</ScaleValue>
       <Options>
         <DialogueOption>
-          <Text>Name one thing you bought last time in a physical store?</Text>
+          <Text>Alright. At the start you also mentioned visiting a physical store when you can’t find the items you need. Name one thing you bought last time in a physical store?</Text>
           <Pro></Pro>
           <Con></Con>
           <SpecialInteractionItems></SpecialInteractionItems>
@@ -1304,7 +1291,7 @@
           <DestNodeID>46</DestNodeID>
         </DialogueOption>
         <DialogueOption>
-          <Text>What items you usually need to buy in a store that you don’t find in the shopping application?</Text>
+          <Text>Alright. At the start you also mentioned visiting a physical store when you can’t find the items you need. What items you usually need to buy in a store that you don’t find in the shopping application?</Text>
           <Pro></Pro>
           <Con></Con>
           <SpecialInteractionItems></SpecialInteractionItems>
@@ -1321,7 +1308,6 @@
       <Con></Con>
       <Thoughts></Thoughts>
       <ScaleValue>0</ScaleValue>
-      <PlayerText></PlayerText>
       <Options>
         <DialogueOption>
           <Text>What items do you usually add to your cart?</Text>
@@ -1349,7 +1335,6 @@
       <Con></Con>
       <Thoughts></Thoughts>
       <ScaleValue>0</ScaleValue>
-      <PlayerText></PlayerText>
       <Options>
         <DialogueOption>
           <Text>How difficult it is for you to change your dinner plans?</Text>
@@ -1369,7 +1354,6 @@
       <Con></Con>
       <Thoughts></Thoughts>
       <ScaleValue>0</ScaleValue>
-      <PlayerText></PlayerText>
       <Options>
         <DialogueOption>
           <Text>I take it pasta is one of the things that frequent your shopping cart then! What other items do you often add to your cart?</Text>
@@ -1440,12 +1424,11 @@
     <DialogueNode>
       <NodeID>45</NodeID>
       <Info></Info>
-      <Text>Let’s see. [PAUSE] I think the last time I went to the store is to get my daughter a magazine she wanted, there are no magazines in Freshly, mostly groceries and some household products too. [PAUSE] Ah, and I usually go when I want to buy fish, for some reason the website only has frozen fish and not much of a pick of fresh ones.</Text>
+      <Text>Let’s see...[PAUSE] I think the last time I went to the store is to get my daughter a magazine she wanted, there are no magazines in Freshly, mostly groceries and some household products too. Ah, and I usually go when I want to buy fish, for some reason the website only has frozen fish and not much of a pick of fresh ones.</Text>
       <Pro></Pro>
       <Con></Con>
       <Thoughts></Thoughts>
       <ScaleValue>0</ScaleValue>
-      <PlayerText></PlayerText>
       <Options>
         <DialogueOption>
           <Text>That’s very interesting! What else would you like to be able to buy from this website?</Text>
@@ -1468,12 +1451,11 @@
     <DialogueNode>
       <NodeID>46</NodeID>
       <Info></Info>
-      <Text>Let’s see. [PAUSE] I think the last time I went to the store was to get my daughter a magazine she wanted, there are no magazines in Freshly, mostly groceries and some household products too.</Text>
+      <Text>Let’s see...[PAUSE] I think the last time I went to the store was to get my daughter a magazine she wanted, there are no magazines in Freshly, mostly groceries and some household products too.</Text>
       <Pro></Pro>
       <Con></Con>
       <Thoughts></Thoughts>
       <ScaleValue>0</ScaleValue>
-      <PlayerText></PlayerText>
       <Options>
         <DialogueOption>
           <Text>That’s very interesting! What else would you like to be able to buy from this website?</Text>
@@ -1501,7 +1483,6 @@
       <Con></Con>
       <Thoughts></Thoughts>
       <ScaleValue>0</ScaleValue>
-      <PlayerText></PlayerText>
       <Options>
         <DialogueOption>
           <Text>So getting food that is easy to cook or heat up is important to you?</Text>
@@ -1529,7 +1510,6 @@
       <Con></Con>
       <Thoughts></Thoughts>
       <ScaleValue>0</ScaleValue>
-      <PlayerText></PlayerText>
       <Options>
         <DialogueOption>
           <Text>So getting food that is easy to cook or heat up is important to you?</Text>
@@ -1564,8 +1544,7 @@
       <Pro></Pro>
       <Con></Con>
       <Thoughts>My opinion doesn't match theirs.</Thoughts>
-      <ScaleValue>1</ScaleValue>
-      <PlayerText></PlayerText>
+      <ScaleValue>-1</ScaleValue>
       <Options>
         <DialogueOption>
           <Text>I'm sorry, that was just a matter of personal preference.</Text>
@@ -1592,8 +1571,7 @@
       <Pro></Pro>
       <Con></Con>
       <Thoughts></Thoughts>
-      <ScaleValue>-1</ScaleValue>
-      <PlayerText></PlayerText>
+      <ScaleValue>1</ScaleValue>
       <Options>
         <DialogueOption>
           <Text>Do you also have a budget when grocery shopping?</Text>
@@ -1621,7 +1599,6 @@
       <Con></Con>
       <Thoughts>They understand what i was trying to say.</Thoughts>
       <ScaleValue>0</ScaleValue>
-      <PlayerText></PlayerText>
       <Options>
         <DialogueOption>
           <Text>Do you also have a budget when grocery shopping?</Text>
@@ -1641,7 +1618,6 @@
       <Con></Con>
       <Thoughts></Thoughts>
       <ScaleValue>0</ScaleValue>
-      <PlayerText></PlayerText>
       <Options>
         <DialogueOption>
           <Text>What is your daily budget?</Text>
@@ -1669,7 +1645,6 @@
       <Con></Con>
       <Thoughts></Thoughts>
       <ScaleValue>0</ScaleValue>
-      <PlayerText></PlayerText>
       <Options>
         <DialogueOption>
           <Text>This seems very low. How do you manage to survive on that?</Text>
@@ -1704,8 +1679,7 @@
       <Pro></Pro>
       <Con></Con>
       <Thoughts>That is just their opinion, but I don't appreciate it.</Thoughts>
-      <ScaleValue>1</ScaleValue>
-      <PlayerText></PlayerText>
+      <ScaleValue>-1</ScaleValue>
       <Options>
         <DialogueOption>
           <Text>I'm sorry, I didn't mean any harm. It is actually very admirable!</Text>
@@ -1732,8 +1706,7 @@
       <Pro></Pro>
       <Con></Con>
       <Thoughts></Thoughts>
-      <ScaleValue>-1</ScaleValue>
-      <PlayerText></PlayerText>
+      <ScaleValue>1</ScaleValue>
       <Options>
         <DialogueOption>
           <Text>How do you make sure you keep to your budget?</Text>
@@ -1752,8 +1725,7 @@
       <Pro></Pro>
       <Con></Con>
       <Thoughts></Thoughts>
-      <ScaleValue>-1</ScaleValue>
-      <PlayerText></PlayerText>
+      <ScaleValue>1</ScaleValue>
       <Options>
         <DialogueOption>
           <Text>What is your daily budget?</Text>
@@ -1789,7 +1761,6 @@
       <Con></Con>
       <Thoughts></Thoughts>
       <ScaleValue>0</ScaleValue>
-      <PlayerText></PlayerText>
       <Options>
         <DialogueOption>
           <Text>Why, do you think, that is easier in online store?</Text>
@@ -1817,7 +1788,6 @@
       <Con></Con>
       <Thoughts></Thoughts>
       <ScaleValue>0</ScaleValue>
-      <PlayerText></PlayerText>
       <Options>
         <DialogueOption>
           <Text>What would you say, is the online shopping application lacking that you’d like there to be?</Text>
@@ -1837,7 +1807,6 @@
       <Con></Con>
       <Thoughts></Thoughts>
       <ScaleValue>0</ScaleValue>
-      <PlayerText></PlayerText>
       <Options>
         <DialogueOption>
           <Text>Please try to think of something, alright?</Text>
@@ -1865,7 +1834,6 @@
       <Con></Con>
       <Thoughts></Thoughts>
       <ScaleValue>0</ScaleValue>
-      <PlayerText></PlayerText>
       <Options>
         <DialogueOption>
           <Text>Please try to think of something, alright?</Text>
@@ -1893,7 +1861,6 @@
       <Con></Con>
       <Thoughts></Thoughts>
       <ScaleValue>0</ScaleValue>
-      <PlayerText></PlayerText>
       <Options>
         <DialogueOption>
           <Text>In that case, this concludes our interview. Thank you very much for agreeing to participate!</Text>
@@ -1928,8 +1895,7 @@
       <Pro></Pro>
       <Con></Con>
       <Thoughts>They are pushing me, I don't like it.</Thoughts>
-      <ScaleValue>1</ScaleValue>
-      <PlayerText></PlayerText>
+      <ScaleValue>-1</ScaleValue>
       <Options>
         <DialogueOption>
           <Text>I'm sorry, You don't have to add anything else, you've already been very helpful!</Text>
@@ -1956,8 +1922,7 @@
       <Pro></Pro>
       <Con></Con>
       <Thoughts></Thoughts>
-      <ScaleValue>-1</ScaleValue>
-      <PlayerText></PlayerText>
+      <ScaleValue>1</ScaleValue>
       <Options>
         <DialogueOption>
           <Text>In that case, this concludes our interview. Thank you very much for agreeing to participate!</Text>
@@ -1977,7 +1942,6 @@
       <Con></Con>
       <Thoughts></Thoughts>
       <ScaleValue>0</ScaleValue>
-      <PlayerText></PlayerText>
       <Options>
         <DialogueOption>
           <Text>*Just leave without saying anything*</Text>
@@ -2005,7 +1969,6 @@
       <Con></Con>
       <Thoughts></Thoughts>
       <ScaleValue>0</ScaleValue>
-      <PlayerText></PlayerText>
       <Options>
         <DialogueOption>
           <Text>*end interview*</Text>
@@ -2024,8 +1987,7 @@
       <Pro></Pro>
       <Con></Con>
       <Thoughts>Leaving just like that? That's rude.</Thoughts>
-      <ScaleValue>1</ScaleValue>
-      <PlayerText></PlayerText>
+      <ScaleValue>-1</ScaleValue>
       <Options>
         <DialogueOption>
           <Text>*end interview*</Text>

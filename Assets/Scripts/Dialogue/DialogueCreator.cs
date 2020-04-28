@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Collections;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.UI;
-
 using DialogueTree;
 using UnityEngine.SceneManagement;
 using Assets.Scripts.UI.ItemSelection;
@@ -16,8 +16,6 @@ public class DialogueCreator : MonoBehaviour
     private GameObject npcText;
     private GameObject npcThoughtsBubble;
     private GameObject npcThoughtsText;
-    private GameObject playerTextBubble;
-    private GameObject playerText;
     private GameObject option1;
     private GameObject option2;
     private GameObject option3;
@@ -35,19 +33,36 @@ public class DialogueCreator : MonoBehaviour
     {
         dia = Dialogue.LoadDialogue("Assets/Resources/Dialogues/" + DialogueDataFilePath);
         feedbackData = JsonUtility.FromJson<FeedbackData>(feedbackDataJsonFile.text);
-
         npcSpeechBubble = GameObject.Find("SpeechBubble");
         npcText = GameObject.Find("SpeechBubbleText");
         npcThoughtsBubble = GameObject.Find("ThoughtBubble");
         npcThoughtsText = GameObject.Find("ThoughtBubbleText");
-        playerTextBubble = GameObject.Find("PlayerTextBubble");
-        playerText = GameObject.Find("PlayerTextBubbleText");
         option1 = GameObject.Find("Option1");
         option2 = GameObject.Find("Option2");
         option3 = GameObject.Find("Option3");
         option4 = GameObject.Find("Option4");
-
+        
         RunDialogue();
+    }
+
+    private void CheckForDistractingItems()
+    {
+        int distractingItemCount = 0;
+        foreach (Item item in PlayerData.selectedItems)
+        {
+            if (item.distracting)
+            {
+                distractingItemCount++;
+            }
+        }
+        NPCData.SetMaxComfortValue(distractingItemCount);
+        if (distractingItemCount > 0)
+        {
+            InfoCon conToAdd = feedbackData.cons.SingleOrDefault(i => i.id == "3");
+            PlayerData.cons.Add(conToAdd);
+            npcThoughtsText.GetComponent<Text>().text = "This is weird, why do they need all of these items for the interview?";
+            npcThoughtsBubble.SetActive(true);
+        }
     }
 
     public void RunDialogue()
@@ -66,29 +81,48 @@ public class DialogueCreator : MonoBehaviour
         isCoroutineRunning = true;
         char[] textChars;
         string newText;
+        int pauseIndex = -1;
         
-        textChars = text.ToCharArray(0, text.Length);
-        for (int i = 0; i < textChars.Length; i++)  // TODO: pause for ~3 seconds when "[PAUSE]" is encountered
+        if (text.Contains("[PAUSE]"))
         {
-            newText = npcText.GetComponent<Text>().text;
-            textObject.GetComponent<Text>().text = newText + textChars[i];
-            yield return new WaitForSeconds(0.03f);
+            pauseIndex = text.IndexOf('[') - 3;
+            text = text.Replace("[PAUSE]", "");
+        }
+        textChars = text.ToCharArray(0, text.Length);
+        for (int i = 0; i < textChars.Length; i++)  
+        {
+            if (pauseIndex == i)
+            {
+                bool paused = true;
+                int pauseTick = 0;
+                while (paused)
+                {
+                    newText = npcText.GetComponent<Text>().text;
+                    textObject.GetComponent<Text>().text = newText + textChars[i];
+                    yield return new WaitForSeconds(0.75f);
+                    if (pauseTick == 2)
+                    {
+                        paused = false;
+                    } 
+                    else
+                    {
+                        pauseTick++;
+                        i++;
+                    }
+                }
+            }
+            else
+            {
+                newText = npcText.GetComponent<Text>().text;
+                textObject.GetComponent<Text>().text = newText + textChars[i];
+                yield return new WaitForSeconds(0.03f);
+            } 
         }
         isCoroutineRunning = false;
     }
     
     private void NodeActions(DialogueNode node)
     {
-        playerTextBubble.SetActive(false);
-        if (node.PlayerText.Length > 0)
-        {
-            playerText.GetComponent<Text>().text = node.PlayerText;
-            playerTextBubble.SetActive(true);
-            // TODO: make the text write one letter at a time correctly. This needs to finish before the options become visible.
-            //displayTextCoroutine = DisplayText(node.PlayerText, playerText);
-            //StartCoroutine(displayTextCoroutine);
-        }
-
         npcSpeechBubble.SetActive(false);
         if (node.Text.Length > 0)
         {
@@ -99,6 +133,10 @@ public class DialogueCreator : MonoBehaviour
         }
 
         npcThoughtsBubble.SetActive(false);
+        if(node.NodeID == 0)
+        {
+            CheckForDistractingItems();
+        }
         if (node.Thoughts.Length > 0)
         {
             npcThoughtsText.GetComponent<Text>().text = node.Thoughts;
@@ -117,7 +155,7 @@ public class DialogueCreator : MonoBehaviour
             {
                 if(Array.IndexOf(proIds, pro.id) > -1)
                 {
-                    PlayerData.Pros.Add(pro);
+                    PlayerData.pros.Add(pro);
                 }
             }
         }
@@ -129,7 +167,7 @@ public class DialogueCreator : MonoBehaviour
             {
                 if (Array.IndexOf(conIds, con.id) > -1)
                 {
-                    PlayerData.Cons.Add(con);
+                    PlayerData.cons.Add(con);
                 }
             }
         }
@@ -141,7 +179,7 @@ public class DialogueCreator : MonoBehaviour
             {
                 if (Array.IndexOf(infoIds, info.id) > -1)
                 {
-                    PlayerData.Info.Add(info);
+                    PlayerData.info.Add(info);
                 }
             }
         }
@@ -187,7 +225,6 @@ public class DialogueCreator : MonoBehaviour
         btn.GetComponentInChildren<Text>().text = optText;
         btn.GetComponent<Button>().onClick.AddListener(delegate
         {
-            Debug.LogWarning("Inside option clicked");
             if (opt.Pro.Length > 0)
             {
                 string[] proIds = opt.Pro.Split(',');
@@ -195,7 +232,7 @@ public class DialogueCreator : MonoBehaviour
                 {
                     if (Array.IndexOf(proIds, pro.id) > -1)
                     {
-                        PlayerData.Pros.Add(pro);
+                        PlayerData.pros.Add(pro);
                     }
                 }
             }
@@ -207,7 +244,7 @@ public class DialogueCreator : MonoBehaviour
                 {
                     if (Array.IndexOf(conIds, con.id) > -1)
                     {
-                        PlayerData.Cons.Add(con);
+                        PlayerData.cons.Add(con);
                     }
                 }
             }
@@ -221,6 +258,7 @@ public class DialogueCreator : MonoBehaviour
             {
                 SceneManager.LoadScene("Feedback");
             }
+            btn.GetComponent<Button>().onClick.RemoveAllListeners();
         });
     }
 
@@ -232,7 +270,7 @@ public class DialogueCreator : MonoBehaviour
         if (opt.SpecialInteractionItems.Length > 0)
         {
             string[] specialItemsList = opt.SpecialInteractionItems.Split(',');
-            foreach(Item item in PlayerData.SelectedItems)
+            foreach(Item item in PlayerData.selectedItems)
             {
                 if(Array.IndexOf(specialItemsList, item.itemName) > -1)
                 {

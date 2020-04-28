@@ -1,6 +1,5 @@
 ﻿using Assets.Scripts.UI.ItemSelection;
 using System.Collections;
-using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -10,7 +9,6 @@ public class ItemSelection : MonoBehaviour
 {
     public TextAsset jsonFile;
     public Items itemList;
-    public List<Item> selectedItems;
 
     private GameObject continueBtn;
     private bool itemCheckFinished;
@@ -23,6 +21,7 @@ public class ItemSelection : MonoBehaviour
         {
             StartCoroutine(WaitUntilItemCheckFinished());
         });
+        CheckForSelectedItems();
     }
     public void CheckForSelectedItems()
     {
@@ -32,16 +31,16 @@ public class ItemSelection : MonoBehaviour
             GameObject itemGameObject = GameObject.Find(item.gameObjectName);
             if (itemGameObject)
             {
-                if (itemGameObject.GetComponent<Toggle>().isOn && !selectedItems.Contains(item))
+                if (itemGameObject.GetComponent<Toggle>().isOn && !PlayerData.selectedItems.Contains(item))
                 {
-                    selectedItems.Add(item);
+                    PlayerData.selectedItems.Add(item);
                 }
-                else
+                if (!itemGameObject.GetComponent<Toggle>().isOn && PlayerData.selectedItems.Contains(item))
                 {
                     Item itemToRemove = itemList.items.SingleOrDefault(i => i.gameObjectName == item.gameObjectName);
                     if (itemToRemove != null)
                     {
-                        selectedItems.Remove(itemToRemove);
+                        PlayerData.selectedItems.Remove(itemToRemove);
                     }
                 }
             }
@@ -55,12 +54,14 @@ public class ItemSelection : MonoBehaviour
         {
             yield return null;
         }
-        PlayerData.SelectedItems = selectedItems;
         SceneManager.LoadScene("Interview");
     }
 
     void Update()
     {
-        CheckForSelectedItems();
+        if (itemCheckFinished)
+        {
+            CheckForSelectedItems();
+        }
     }
 }

@@ -1,19 +1,36 @@
-﻿public static class NPCData
+﻿using UnityEngine;
+
+public static class NPCData
 {
-    private static int npcComfort = 0;
+    private static int npcComfort = 1;
+    private static int maxNpcComfort = 4;
+    private static int minNpcComfort = -4;
     public static void AddToComfortValue(int additionalVal)
     {
-        if (npcComfort >= -4 && npcComfort <= 4)
+        if (npcComfort > minNpcComfort && npcComfort < maxNpcComfort)
+        {
+            npcComfort += additionalVal;
+        }
+        else if (npcComfort == minNpcComfort && additionalVal > 0)
+        {
+            npcComfort += additionalVal;
+        }
+        else if (npcComfort == maxNpcComfort && additionalVal < 0)
         {
             npcComfort += additionalVal;
         }
     }
 
+    public static void SetMaxComfortValue(int distractingValue)
+    {
+        npcComfort -= distractingValue;
+        maxNpcComfort -= distractingValue;
+    }
     public static string GetComfortValue()
     {
-        if (npcComfort > 0 && npcComfort <= 4)
+        if (npcComfort < 0)
         {
-            return "-" + npcComfort;
+            return "" + npcComfort;
         }
         else if (npcComfort == 0) 
         {
