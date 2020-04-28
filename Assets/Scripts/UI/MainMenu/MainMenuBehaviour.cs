@@ -10,10 +10,12 @@ public class MainMenuBehaviour : MonoBehaviour
     private GameObject aboutBtn;
     private GameObject backBtn;
     private GameObject about;
+    private GameObject title;
 
 
     void Start()
     {
+        title = GameObject.Find("Title");
         playBtn = GameObject.Find("PlayBtn");
         playBtn.GetComponent<Button>().onClick.AddListener(delegate
         {
@@ -25,12 +27,18 @@ public class MainMenuBehaviour : MonoBehaviour
         aboutBtn.GetComponent<Button>().onClick.AddListener(delegate
         {
             about.SetActive(true);
+            playBtn.SetActive(false);
+            aboutBtn.SetActive(false);
+            title.SetActive(false);
         });
 
         backBtn = GameObject.Find("BackBtn");
         backBtn.GetComponent<Button>().onClick.AddListener(delegate
         {
             about.SetActive(false);
+            playBtn.SetActive(true);
+            aboutBtn.SetActive(true);
+            title.SetActive(true);
         });
         about.SetActive(false);
     }
