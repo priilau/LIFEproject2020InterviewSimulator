@@ -2,11 +2,13 @@
 
 public static class NPCData
 {
+    public static int npcComfortValue;
     private static int npcComfort = 1;
     private static int maxNpcComfort = 4;
     private static int minNpcComfort = -4;
     public static void AddToComfortValue(int additionalVal)
     {
+        npcComfortValue = npcComfort;
         if (npcComfort > minNpcComfort && npcComfort < maxNpcComfort)
         {
             npcComfort += additionalVal;
