@@ -155,7 +155,7 @@
       <Options>
         <DialogueOption>
           <Text>Nice to meet you too! Thank you for agreeing to participate in the interview.</Text>
-          <Pro></Pro>
+          <Pro>11</Pro>
           <Con></Con>
           <SpecialInteractionItems></SpecialInteractionItems>
           <RightOption>true</RightOption>
@@ -241,7 +241,7 @@
       <Info></Info>
       <Text>...</Text>
       <Pro></Pro>
-      <Con></Con>
+      <Con>1</Con>
       <Thoughts>Right to business? A bit rude perhaps.</Thoughts>
       <ScaleValue>-1</ScaleValue>
       <Options>
@@ -302,7 +302,7 @@
         <DialogueOption>
           <Text>Online shopping. Go.</Text>
           <Pro></Pro>
-          <Con></Con>
+          <Con>18</Con>
           <SpecialInteractionItems></SpecialInteractionItems>
           <RightOption>false</RightOption>
           <DestNodeID>6</DestNodeID>
@@ -336,7 +336,7 @@
         </DialogueOption>
         <DialogueOption>
           <Text>Firstly, I would like to know a little bit about you. Can you tell me, what is your age group?</Text>
-          <Pro></Pro>
+          <Pro>1</Pro>
           <Con></Con>
           <SpecialInteractionItems></SpecialInteractionItems>
           <RightOption>true</RightOption>
@@ -392,7 +392,7 @@
     </DialogueNode>
     <DialogueNode>
       <NodeID>7</NodeID>
-      <Info></Info>
+      <Info>2</Info>
       <Text>I’m in my late 20s.</Text>
       <Pro></Pro>
       <Con></Con>
@@ -401,8 +401,8 @@
       <Options>
         <DialogueOption>
           <Text>Do you have a family? A husband or kids?</Text>
-          <Pro></Pro>
-          <Con></Con>
+          <Pro>14</Pro>
+          <Con>11</Con>
           <SpecialInteractionItems></SpecialInteractionItems>
           <RightOption>true</RightOption>
           <DestNodeID>10</DestNodeID>
@@ -410,7 +410,7 @@
         <DialogueOption>
           <Text>Really? You look a lot older!</Text>
           <Pro></Pro>
-          <Con></Con>
+          <Con>4</Con>
           <SpecialInteractionItems></SpecialInteractionItems>
           <RightOption>false</RightOption>
           <DestNodeID>11</DestNodeID>
@@ -473,7 +473,7 @@
     </DialogueNode>
     <DialogueNode>
       <NodeID>10</NodeID>
-      <Info></Info>
+      <Info>3</Info>
       <Text>Just my daughter and I.</Text>
       <Pro></Pro>
       <Con></Con>
@@ -510,14 +510,14 @@
         <DialogueOption>
           <Text>Oh, she just lost her job and the kid is a menace.</Text>
           <Pro></Pro>
-          <Con></Con>
+          <Con>6</Con>
           <SpecialInteractionItems></SpecialInteractionItems>
           <RightOption>false</RightOption>
           <DestNodeID>14</DestNodeID>
         </DialogueOption>
         <DialogueOption>
           <Text>Luckily, she's getting by. But let's get back to you. What kind of work do you do?</Text>
-          <Pro></Pro>
+          <Pro>10</Pro>
           <Con></Con>
           <SpecialInteractionItems></SpecialInteractionItems>
           <RightOption>false</RightOption>
@@ -545,14 +545,14 @@
         <DialogueOption>
           <Text>No, he's long gone! Same case with you right?</Text>
           <Pro></Pro>
-          <Con></Con>
+          <Con>7</Con>
           <SpecialInteractionItems></SpecialInteractionItems>
           <RightOption>false</RightOption>
           <DestNodeID>16</DestNodeID>
         </DialogueOption>
         <DialogueOption>
           <Text>He is. But let's get back to the interview.</Text>
-          <Pro></Pro>
+          <Pro>10</Pro>
           <Con></Con>
           <SpecialInteractionItems></SpecialInteractionItems>
           <RightOption>false</RightOption>
@@ -577,6 +577,14 @@
           <RightOption>true</RightOption>
           <DestNodeID>19</DestNodeID>
         </DialogueOption>
+        <DialogueOption>
+          <Text>Back to my friend, the child's father is long gone. Same case with you right?</Text>
+          <Pro></Pro>
+          <Con></Con>
+          <SpecialInteractionItems></SpecialInteractionItems>
+          <RightOption>false</RightOption>
+          <DestNodeID>16</DestNodeID>
+        </DialogueOption>
       </Options>
     </DialogueNode>
     <DialogueNode>
@@ -598,7 +606,7 @@
         </DialogueOption>
         <DialogueOption>
           <Text>Let's get back to the interview instead.</Text>
-          <Pro></Pro>
+          <Pro>10</Pro>
           <Con></Con>
           <SpecialInteractionItems></SpecialInteractionItems>
           <RightOption>false</RightOption>
@@ -642,11 +650,19 @@
           <RightOption>true</RightOption>
           <DestNodeID>19</DestNodeID>
         </DialogueOption>
+        <DialogueOption>
+          <Text>Can you specify your salary? It is just for the research and I am only looking to see, whether it is above, below or around the average wage.</Text>
+          <Pro>9</Pro>
+          <Con></Con>
+          <SpecialInteractionItems></SpecialInteractionItems>
+          <RightOption>true</RightOption>
+          <DestNodeID>20</DestNodeID>
+        </DialogueOption>
       </Options>
     </DialogueNode>
     <DialogueNode>
       <NodeID>19</NodeID>
-      <Info></Info>
+      <Info>4</Info>
       <Text> I work as an administrator in a hotel.</Text>
       <Pro></Pro>
       <Con></Con>
@@ -655,15 +671,15 @@
       <Options>
         <DialogueOption>
           <Text>Do you earn above average wage?</Text>
-          <Pro></Pro>
-          <Con></Con>
+          <Pro>14</Pro>
+          <Con>11</Con>
           <SpecialInteractionItems></SpecialInteractionItems>
           <RightOption>false</RightOption>
           <DestNodeID>21</DestNodeID>
         </DialogueOption>
         <DialogueOption>
           <Text>Can you specify your salary? It is just for the research and I am only looking to see, whether it is above, below or around the average wage.</Text>
-          <Pro></Pro>
+          <Pro>9</Pro>
           <Con></Con>
           <SpecialInteractionItems></SpecialInteractionItems>
           <RightOption>true</RightOption>
@@ -671,7 +687,7 @@
         </DialogueOption>
         <DialogueOption>
           <Text>You must not earn much, being a single mother! How much do you get?</Text>
-          <Pro></Pro>
+          <Pro>7,8</Pro>
           <Con></Con>
           <SpecialInteractionItems></SpecialInteractionItems>
           <RightOption>false</RightOption>
@@ -681,7 +697,7 @@
     </DialogueNode>
     <DialogueNode>
       <NodeID>20</NodeID>
-      <Info></Info>
+      <Info>6</Info>
       <Text>I am getting below average wage.</Text>
       <Pro></Pro>
       <Con></Con>
@@ -753,7 +769,7 @@
         <DialogueOption>
           <Text>With such low income, you must not do much online shopping. How often do you shop in online grocery stores?</Text>
           <Pro></Pro>
-          <Con></Con>
+          <Con>4</Con>
           <SpecialInteractionItems></SpecialInteractionItems>
           <RightOption>false</RightOption>
           <DestNodeID>71</DestNodeID>
@@ -763,7 +779,7 @@
     <DialogueNode>
       <NodeID>71</NodeID>
       <Info></Info>
-      <Text>...</Text>
+      <Text>I don't earn that little.</Text>
       <Pro></Pro>
       <Con></Con>
       <Thoughts>I don't need them to insult me like that.</Thoughts>
@@ -789,7 +805,7 @@
     </DialogueNode>
     <DialogueNode>
       <NodeID>21</NodeID>
-      <Info></Info>
+      <Info>6</Info>
       <Text>No, unfortunately not.</Text>
       <Pro></Pro>
       <Con></Con>
@@ -816,7 +832,7 @@
     </DialogueNode>
     <DialogueNode>
       <NodeID>23</NodeID>
-      <Info></Info>
+      <Info>7</Info>
       <Text>I think I shop online about two-three times a week.</Text>
       <Pro></Pro>
       <Con></Con>
@@ -825,7 +841,7 @@
       <Options>
         <DialogueOption>
           <Text>Which applications do you use for your shopping?</Text>
-          <Pro></Pro>
+          <Pro>9</Pro>
           <Con></Con>
           <SpecialInteractionItems></SpecialInteractionItems>
           <RightOption>true</RightOption>
@@ -834,7 +850,7 @@
         <DialogueOption>
           <Text>Do you use FoodDelivery?</Text>
           <Pro></Pro>
-          <Con></Con>
+          <Con>11</Con>
           <SpecialInteractionItems></SpecialInteractionItems>
           <RightOption>false</RightOption>
           <DestNodeID>25</DestNodeID>
@@ -880,7 +896,7 @@
         <DialogueOption>
           <Text>Do you also frequent the physical store?</Text>
           <Pro></Pro>
-          <Con></Con>
+          <Con>11</Con>
           <SpecialInteractionItems></SpecialInteractionItems>
           <RightOption>false</RightOption>
           <DestNodeID>26</DestNodeID>
@@ -897,7 +913,7 @@
     </DialogueNode>
     <DialogueNode>
       <NodeID>26</NodeID>
-      <Info></Info>
+      <Info>8</Info>
       <Text>Not always. Mostly I shop online.</Text>
       <Pro></Pro>
       <Con></Con>
@@ -914,7 +930,7 @@
         </DialogueOption>
         <DialogueOption>
           <Text>Do you think online shopping helps you save money, by buying items that aren’t readily necessary?</Text>
-          <Pro></Pro>
+          <Pro>5,6</Pro>
           <Con></Con>
           <SpecialInteractionItems></SpecialInteractionItems>
           <RightOption>true</RightOption>
@@ -932,7 +948,7 @@
     </DialogueNode>
     <DialogueNode>
       <NodeID>27</NodeID>
-      <Info></Info>
+      <Info>8,9</Info>
       <Text>Hmm, I use Freshly for my everyday shopping. However sometimes I don’t find all the products and I need and go to a physical store as well.</Text>
       <Pro></Pro>
       <Con></Con>
@@ -941,8 +957,8 @@
       <Options>
         <DialogueOption>
           <Text>Tell me about Freshly. What do you like about this application?</Text>
-          <Pro></Pro>
-          <Con></Con>
+          <Pro>4</Pro>
+          <Con>10</Con>
           <SpecialInteractionItems></SpecialInteractionItems>
           <RightOption>true</RightOption>
           <DestNodeID>29</DestNodeID>
@@ -950,7 +966,7 @@
         <DialogueOption>
           <Text>Do you like this application? Would you recommend it?</Text>
           <Pro></Pro>
-          <Con></Con>
+          <Con>11</Con>
           <SpecialInteractionItems></SpecialInteractionItems>
           <RightOption>false</RightOption>
           <DestNodeID>28</DestNodeID>
@@ -959,7 +975,7 @@
     </DialogueNode>
     <DialogueNode>
       <NodeID>28</NodeID>
-      <Info></Info>
+      <Info>10</Info>
       <Text>Yes. I would recommend it.</Text>
       <Pro></Pro>
       <Con></Con>
@@ -976,8 +992,8 @@
         </DialogueOption>
         <DialogueOption>
           <Text>Let’s take Freshly as an example. Tell me about what makes shopping there comfortable?</Text>
-          <Pro></Pro>
-          <Con></Con>
+          <Pro>4</Pro>
+          <Con>10</Con>
           <SpecialInteractionItems></SpecialInteractionItems>
           <RightOption>true</RightOption>
           <DestNodeID>36</DestNodeID>
@@ -986,7 +1002,7 @@
     </DialogueNode>
     <DialogueNode>
       <NodeID>29</NodeID>
-      <Info></Info>
+      <Info>10,11,13</Info>
       <Text>Well, it usually has a wide product range. I like that they also have a fast delivery and I can choose what time they arrive.</Text>
       <Pro></Pro>
       <Con></Con>
@@ -995,7 +1011,7 @@
       <Options>
         <DialogueOption>
           <Text>What times do you usually like your deliveries?</Text>
-          <Pro></Pro>
+          <Pro>6</Pro>
           <Con></Con>
           <SpecialInteractionItems></SpecialInteractionItems>
           <RightOption>true</RightOption>
@@ -1021,7 +1037,7 @@
     </DialogueNode>
     <DialogueNode>
       <NodeID>30</NodeID>
-      <Info></Info>
+      <Info>5,12</Info>
       <Text>I prefer evenings, since I work such long days and I don’t have time to buy groceries or receive them during the day.</Text>
       <Pro></Pro>
       <Con></Con>
@@ -1030,7 +1046,7 @@
       <Options>
         <DialogueOption>
           <Text>Do you think this is one of the reasons why you like online shopping?</Text>
-          <Pro></Pro>
+          <Pro>5</Pro>
           <Con></Con>
           <SpecialInteractionItems></SpecialInteractionItems>
           <RightOption>true</RightOption>
@@ -1038,7 +1054,7 @@
         </DialogueOption>
         <DialogueOption>
           <Text>What other reasons, do you think, make online grocery shopping appealing to you?</Text>
-          <Pro></Pro>
+          <Pro>6,9</Pro>
           <Con></Con>
           <SpecialInteractionItems></SpecialInteractionItems>
           <RightOption>true</RightOption>
@@ -1052,22 +1068,30 @@
       <Text>Yes definitely, having groceries delivered to me at my chosen time helps so much and makes my life a bit easier.</Text>
       <Pro></Pro>
       <Con></Con>
-      <Thoughts></Thoughts>
-      <ScaleValue>0</ScaleValue>
+      <Thoughts>Good, they understood what I meant.</Thoughts>
+      <ScaleValue>1</ScaleValue>
       <Options>
         <DialogueOption>
           <Text>What other reasons, do you think, make online grocery shopping appealing to you?</Text>
-          <Pro></Pro>
+          <Pro>6,9</Pro>
           <Con></Con>
           <SpecialInteractionItems></SpecialInteractionItems>
           <RightOption>true</RightOption>
           <DestNodeID>32</DestNodeID>
         </DialogueOption>
+        <DialogueOption>
+          <Text>Let’s take Freshly as an example. Tell me about what makes shopping there comfortable?</Text>
+          <Pro>4</Pro>
+          <Con>10</Con>
+          <SpecialInteractionItems></SpecialInteractionItems>
+          <RightOption>true</RightOption>
+          <DestNodeID>36</DestNodeID>
+        </DialogueOption>
       </Options>
     </DialogueNode>
     <DialogueNode>
       <NodeID>32</NodeID>
-      <Info></Info>
+      <Info>14,15</Info>
       <Text>Well, this is the main reason...[PAUSE] I also like shopping online, because I can do it from my own home and there are no distractions. I often get distracted when going to a store and buy things I don’t need.</Text>
       <Pro></Pro>
       <Con></Con>
@@ -1076,11 +1100,19 @@
       <Options>
         <DialogueOption>
           <Text>Do you think online shopping helps you save money, by buying items that aren’t readily necessary?</Text>
-          <Pro></Pro>
+          <Pro>5,6</Pro>
           <Con></Con>
           <SpecialInteractionItems></SpecialInteractionItems>
           <RightOption>true</RightOption>
           <DestNodeID>33</DestNodeID>
+        </DialogueOption>
+        <DialogueOption>
+          <Text>Let’s take Freshly as an example. Tell me about what makes shopping there comfortable?</Text>
+          <Pro>4</Pro>
+          <Con>10</Con>
+          <SpecialInteractionItems></SpecialInteractionItems>
+          <RightOption>true</RightOption>
+          <DestNodeID>36</DestNodeID>
         </DialogueOption>
       </Options>
     </DialogueNode>
@@ -1095,8 +1127,8 @@
       <Options>
         <DialogueOption>
           <Text>Let’s take Freshly as an example. Tell me about what makes shopping there comfortable?</Text>
-          <Pro></Pro>
-          <Con></Con>
+          <Pro>4</Pro>
+          <Con>10</Con>
           <SpecialInteractionItems></SpecialInteractionItems>
           <RightOption>true</RightOption>
           <DestNodeID>36</DestNodeID>
@@ -1104,7 +1136,7 @@
         <DialogueOption>
           <Text>Just going to mention, that we are only halfway through the interview.</Text>
           <Pro></Pro>
-          <Con></Con>
+          <Con>13</Con>
           <SpecialInteractionItems></SpecialInteractionItems>
           <RightOption>false</RightOption>
           <DestNodeID>34</DestNodeID>
@@ -1149,11 +1181,19 @@
       <Options>
         <DialogueOption>
           <Text>No, don't worry about it at all. You're doing great!</Text>
-          <Pro></Pro>
+          <Pro>11</Pro>
           <Con></Con>
           <SpecialInteractionItems></SpecialInteractionItems>
           <RightOption>false</RightOption>
           <DestNodeID>75</DestNodeID>
+        </DialogueOption>
+        <DialogueOption>
+          <Text>Sorry for interrupting you. Let's get back to it.</Text>
+          <Pro></Pro>
+          <Con></Con>
+          <SpecialInteractionItems></SpecialInteractionItems>
+          <RightOption>false</RightOption>
+          <DestNodeID>76</DestNodeID>
         </DialogueOption>
       </Options>
     </DialogueNode>
@@ -1163,22 +1203,30 @@
       <Text>Thanks.</Text>
       <Pro></Pro>
       <Con></Con>
-      <Thoughts></Thoughts>
+      <Thoughts>They are being nice.</Thoughts>
       <ScaleValue>1</ScaleValue>
       <Options>
         <DialogueOption>
           <Text>Let’s take Freshly as an example. Tell me about what makes shopping there comfortable?</Text>
-          <Pro></Pro>
-          <Con></Con>
+          <Pro>4</Pro>
+          <Con>10</Con>
           <SpecialInteractionItems></SpecialInteractionItems>
           <RightOption>true</RightOption>
           <DestNodeID>36</DestNodeID>
+        </DialogueOption>
+        <DialogueOption>
+          <Text>When you start shopping online, do you use search a lot?</Text>
+          <Pro></Pro>
+          <Con>11</Con>
+          <SpecialInteractionItems></SpecialInteractionItems>
+          <RightOption>false</RightOption>
+          <DestNodeID>38</DestNodeID>
         </DialogueOption>
       </Options>
     </DialogueNode>
     <DialogueNode>
       <NodeID>36</NodeID>
-      <Info></Info>
+      <Info>17</Info>
       <Text>It has all these different food categories and I can find all the products I need under them, but using the search functionality makes finding things so much easier. This is something you can’t do in a physical store, you’d have to wander the isles or ask a salesperson, where the item you want is.</Text>
       <Pro></Pro>
       <Con></Con>
@@ -1188,14 +1236,14 @@
         <DialogueOption>
           <Text>When you start shopping online, do you use search a lot?</Text>
           <Pro></Pro>
-          <Con></Con>
+          <Con>11</Con>
           <SpecialInteractionItems></SpecialInteractionItems>
           <RightOption>false</RightOption>
           <DestNodeID>38</DestNodeID>
         </DialogueOption>
         <DialogueOption>
           <Text>Walk me through the steps you take for your shopping. What do you do before you start and how do you go about shopping?</Text>
-          <Pro></Pro>
+          <Pro>9</Pro>
           <Con></Con>
           <SpecialInteractionItems></SpecialInteractionItems>
           <RightOption>true</RightOption>
@@ -1205,7 +1253,7 @@
     </DialogueNode>
     <DialogueNode>
       <NodeID>37</NodeID>
-      <Info></Info>
+      <Info>18,20,21</Info>
       <Text>Hmm...[PAUSE] Well usually I have an idea what I want to cook before i go to the app. Then I start by going through the recipe and use the search to find the items. When I don’t find what I want, I improvise and get some alternative, unless this specific item was crucial for the recipe. Sometimes I also ask my daughter if she wants anything and add it if I can.</Text>
       <Pro></Pro>
       <Con></Con>
@@ -1215,14 +1263,14 @@
         <DialogueOption>
           <Text>What items do you usually add to your cart?</Text>
           <Pro></Pro>
-          <Con></Con>
+          <Con>12</Con>
           <SpecialInteractionItems></SpecialInteractionItems>
           <RightOption>false</RightOption>
           <DestNodeID>44</DestNodeID>
         </DialogueOption>
         <DialogueOption>
           <Text>Does it happen often, that you don’t find what you’re looking for?</Text>
-          <Pro></Pro>
+          <Pro>6</Pro>
           <Con></Con>
           <SpecialInteractionItems></SpecialInteractionItems>
           <RightOption>true</RightOption>
@@ -1231,7 +1279,7 @@
         <DialogueOption>
           <Text>*look at clock* We are nearing the end of our time. Let's go faster.</Text>
           <Pro></Pro>
-          <Con></Con>
+          <Con>13</Con>
           <SpecialInteractionItems></SpecialInteractionItems>
           <RightOption>false</RightOption>
           <DestNodeID>40</DestNodeID>
@@ -1257,7 +1305,7 @@
         </DialogueOption>
         <DialogueOption>
           <Text>Alright. At the start you also mentioned visiting a physical store when you can’t find the items you need. What items you usually need to buy in a store that you don’t find in the shopping application?</Text>
-          <Pro></Pro>
+          <Pro>9</Pro>
           <Con></Con>
           <SpecialInteractionItems></SpecialInteractionItems>
           <RightOption>true</RightOption>
@@ -1266,7 +1314,7 @@
         <DialogueOption>
           <Text>Alright. At the start you also mentioned visiting a physical store when you can’t find the items you need. Name one thing you bought last time in a physical store?</Text>
           <Pro></Pro>
-          <Con></Con>
+          <Con>12</Con>
           <SpecialInteractionItems></SpecialInteractionItems>
           <RightOption>false</RightOption>
           <DestNodeID>46</DestNodeID>
@@ -1285,14 +1333,14 @@
         <DialogueOption>
           <Text>Alright. At the start you also mentioned visiting a physical store when you can’t find the items you need. Name one thing you bought last time in a physical store?</Text>
           <Pro></Pro>
-          <Con></Con>
+          <Con>12</Con>
           <SpecialInteractionItems></SpecialInteractionItems>
           <RightOption>false</RightOption>
           <DestNodeID>46</DestNodeID>
         </DialogueOption>
         <DialogueOption>
           <Text>Alright. At the start you also mentioned visiting a physical store when you can’t find the items you need. What items you usually need to buy in a store that you don’t find in the shopping application?</Text>
-          <Pro></Pro>
+          <Pro>9</Pro>
           <Con></Con>
           <SpecialInteractionItems></SpecialInteractionItems>
           <RightOption>false</RightOption>
@@ -1302,7 +1350,7 @@
     </DialogueNode>
     <DialogueNode>
       <NodeID>38</NodeID>
-      <Info></Info>
+      <Info>17</Info>
       <Text>Yes, I use it to find all the items I need.</Text>
       <Pro></Pro>
       <Con></Con>
@@ -1319,7 +1367,7 @@
         </DialogueOption>
         <DialogueOption>
           <Text>Does it happen often, that you don’t find what you’re looking for?</Text>
-          <Pro></Pro>
+          <Pro>6</Pro>
           <Con></Con>
           <SpecialInteractionItems></SpecialInteractionItems>
           <RightOption>true</RightOption>
@@ -1329,7 +1377,7 @@
     </DialogueNode>
     <DialogueNode>
       <NodeID>39</NodeID>
-      <Info></Info>
+      <Info>22</Info>
       <Text>No, not often, I know what they have so I change my recipes accordingly.</Text>
       <Pro></Pro>
       <Con></Con>
@@ -1339,7 +1387,7 @@
         <DialogueOption>
           <Text>How difficult it is for you to change your dinner plans?</Text>
           <Pro></Pro>
-          <Con></Con>
+          <Con>6</Con>
           <SpecialInteractionItems></SpecialInteractionItems>
           <RightOption>true</RightOption>
           <DestNodeID>42</DestNodeID>
@@ -1350,14 +1398,14 @@
       <NodeID>42</NodeID>
       <Info></Info>
       <Text>Not too difficult, I have some bookmarked recipe sites and there are always interesting and easy things to cook. My daughter is just happy with all kinds of pasta, so not so difficult to change the items.</Text>
-      <Pro></Pro>
+      <Pro>19,23</Pro>
       <Con></Con>
       <Thoughts></Thoughts>
       <ScaleValue>0</ScaleValue>
       <Options>
         <DialogueOption>
-          <Text>I take it pasta is one of the things that frequent your shopping cart then! What other items do you often add to your cart?</Text>
-          <Pro></Pro>
+          <Text>Actually you are right, there are not too much differences to buy these things from online or physical. I take it pasta is one of the things that frequent your shopping cart then! What other items do you often add to your cart?</Text>
+          <Pro>5,6</Pro>
           <Con></Con>
           <SpecialInteractionItems></SpecialInteractionItems>
           <RightOption>true</RightOption>
@@ -1367,25 +1415,24 @@
     </DialogueNode>
     <DialogueNode>
       <NodeID>43</NodeID>
-      <Info></Info>
+      <Info>23,24</Info>
       <Text>Yes! I buy a lot of pasta! But other regular items are milk, cheese, cereal and bread. The usuals.</Text>
       <Pro></Pro>
       <Con></Con>
-      <Thoughts></Thoughts>
-      <ScaleValue>0</ScaleValue>
-      <PlayerText>Alright. At the start you also mentioned visiting a physical store when you can’t find the items you need.</PlayerText>
+      <Thoughts>This makes me feel a bit more comfortable.</Thoughts>
+      <ScaleValue>1</ScaleValue>
       <Options>
         <DialogueOption>
-          <Text>Name one thing you bought last time in a physical store?</Text>
+          <Text>Alright. At the start you also mentioned visiting a physical store when you can’t find the items you need. Name one thing you bought last time in a physical store?</Text>
           <Pro></Pro>
-          <Con></Con>
+          <Con>12</Con>
           <SpecialInteractionItems></SpecialInteractionItems>
           <RightOption>false</RightOption>
           <DestNodeID>46</DestNodeID>
         </DialogueOption>
         <DialogueOption>
-          <Text>What items you usually need to buy in a store that you don’t find in the shopping application?</Text>
-          <Pro></Pro>
+          <Text>Alright. At the start you also mentioned visiting a physical store when you can’t find the items you need. What items you usually need to buy in a store that you don’t find in the shopping application?</Text>
+          <Pro>9</Pro>
           <Con></Con>
           <SpecialInteractionItems></SpecialInteractionItems>
           <RightOption>false</RightOption>
@@ -1395,25 +1442,24 @@
     </DialogueNode>
     <DialogueNode>
       <NodeID>44</NodeID>
-      <Info></Info>
+      <Info>24</Info>
       <Text>Milk, cheese, cereal, bread, the usuals.</Text>
       <Pro></Pro>
       <Con></Con>
       <Thoughts></Thoughts>
       <ScaleValue>0</ScaleValue>
-      <PlayerText>Alright. At the start you also mentioned visiting a physical store when you can’t find the items you need.</PlayerText>
       <Options>
         <DialogueOption>
-          <Text>Name one thing you bought last time in a physical store?</Text>
+          <Text>Alright. At the start you also mentioned visiting a physical store when you can’t find the items you need. Name one thing you bought last time in a physical store?</Text>
           <Pro></Pro>
-          <Con></Con>
+          <Con>12</Con>
           <SpecialInteractionItems></SpecialInteractionItems>
           <RightOption>false</RightOption>
           <DestNodeID>46</DestNodeID>
         </DialogueOption>
         <DialogueOption>
-          <Text>What items you usually need to buy in a store that you don’t find in the shopping application?</Text>
-          <Pro></Pro>
+          <Text>Alright. At the start you also mentioned visiting a physical store when you can’t find the items you need. What items you usually need to buy in a store that you don’t find in the shopping application?</Text>
+          <Pro>9</Pro>
           <Con></Con>
           <SpecialInteractionItems></SpecialInteractionItems>
           <RightOption>true</RightOption>
@@ -1423,7 +1469,7 @@
     </DialogueNode>
     <DialogueNode>
       <NodeID>45</NodeID>
-      <Info></Info>
+      <Info>25,26</Info>
       <Text>Let’s see...[PAUSE] I think the last time I went to the store is to get my daughter a magazine she wanted, there are no magazines in Freshly, mostly groceries and some household products too. Ah, and I usually go when I want to buy fish, for some reason the website only has frozen fish and not much of a pick of fresh ones.</Text>
       <Pro></Pro>
       <Con></Con>
@@ -1432,7 +1478,7 @@
       <Options>
         <DialogueOption>
           <Text>That’s very interesting! What else would you like to be able to buy from this website?</Text>
-          <Pro></Pro>
+          <Pro>6,11</Pro>
           <Con></Con>
           <SpecialInteractionItems></SpecialInteractionItems>
           <RightOption>true</RightOption>
@@ -1454,12 +1500,12 @@
       <Text>Let’s see...[PAUSE] I think the last time I went to the store was to get my daughter a magazine she wanted, there are no magazines in Freshly, mostly groceries and some household products too.</Text>
       <Pro></Pro>
       <Con></Con>
-      <Thoughts></Thoughts>
+      <Thoughts>Got to think of just one thing.</Thoughts>
       <ScaleValue>0</ScaleValue>
       <Options>
         <DialogueOption>
           <Text>That’s very interesting! What else would you like to be able to buy from this website?</Text>
-          <Pro></Pro>
+          <Pro>6,11</Pro>
           <Con></Con>
           <SpecialInteractionItems></SpecialInteractionItems>
           <RightOption>true</RightOption>
@@ -1477,7 +1523,7 @@
     </DialogueNode>
     <DialogueNode>
       <NodeID>47</NodeID>
-      <Info></Info>
+      <Info>27</Info>
       <Text>Some ready made food!</Text>
       <Pro></Pro>
       <Con></Con>
@@ -1486,7 +1532,7 @@
       <Options>
         <DialogueOption>
           <Text>So getting food that is easy to cook or heat up is important to you?</Text>
-          <Pro></Pro>
+          <Pro>5</Pro>
           <Con></Con>
           <SpecialInteractionItems></SpecialInteractionItems>
           <RightOption>true</RightOption>
@@ -1494,7 +1540,7 @@
         </DialogueOption>
         <DialogueOption>
           <Text>What kind of ready made food you’d like?</Text>
-          <Pro></Pro>
+          <Pro>6</Pro>
           <Con></Con>
           <SpecialInteractionItems></SpecialInteractionItems>
           <RightOption>true</RightOption>
@@ -1504,7 +1550,7 @@
     </DialogueNode>
     <DialogueNode>
       <NodeID>48</NodeID>
-      <Info></Info>
+      <Info>28,29</Info>
       <Text>There’s usually cakes and party platters ready to go, but I’d like to see perhaps cooked chicken or risotto, something I can throw on the pan to quickly heat up and have dinner ready in minutes. But not something frozen, something real.</Text>
       <Pro></Pro>
       <Con></Con>
@@ -1513,7 +1559,7 @@
       <Options>
         <DialogueOption>
           <Text>So getting food that is easy to cook or heat up is important to you?</Text>
-          <Pro></Pro>
+          <Pro>5</Pro>
           <Con></Con>
           <SpecialInteractionItems></SpecialInteractionItems>
           <RightOption>true</RightOption>
@@ -1522,7 +1568,7 @@
         <DialogueOption>
           <Text>But frozen food is nice! It is cheap and very easy to cook. I also like the taste of it!</Text>
           <Pro></Pro>
-          <Con></Con>
+          <Con>15</Con>
           <SpecialInteractionItems></SpecialInteractionItems>
           <RightOption>false</RightOption>
           <DestNodeID>49</DestNodeID>
@@ -1612,7 +1658,7 @@
     </DialogueNode>
     <DialogueNode>
       <NodeID>52</NodeID>
-      <Info></Info>
+      <Info>30</Info>
       <Text> Yeah, I try to stay in a daily budget limit.</Text>
       <Pro></Pro>
       <Con></Con>
@@ -1639,7 +1685,7 @@
     </DialogueNode>
     <DialogueNode>
       <NodeID>53</NodeID>
-      <Info></Info>
+      <Info>31</Info>
       <Text>I try to keep it to about 15€.</Text>
       <Pro></Pro>
       <Con></Con>
@@ -1649,7 +1695,7 @@
         <DialogueOption>
           <Text>This seems very low. How do you manage to survive on that?</Text>
           <Pro></Pro>
-          <Con></Con>
+          <Con>15</Con>
           <SpecialInteractionItems></SpecialInteractionItems>
           <RightOption>false</RightOption>
           <DestNodeID>54</DestNodeID>
@@ -1665,7 +1711,7 @@
         <DialogueOption>
           <Text>Is it easier to keep to this in online or physical store?</Text>
           <Pro></Pro>
-          <Con></Con>
+          <Con>11</Con>
           <SpecialInteractionItems></SpecialInteractionItems>
           <RightOption>false</RightOption>
           <DestNodeID>56</DestNodeID>
@@ -1716,11 +1762,19 @@
           <RightOption>true</RightOption>
           <DestNodeID>55</DestNodeID>
         </DialogueOption>
+        <DialogueOption>
+          <Text>Is it easier to keep to this in online or physical store?</Text>
+          <Pro></Pro>
+          <Con>11</Con>
+          <SpecialInteractionItems></SpecialInteractionItems>
+          <RightOption>false</RightOption>
+          <DestNodeID>56</DestNodeID>
+        </DialogueOption>
       </Options>
     </DialogueNode>
     <DialogueNode>
       <NodeID>55</NodeID>
-      <Info></Info>
+      <Info>33,34</Info>
       <Text>I try to select discounted items and when I shop online I can always see how much the items in my cart cost. That helps a lot.</Text>
       <Pro></Pro>
       <Con></Con>
@@ -1728,16 +1782,8 @@
       <ScaleValue>1</ScaleValue>
       <Options>
         <DialogueOption>
-          <Text>What is your daily budget?</Text>
-          <Pro></Pro>
-          <Con></Con>
-          <SpecialInteractionItems></SpecialInteractionItems>
-          <RightOption>false</RightOption>
-          <DestNodeID>53</DestNodeID>
-        </DialogueOption>
-        <DialogueOption>
           <Text>How would you compare finding discounted items in an online store to finding them in physical store?</Text>
-          <Pro></Pro>
+          <Pro>9</Pro>
           <Con></Con>
           <SpecialInteractionItems></SpecialInteractionItems>
           <RightOption>true</RightOption>
@@ -1745,7 +1791,7 @@
         </DialogueOption>
         <DialogueOption>
           <Text>What would you say, is the online shopping application lacking that you’d like there to be?</Text>
-          <Pro></Pro>
+          <Pro>9</Pro>
           <Con></Con>
           <SpecialInteractionItems></SpecialInteractionItems>
           <RightOption>true</RightOption>
@@ -1755,7 +1801,7 @@
     </DialogueNode>
     <DialogueNode>
       <NodeID>56</NodeID>
-      <Info></Info>
+      <Info>32</Info>
       <Text>Online store.</Text>
       <Pro></Pro>
       <Con></Con>
@@ -1764,7 +1810,7 @@
       <Options>
         <DialogueOption>
           <Text>Why, do you think, that is easier in online store?</Text>
-          <Pro></Pro>
+          <Pro>6,9</Pro>
           <Con></Con>
           <SpecialInteractionItems></SpecialInteractionItems>
           <RightOption>false</RightOption>
@@ -1772,7 +1818,7 @@
         </DialogueOption>
         <DialogueOption>
           <Text>What would you say, is the online shopping application lacking that you’d like there to be?</Text>
-          <Pro></Pro>
+          <Pro>9</Pro>
           <Con></Con>
           <SpecialInteractionItems></SpecialInteractionItems>
           <RightOption>true</RightOption>
@@ -1782,7 +1828,7 @@
     </DialogueNode>
     <DialogueNode>
       <NodeID>58</NodeID>
-      <Info></Info>
+      <Info>32,35</Info>
       <Text>I think it is easier in online store because I can filter by discounted items, in the physical store I would have to spend more time finding discounted versions.</Text>
       <Pro></Pro>
       <Con></Con>
@@ -1796,6 +1842,14 @@
           <SpecialInteractionItems></SpecialInteractionItems>
           <RightOption>true</RightOption>
           <DestNodeID>60</DestNodeID>
+        </DialogueOption>
+        <DialogueOption>
+          <Text>What do you think are the online shopping applications missing, that you'd like there to be?</Text>
+          <Pro></Pro>
+          <Con></Con>
+          <SpecialInteractionItems></SpecialInteractionItems>
+          <RightOption>false</RightOption>
+          <DestNodeID>59</DestNodeID>
         </DialogueOption>
       </Options>
     </DialogueNode>
@@ -1811,14 +1865,14 @@
         <DialogueOption>
           <Text>Please try to think of something, alright?</Text>
           <Pro></Pro>
-          <Con></Con>
+          <Con>19</Con>
           <SpecialInteractionItems></SpecialInteractionItems>
           <RightOption>false</RightOption>
           <DestNodeID>62</DestNodeID>
         </DialogueOption>
         <DialogueOption>
           <Text>It is absolutely alright, you have been very helpful already! Do you have anything you’d like to add?</Text>
-          <Pro></Pro>
+          <Pro>11</Pro>
           <Con></Con>
           <SpecialInteractionItems></SpecialInteractionItems>
           <RightOption>true</RightOption>
@@ -1828,8 +1882,8 @@
     </DialogueNode>
     <DialogueNode>
       <NodeID>60</NodeID>
-      <Info></Info>
-      <Text>Can't think of anything else at the moment.</Text>
+      <Info>36,37</Info>
+      <Text>Well, even more categories would be nice...[PAUSE] I think I’d like to be able to see quick and easy recipes over there as well, that I can make with the items that are in the store. Can’t think of much more at the moment.</Text>
       <Pro></Pro>
       <Con></Con>
       <Thoughts></Thoughts>
@@ -1838,14 +1892,14 @@
         <DialogueOption>
           <Text>Please try to think of something, alright?</Text>
           <Pro></Pro>
-          <Con></Con>
+          <Con>19</Con>
           <SpecialInteractionItems></SpecialInteractionItems>
           <RightOption>false</RightOption>
           <DestNodeID>62</DestNodeID>
         </DialogueOption>
         <DialogueOption>
           <Text>It is absolutely alright, you have been very helpful already! Do you have anything you’d like to add?</Text>
-          <Pro></Pro>
+          <Pro>11</Pro>
           <Con></Con>
           <SpecialInteractionItems></SpecialInteractionItems>
           <RightOption>true</RightOption>
@@ -1864,7 +1918,7 @@
       <Options>
         <DialogueOption>
           <Text>In that case, this concludes our interview. Thank you very much for agreeing to participate!</Text>
-          <Pro></Pro>
+          <Pro>12</Pro>
           <Con></Con>
           <SpecialInteractionItems></SpecialInteractionItems>
           <RightOption>true</RightOption>
@@ -1872,7 +1926,7 @@
         </DialogueOption>
         <DialogueOption>
           <Text>Goodbye!</Text>
-          <Pro></Pro>
+          <Pro>13</Pro>
           <Con></Con>
           <SpecialInteractionItems></SpecialInteractionItems>
           <RightOption>true</RightOption>
@@ -1881,7 +1935,7 @@
         <DialogueOption>
           <Text>*just leave without saying anything*</Text>
           <Pro></Pro>
-          <Con></Con>
+          <Con>20</Con>
           <SpecialInteractionItems></SpecialInteractionItems>
           <RightOption>false</RightOption>
           <DestNodeID>72</DestNodeID>
@@ -1907,7 +1961,7 @@
         </DialogueOption>
         <DialogueOption>
           <Text>In that case, this concludes our interview. Thank you very much for agreeing to participate!</Text>
-          <Pro></Pro>
+          <Pro>12</Pro>
           <Con></Con>
           <SpecialInteractionItems></SpecialInteractionItems>
           <RightOption>true</RightOption>
@@ -1926,8 +1980,16 @@
       <Options>
         <DialogueOption>
           <Text>In that case, this concludes our interview. Thank you very much for agreeing to participate!</Text>
-          <Pro></Pro>
+          <Pro>12</Pro>
           <Con></Con>
+          <SpecialInteractionItems></SpecialInteractionItems>
+          <RightOption>true</RightOption>
+          <DestNodeID>64</DestNodeID>
+        </DialogueOption>
+        <DialogueOption>
+          <Text>*just leave without saying anything*</Text>
+          <Pro></Pro>
+          <Con>20</Con>
           <SpecialInteractionItems></SpecialInteractionItems>
           <RightOption>true</RightOption>
           <DestNodeID>64</DestNodeID>
@@ -1946,14 +2008,14 @@
         <DialogueOption>
           <Text>*Just leave without saying anything*</Text>
           <Pro></Pro>
-          <Con></Con>
+          <Con>20</Con>
           <SpecialInteractionItems></SpecialInteractionItems>
           <RightOption>false</RightOption>
           <DestNodeID>72</DestNodeID>
         </DialogueOption>
         <DialogueOption>
           <Text>Goodbye!</Text>
-          <Pro></Pro>
+          <Pro>13</Pro>
           <Con></Con>
           <SpecialInteractionItems></SpecialInteractionItems>
           <RightOption>true</RightOption>
@@ -1981,9 +2043,28 @@
       </Options>
     </DialogueNode>
     <DialogueNode>
+      <NodeID>73</NodeID>
+      <Info></Info>
+      <Text>Bye, I guess...</Text>
+      <Pro></Pro>
+      <Con></Con>
+      <Thoughts>The ending was quite sudden.</Thoughts>
+      <ScaleValue>-1</ScaleValue>
+      <Options>
+        <DialogueOption>
+          <Text>*end interview*</Text>
+          <Pro></Pro>
+          <Con>21</Con>
+          <SpecialInteractionItems></SpecialInteractionItems>
+          <RightOption>false</RightOption>
+          <DestNodeID>-1</DestNodeID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
       <NodeID>72</NodeID>
       <Info></Info>
-      <Text>...</Text>
+      <Text>Bye, I guess...</Text>
       <Pro></Pro>
       <Con></Con>
       <Thoughts>Leaving just like that? That's rude.</Thoughts>

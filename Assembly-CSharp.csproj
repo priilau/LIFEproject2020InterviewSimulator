@@ -80,7 +80,6 @@
     <Compile Include="Assets\Scripts\UI\ItemSelection\ItemSelection.cs" />
     <Compile Include="Assets\Scripts\UI\ItemSelection\Items.cs" />
     <Compile Include="Assets\Scripts\UI\MainMenu\MainMenuBehaviour.cs" />
-    <None Include="Assets\Resources\Dialogues\test_dia.xml" />
     <None Include="Assets\Resources\Dialogues\dialogue_judy.xml" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>C:/Users/0000/Desktop/Kool/ELU/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
