@@ -64,7 +64,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\Dialogue\DialogueBehaviour.cs" />
-    <Compile Include="Assets\Scripts\NPC\NPCBehaviours.cs" />
+    <Compile Include="Assets\Scripts\NPC\NPCBehaviour.cs" />
     <Compile Include="Assets\Scripts\NPC\NPCData.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerData.cs" />
     <Compile Include="Assets\Scripts\UI\Feedback\FeedbackInfo\FeedBackBehaviour.cs" />
@@ -75,8 +75,8 @@
     <Compile Include="Assets\Scripts\UI\Feedback\InfoItemDetails.cs" />
     <Compile Include="Assets\Scripts\UI\Feedback\ListFeedbackInfo.cs" />
     <Compile Include="Assets\Scripts\UI\Feedback\ProAndConDetails.cs" />
+    <Compile Include="Assets\Scripts\UI\HowToPlay\HowToPlayBehaviour.cs" />
     <Compile Include="Assets\Scripts\UI\Interview\InterviewBehaviour.cs" />
-    <Compile Include="Assets\Scripts\UI\Introduction\Introduction.cs" />
     <Compile Include="Assets\Scripts\UI\ItemSelection\Item.cs" />
     <Compile Include="Assets\Scripts\UI\ItemSelection\ItemSelection.cs" />
     <Compile Include="Assets\Scripts\UI\ItemSelection\Items.cs" />
@@ -104,12 +104,6 @@
     <Reference Include="Unity.Rider.Editor">
       <HintPath>C:/Users/Priit/Desktop/ELUprojekt/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.2D.Sprite.Editor">
-      <HintPath>C:/Users/Priit/Desktop/ELUprojekt/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.2D.Tilemap.Editor">
-      <HintPath>C:/Users/Priit/Desktop/ELUprojekt/Library/ScriptAssemblies/Unity.2D.Tilemap.Editor.dll</HintPath>
-    </Reference>
     <Reference Include="Unity.TextMeshPro">
       <HintPath>C:/Users/Priit/Desktop/ELUprojekt/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
@@ -119,17 +113,11 @@
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity/2019.3.10f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
     </Reference>
-<<<<<<< HEAD
     <Reference Include="UnityEngine.ARModule">
       <HintPath>C:/Program Files/Unity/2019.3.10f1/Editor/Data/Managed/UnityEngine/UnityEngine.ARModule.dll</HintPath>
     </Reference>
-=======
->>>>>>> 571d34f9b925c074df1f95de7c4746995f87f395
     <Reference Include="UnityEngine.AccessibilityModule">
       <HintPath>C:/Program Files/Unity/2019.3.10f1/Editor/Data/Managed/UnityEngine/UnityEngine.AccessibilityModule.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.AndroidJNIModule">
-      <HintPath>C:/Program Files/Unity/2019.3.10f1/Editor/Data/Managed/UnityEngine/UnityEngine.AndroidJNIModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AnimationModule">
       <HintPath>C:/Program Files/Unity/2019.3.10f1/Editor/Data/Managed/UnityEngine/UnityEngine.AnimationModule.dll</HintPath>
@@ -140,29 +128,23 @@
     <Reference Include="UnityEngine.AudioModule">
       <HintPath>C:/Program Files/Unity/2019.3.10f1/Editor/Data/Managed/UnityEngine/UnityEngine.AudioModule.dll</HintPath>
     </Reference>
+    <Reference Include="UnityEngine.BaselibModule">
+      <HintPath>C:/Program Files/Unity/2019.3.10f1/Editor/Data/PlaybackEngines/WebGLSupport/Managed/UnityEngine.BaselibModule.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEngine.ClothModule">
       <HintPath>C:/Program Files/Unity/2019.3.10f1/Editor/Data/Managed/UnityEngine/UnityEngine.ClothModule.dll</HintPath>
     </Reference>
-<<<<<<< HEAD
-    <Reference Include="UnityEngine.ClusterInputModule">
-      <HintPath>C:/Program Files/Unity/2019.3.10f1/Editor/Data/Managed/UnityEngine/UnityEngine.ClusterInputModule.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.ClusterRendererModule">
-      <HintPath>C:/Program Files/Unity/2019.3.10f1/Editor/Data/Managed/UnityEngine/UnityEngine.ClusterRendererModule.dll</HintPath>
-    </Reference>
-=======
->>>>>>> 571d34f9b925c074df1f95de7c4746995f87f395
     <Reference Include="UnityEngine.CoreModule">
       <HintPath>C:/Program Files/Unity/2019.3.10f1/Editor/Data/Managed/UnityEngine/UnityEngine.CoreModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.CrashReportingModule">
       <HintPath>C:/Program Files/Unity/2019.3.10f1/Editor/Data/Managed/UnityEngine/UnityEngine.CrashReportingModule.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEngine.DSPGraphModule">
-      <HintPath>C:/Program Files/Unity/2019.3.10f1/Editor/Data/Managed/UnityEngine/UnityEngine.DSPGraphModule.dll</HintPath>
-    </Reference>
     <Reference Include="UnityEngine.DirectorModule">
       <HintPath>C:/Program Files/Unity/2019.3.10f1/Editor/Data/Managed/UnityEngine/UnityEngine.DirectorModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.FileSystemHttpModule">
+      <HintPath>C:/Program Files/Unity/2019.3.10f1/Editor/Data/PlaybackEngines/WebGLSupport/Managed/UnityEngine.FileSystemHttpModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.GameCenterModule">
       <HintPath>C:/Program Files/Unity/2019.3.10f1/Editor/Data/Managed/UnityEngine/UnityEngine.GameCenterModule.dll</HintPath>
@@ -181,9 +163,6 @@
     </Reference>
     <Reference Include="UnityEngine.InputModule">
       <HintPath>C:/Program Files/Unity/2019.3.10f1/Editor/Data/Managed/UnityEngine/UnityEngine.InputModule.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.InputLegacyModule">
-      <HintPath>C:/Program Files/Unity/2019.3.10f1/Editor/Data/Managed/UnityEngine/UnityEngine.InputLegacyModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.JSONSerializeModule">
       <HintPath>C:/Program Files/Unity/2019.3.10f1/Editor/Data/Managed/UnityEngine/UnityEngine.JSONSerializeModule.dll</HintPath>
@@ -212,6 +191,9 @@
     <Reference Include="UnityEngine.SharedInternalsModule">
       <HintPath>C:/Program Files/Unity/2019.3.10f1/Editor/Data/Managed/UnityEngine/UnityEngine.SharedInternalsModule.dll</HintPath>
     </Reference>
+    <Reference Include="UnityEngine.SpatialTrackingModule">
+      <HintPath>C:/Program Files/Unity/2019.3.10f1/Editor/Data/PlaybackEngines/WebGLSupport/Managed/UnityEngine.SpatialTrackingModule.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEngine.SpriteMaskModule">
       <HintPath>C:/Program Files/Unity/2019.3.10f1/Editor/Data/Managed/UnityEngine/UnityEngine.SpriteMaskModule.dll</HintPath>
     </Reference>
@@ -221,11 +203,11 @@
     <Reference Include="UnityEngine.StreamingModule">
       <HintPath>C:/Program Files/Unity/2019.3.10f1/Editor/Data/Managed/UnityEngine/UnityEngine.StreamingModule.dll</HintPath>
     </Reference>
+    <Reference Include="UnityEngine.StyleSheetsModule">
+      <HintPath>C:/Program Files/Unity/2019.3.10f1/Editor/Data/PlaybackEngines/WebGLSupport/Managed/UnityEngine.StyleSheetsModule.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEngine.SubstanceModule">
       <HintPath>C:/Program Files/Unity/2019.3.10f1/Editor/Data/Managed/UnityEngine/UnityEngine.SubstanceModule.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.SubsystemsModule">
-      <HintPath>C:/Program Files/Unity/2019.3.10f1/Editor/Data/Managed/UnityEngine/UnityEngine.SubsystemsModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.TLSModule">
       <HintPath>C:/Program Files/Unity/2019.3.10f1/Editor/Data/Managed/UnityEngine/UnityEngine.TLSModule.dll</HintPath>
@@ -244,6 +226,9 @@
     </Reference>
     <Reference Include="UnityEngine.TilemapModule">
       <HintPath>C:/Program Files/Unity/2019.3.10f1/Editor/Data/Managed/UnityEngine/UnityEngine.TilemapModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TimelineModule">
+      <HintPath>C:/Program Files/Unity/2019.3.10f1/Editor/Data/PlaybackEngines/WebGLSupport/Managed/UnityEngine.TimelineModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UIModule">
       <HintPath>C:/Program Files/Unity/2019.3.10f1/Editor/Data/Managed/UnityEngine/UnityEngine.UIModule.dll</HintPath>
@@ -294,7 +279,7 @@
       <HintPath>C:/Program Files/Unity/2019.3.10f1/Editor/Data/Managed/UnityEngine/UnityEngine.VideoModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.WebGLModule">
-      <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.10f1/Editor/Data/PlaybackEngines/WebGLSupport/Managed/UnityEngine.WebGLModule.dll</HintPath>
+      <HintPath>C:/Program Files/Unity/2019.3.10f1/Editor/Data/PlaybackEngines/WebGLSupport/Managed/UnityEngine.WebGLModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.WindModule">
       <HintPath>C:/Program Files/Unity/2019.3.10f1/Editor/Data/Managed/UnityEngine/UnityEngine.WindModule.dll</HintPath>
