@@ -8,7 +8,7 @@ using UnityEngine.SceneManagement;
 using Assets.Scripts.UI.ItemSelection;
 using Assets.Scripts.UI.Feedback.FeedbackInfo;
 
-public class DialogueCreator : MonoBehaviour
+public class DialogueBehaviour : MonoBehaviour
 {
     private Dialogue dia;
 
@@ -23,6 +23,7 @@ public class DialogueCreator : MonoBehaviour
     private IEnumerator displayTextCoroutine;
     private bool isCoroutineRunning = false;
     private bool optionsCreated = false;
+    private bool mouseClicked = false;
     private int selectedOption = -2;  // exit node is -1
     private FeedbackData feedbackData;
 
@@ -43,6 +44,14 @@ public class DialogueCreator : MonoBehaviour
         option4 = GameObject.Find("Option4");
         
         RunDialogue();
+    }
+
+    void Update()
+    {
+        if (Input.GetMouseButtonDown(0))
+        {
+            mouseClicked = true;
+        }
     }
 
     private void CheckForDistractingItems()
@@ -76,10 +85,12 @@ public class DialogueCreator : MonoBehaviour
         optionsCreated = false;
     }
 
-    private IEnumerator DisplayText(string text, GameObject textObject)
+    private IEnumerator DisplayText(DialogueNode node, GameObject textObject)
     {
+        mouseClicked = false;
         isCoroutineRunning = true;
         char[] textChars;
+        string text = node.Text;
         string newText;
         int pauseIndex = -1;
         
@@ -91,11 +102,16 @@ public class DialogueCreator : MonoBehaviour
         textChars = text.ToCharArray(0, text.Length);
         for (int i = 0; i < textChars.Length; i++)  
         {
+            if (mouseClicked)
+            {
+                textObject.GetComponent<Text>().text = text;
+                break;
+            }
             if (pauseIndex == i)
             {
                 bool paused = true;
                 int pauseTick = 0;
-                while (paused)
+                while (paused && !mouseClicked)
                 {
                     newText = npcText.GetComponent<Text>().text;
                     textObject.GetComponent<Text>().text = newText + textChars[i];
@@ -116,21 +132,25 @@ public class DialogueCreator : MonoBehaviour
                 newText = npcText.GetComponent<Text>().text;
                 textObject.GetComponent<Text>().text = newText + textChars[i];
                 yield return new WaitForSeconds(0.03f);
-            } 
+            }
         }
+        CreateNodeOptionButtons(node);
         isCoroutineRunning = false;
-    }
+    } 
     
     private void NodeActions(DialogueNode node)
     {
-        npcSpeechBubble.SetActive(false);
         if (node.Text.Length > 0)
         {
-            npcText.GetComponent<Text>().text = "";
             npcSpeechBubble.SetActive(true);
-            displayTextCoroutine = DisplayText(node.Text, npcText);
-            StartCoroutine(displayTextCoroutine);
+        } 
+        else
+        {
+            npcSpeechBubble.SetActive(false);
         }
+        npcText.GetComponent<Text>().text = "";
+        displayTextCoroutine = DisplayText(node, npcText);
+        StartCoroutine(displayTextCoroutine);
 
         npcThoughtsBubble.SetActive(false);
         if(node.NodeID == 0)
@@ -153,7 +173,7 @@ public class DialogueCreator : MonoBehaviour
             string[] proIds = node.Pro.Split(',');
             foreach (InfoPro pro in feedbackData.pros)
             {
-                if(Array.IndexOf(proIds, pro.id) > -1)
+                if(Array.IndexOf(proIds, pro.id) > -1 && !PlayerData.pros.Contains(pro))
                 {
                     PlayerData.pros.Add(pro);
                 }
@@ -165,7 +185,7 @@ public class DialogueCreator : MonoBehaviour
             string[] conIds = node.Con.Split(',');
             foreach (InfoCon con in feedbackData.cons)
             {
-                if (Array.IndexOf(conIds, con.id) > -1)
+                if (Array.IndexOf(conIds, con.id) > -1 && !PlayerData.cons.Contains(con))
                 {
                     PlayerData.cons.Add(con);
                 }
@@ -177,7 +197,7 @@ public class DialogueCreator : MonoBehaviour
             string[] infoIds = node.Info.Split(',');
             foreach (Info info in feedbackData.info)
             {
-                if (Array.IndexOf(infoIds, info.id) > -1)
+                if (Array.IndexOf(infoIds, info.id) > -1 && !PlayerData.info.Contains(info))
                 {
                     PlayerData.info.Add(info);
                 }
@@ -187,14 +207,16 @@ public class DialogueCreator : MonoBehaviour
 
     private void DisplayNode(DialogueNode node)
     {
-        NodeActions(node);
-
         option1.SetActive(false);
         option2.SetActive(false);
         option3.SetActive(false);
         option4.SetActive(false);
+        NodeActions(node);
+    }
 
-        for(int i = 0; i < node.Options.Count; i++)
+    private void CreateNodeOptionButtons(DialogueNode node)
+    {
+        for (int i = 0; i < node.Options.Count; i++)
         {
             switch (i)
             {
@@ -230,7 +252,7 @@ public class DialogueCreator : MonoBehaviour
                 string[] proIds = opt.Pro.Split(',');
                 foreach (InfoPro pro in feedbackData.pros)
                 {
-                    if (Array.IndexOf(proIds, pro.id) > -1)
+                    if (Array.IndexOf(proIds, pro.id) > -1 && !PlayerData.pros.Contains(pro))
                     {
                         PlayerData.pros.Add(pro);
                     }
@@ -242,18 +264,19 @@ public class DialogueCreator : MonoBehaviour
                 string[] conIds = opt.Con.Split(',');
                 foreach (InfoCon con in feedbackData.cons)
                 {
-                    if (Array.IndexOf(conIds, con.id) > -1)
+                    if (Array.IndexOf(conIds, con.id) > -1 && !PlayerData.cons.Contains(con))
                     {
                         PlayerData.cons.Add(con);
                     }
                 }
             }
 
-            SetSelectedOption(opt.DestNodeID);
             if (isCoroutineRunning)
             {
                 StopCoroutine(displayTextCoroutine);
             }
+
+            SetSelectedOption(opt.DestNodeID);
             if(opt.DestNodeID == -1) 
             {
                 SceneManager.LoadScene("Feedback");
@@ -307,11 +330,6 @@ public class DialogueCreator : MonoBehaviour
             optionText = opt.Text.Replace("[PLAYER_NAME]", PlayerData.playerName);
         }
         return optionText;
-    }
-
-    void Update()
-    {
-        
     }
 
     public IEnumerator Run()

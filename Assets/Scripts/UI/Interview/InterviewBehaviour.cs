@@ -1,4 +1,5 @@
 ﻿using Assets.Scripts.UI.ItemSelection;
+using System.Linq;
 using UnityEngine;
 
 public class InterviewBehaviour : MonoBehaviour
@@ -9,25 +10,14 @@ public class InterviewBehaviour : MonoBehaviour
     {
         itemList = JsonUtility.FromJson<Items>(jsonFile.text);
 
-        foreach (Item item in itemList.items)
+        foreach(Item item in itemList.items)
         {
-            GameObject itemGameObject = GameObject.Find(item.gameObjectName);
-            // for some reason this doesn't work here but works in ItemSelection.cs line 34
-            /*
-            if (itemGameObject && PlayerData.selectedItems.Contains(item))
+            GameObject itemGameObject = GameObject.Find(item.itemName);
+            itemGameObject.SetActive(false);
+            Item selectedItem = PlayerData.selectedItems.SingleOrDefault(i => i.itemName == item.itemName);
+            if (selectedItem != null)
             {
-                itemGameObject.SetActive(false);
-            }
-             */
-            if (itemGameObject)
-            {
-                foreach(Item selectedItem in PlayerData.selectedItems)
-                {
-                    if(selectedItem.itemName != item.itemName)
-                    {
-                        itemGameObject.SetActive(false);
-                    }
-                }
+                itemGameObject.SetActive(true);
             }
         }
     }

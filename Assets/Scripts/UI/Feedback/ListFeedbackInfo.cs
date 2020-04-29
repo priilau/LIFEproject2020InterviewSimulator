@@ -12,14 +12,13 @@ public class ListFeedbackInfo : MonoBehaviour
     private int count = 0;
     void Start()
     {
-        Debug.Log(content.tag);
         if(content.tag == "Pros")
         {
-            content.sizeDelta = new Vector2(0, PlayerData.pros.Count * 60);
+            content.sizeDelta = new Vector2(0, PlayerData.pros.Count * 145);
             foreach (InfoPro pro in PlayerData.pros)
             {
-                float spawnY = count * 60;
-                Vector3 pos = new Vector3(spawnPoint.position.x, -spawnY, spawnPoint.position.z);
+                float spawnY = count * 145;
+                Vector3 pos = new Vector3(0, -spawnY, 0);
                 GameObject spawnedItem = Instantiate(item, pos, spawnPoint.rotation);
                 spawnedItem.transform.SetParent(spawnPoint, false);
                 ProAndConDetails itemDetails = spawnedItem.GetComponent<ProAndConDetails>();
@@ -32,11 +31,11 @@ public class ListFeedbackInfo : MonoBehaviour
 
         if (content.tag == "Cons")
         {
-            content.sizeDelta = new Vector2(0, PlayerData.cons.Count * 60);
+            content.sizeDelta = new Vector2(0, PlayerData.cons.Count * 145);
             foreach (InfoCon con in PlayerData.cons)
             {
-                float spawnY = count * 60;
-                Vector3 pos = new Vector3(spawnPoint.position.x, -spawnY, spawnPoint.position.z);
+                float spawnY = count * 145;
+                Vector3 pos = new Vector3(0, -spawnY, 0);
                 GameObject spawnedItem = Instantiate(item, pos, spawnPoint.rotation);
                 spawnedItem.transform.SetParent(spawnPoint, false);
                 ProAndConDetails itemDetails = spawnedItem.GetComponent<ProAndConDetails>();
@@ -49,11 +48,11 @@ public class ListFeedbackInfo : MonoBehaviour
 
         if (content.tag == "Info")
         {
-            content.sizeDelta = new Vector2(0, PlayerData.info.Count * 60);
+            content.sizeDelta = new Vector2(0, PlayerData.info.Count * 65);
             foreach (Info info in PlayerData.info)
             {
-                float spawnY = count * 60;
-                Vector3 pos = new Vector3(spawnPoint.position.x, -spawnY, spawnPoint.position.z);
+                float spawnY = count * 65;
+                Vector3 pos = new Vector3(0, -spawnY, 0);
                 GameObject spawnedItem = Instantiate(item, pos, spawnPoint.rotation);
                 spawnedItem.transform.SetParent(spawnPoint, false);
                 InfoItemDetails itemDetails = spawnedItem.GetComponent<InfoItemDetails>();

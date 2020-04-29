@@ -3,7 +3,7 @@
     {
       "id": "1",
       "info": "Not greeting the interviewee",
-      "comment": "Always start out the interview with a greeting, it doesn’t take long and it helps to create a more natural atmosphere."
+      "comment": "Always start out the interview with a greeting, it does not take long and it helps to create a more natural atmosphere."
     },
     {
       "id": "2",
@@ -28,12 +28,12 @@
     {
       "id": "6",
       "info": "Talking about own problems instead",
-      "comment": "They don’t need you to bring your own problems to the table and make the interview more awkward. With this, you are distracting them from the interview topic."
+      "comment": "They do not need you to bring your own problems to the table and make the interview more awkward. With this, you are distracting them from the interview topic."
     },
     {
       "id": "7",
       "info": "Making assumptions about interviewee",
-      "comment": "Don’t assume anything about the interviewee, if they want to tell you about this topic, they will. If they don’t then maybe it is too personal."
+      "comment": "Do not assume anything about the interviewee, if they want to tell you about this topic, they will. If they do not then maybe it is too personal."
     },
     {
       "id": "8",
@@ -43,21 +43,21 @@
     {
       "id": "9",
       "info": "Concluding the interview because the weather outside was lovely",
-      "comment": "There may be several distractions why you could end the interview, however doesn’t mean that you should."
+      "comment": "There may be several distractions why you could end the interview, however does not mean that you should."
     },
     {
       "id": "10",
       "info": "Directing the interviewee",
-      "comment": "Making the interviewee thinking about something specific gives you more details about that specific thing, but there is a chance you lose some information you could’ve gotten with more open-ended questions"
+      "comment": "Making the interviewee thinking about something specific gives you more details about that specific thing, but there is a chance you lose some information you could have gotten with more open-ended questions"
     },
     {
       "id": "11",
       "info": "Asking yes/no questions (close-ended questions)",
-      "comment": "You don’t get any rich details about the topic at hand, there is a chance they will only respond yes or no to what you asked."
+      "comment": "You do not get any rich details about the topic at hand, there is a chance they will only respond yes or no to what you asked."
     },
     {
       "id": "12",
-      "info": "Not following up on interviewee’s answer.",
+      "info": "Not following up on interviewees answer.",
       "comment": "If the interviewee says something relevant to your study, follow up on this whenever possible. Following up might reveal some more information that you might not have thought to ask before. Don’t skip to the next question on your list."
     },
     {
@@ -68,22 +68,22 @@
     {
       "id": "14",
       "info": "Interrupting the interviewee",
-      "comment": "Interruptions make the interviewee lose their train of thought. Interruptions never feel good for anybody present and the interviewer will also lose information they might have gotten if they hadn’t interrupted the interviewee mid sentence or mid-thought. Give them time to think."
+      "comment": "Interruptions make the interviewee lose their train of thought. Interruptions never feel good for anybody present and the interviewer will also lose information they might have gotten if they had not interrupted the interviewee mid sentence or mid-thought. Give them time to think."
     },
     {
       "id": "15",
       "info": "Giving personal opinions",
-      "comment": "As with assumptions, don’t make your personal opinion known to them, it might not be the same. Also it might distract both of you from the topic at hand."
+      "comment": "As with assumptions, do not make your personal opinion known to them, it might not be the same. Also it might distract both of you from the topic at hand."
     },
     {
       "id": "16",
       "info": "Not bringing a camera / dictaphone / notebook.",
-      "comment": "Camera and dictaphone help you record what is being said during the interview. If you bring a camera, a dictaphone is not necessary, since the video comes with sound and will also show you their expressions. If you only have a dictaphone, you get the sound recording, but won’t have access to their expressions and physical reactions later on. The notebook is necessary for quickly jutting down anything important you notice during the interview so you already have something to go back to when you start analyzing it. However if you bring no recording devices, you will lose a lot of information after the interview, because you won’t be able to remember every detail that was discussed."
+      "comment": "Camera and dictaphone help you record what is being said during the interview. If you bring a camera, a dictaphone is not necessary, since the video comes with sound and will also show you their expressions. If you only have a dictaphone, you get the sound recording, but will not have access to their expressions and physical reactions later on. The notebook is necessary for quickly jutting down anything important you notice during the interview so you already have something to go back to when you start analyzing it. However if you bring no recording devices, you will lose a lot of information after the interview, because you will not be able to remember every detail that was discussed."
     },
     {
       "id": "17",
       "info": "Not asking permission to set up devices.",
-      "comment": "Always ask permission to use recording devices. Asking permission is required and will also make the interviewee more comfortable if you don’t just start recording on your own will."
+      "comment": "Always ask permission to use recording devices. Asking permission is required and will also make the interviewee more comfortable if you do not just start recording on your own will."
     },
     {
       "id": "18",
@@ -98,7 +98,7 @@
     {
       "id": "20",
       "info": "Not saying goodbye",
-      "comment": "Even if you’re not seeing the interviewee ever again, make sure to be polite when leaving."
+      "comment": "Even if you are not seeing the interviewee ever again, make sure to be polite when leaving."
     },
     {
       "id": "21",
@@ -109,7 +109,7 @@
   "info": [
     {
       "id": "1",
-      "info": "Interviewee’s name is Judy."
+      "info": "Interviewees name is Judy."
     },
     {
       "id": "2",
@@ -165,7 +165,7 @@
     },
     {
       "id": "15",
-      "info": "She likes that online shopping doesn’t have distractions."
+      "info": "She likes that online shopping does not have distractions."
     },
     {
       "id": "16",
@@ -185,7 +185,7 @@
     },
     {
       "id": "20",
-      "info": "She sometimes finds an alternative item if she doesn’t find what she needs."
+      "info": "She sometimes finds an alternative item if she does not find what she needs."
     },
     {
       "id": "21",
@@ -221,7 +221,7 @@
     },
     {
       "id": "29",
-      "info": "She doesn’t like frozen food."
+      "info": "She does not like frozen food."
     },
     {
       "id": "30",
@@ -229,7 +229,7 @@
     },
     {
       "id": "31",
-      "info": "Her daily budget is 15€."
+      "info": "Her daily budget is 15 euros."
     },
     {
       "id": "32",
@@ -260,12 +260,12 @@
     {
       "id": "1",
       "info": "Greeting the interviewee",
-      "comment": "Always start out the interview with a greeting, it doesn’t take long and it helps to create a more natural atmosphere."
+      "comment": "Always start out the interview with a greeting, it does not take long and it helps to create a more natural atmosphere."
     },
     {
       "id": "2",
       "info": "Asking permission to use recording devices",
-      "comment": "Always ask permission to use recording devices. Asking permission is required and will also make the interviewee more comfortable if you don’t just start recording on your own will."
+      "comment": "Always ask permission to use recording devices. Asking permission is required and will also make the interviewee more comfortable if you do not just start recording on your own will."
     },
     {
       "id": "3",
@@ -280,12 +280,12 @@
     {
       "id": "5",
       "info": "Confirming what the interviewee was saying",
-      "comment": "Confirmations are important. If you don’t confirm what was said, you might get the wrong idea. Also, confirmations make them feel more comfortable since you have understood what they are talking about, and they may perhaps say something else about this topic that is of interest to you."
+      "comment": "Confirmations are important. If you do not confirm what was said, you might get the wrong idea. Also, confirmations make them feel more comfortable since you have understood what they are talking about, and they may perhaps say something else about this topic that is of interest to you."
     },
     {
       "id": "6",
-      "info": "Following up on interviewee’s answer",
-      "comment": "If the interviewee says something relevant to your study, follow up on this whenever possible. Following up might reveal some more information that you might not have thought to ask before. Don’t skip to the next question on your list."
+      "info": "Following up on interviewees answer",
+      "comment": "If the interviewee says something relevant to your study, follow up on this whenever possible. Following up might reveal some more information that you might not have thought to ask before. Do not skip to the next question on your list."
     },
     {
       "id": "7",
@@ -295,7 +295,7 @@
     {
       "id": "8",
       "info": "Not interrupting the interviewee",
-      "comment": "Interruptions make the interviewee lose their train of thought. Interruptions never feel good for anybody present and the interviewer will also lose information they might have gotten if they hadn’t interrupted the interviewee mid sentence or mid-thought. Give them time to think."
+      "comment": "Interruptions make the interviewee lose their train of thought. Interruptions never feel good for anybody present and the interviewer will also lose information they might have gotten if they had not interrupted the interviewee mid sentence or mid-thought. Give them time to think."
     },
     {
       "id": "9",
@@ -320,7 +320,7 @@
     {
       "id": "13",
       "info": "Saying goodbye to the interviewee",
-      "comment": "Even if you’re not seeing the interviewee ever again, make sure to be polite when leaving."
+      "comment": "Even if you are not seeing the interviewee ever again, make sure to be polite when leaving."
     },
     {
       "id": "14",
@@ -330,7 +330,7 @@
     {
       "id": "15",
       "info": "Bringing a camera / dictaphone / notebook",
-      "comment": "Camera and dictaphone help you record what is being said during the interview. If you bring a camera, a dictaphone is not necessary, since the video comes with sound and will also show you their expressions. If you only have a dictaphone, you get the sound recording, but won’t have access to their expressions and physical reactions later on. The notebook is necessary for quickly jutting down anything important you notice during the interview so you already have something to go back to when you start analyzing it. However if you bring no recording devices, you will lose a lot of information after the interview, because you won’t be able to remember every detail that was discussed."
+      "comment": "Camera and dictaphone help you record what is being said during the interview. If you bring a camera, a dictaphone is not necessary, since the video comes with sound and will also show you their expressions. If you only have a dictaphone, you get the sound recording, but will not have access to their expressions and physical reactions later on. The notebook is necessary for quickly jutting down anything important you notice during the interview so you already have something to go back to when you start analyzing it. However if you bring no recording devices, you will lose a lot of information after the interview, because you will not be able to remember every detail that was discussed."
     }
   ]
 }
