@@ -954,6 +954,7 @@ GameObject:
   - component: {fileID: 633436945}
   - component: {fileID: 633436947}
   - component: {fileID: 633436946}
+  - component: {fileID: 633436948}
   m_Layer: 5
   m_Name: Feedback
   m_TagString: Untagged
@@ -1021,6 +1022,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 633436944}
   m_CullTransparentMesh: 0
+--- !u!114 &633436948
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 633436944}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: deef576f745da694e9562367ce1cfb1e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &662515955
 GameObject:
   m_ObjectHideFlags: 0
@@ -1103,7 +1116,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 1727207153}
   m_Direction: 2
   m_Value: 1
-  m_Size: 0.9999999
+  m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -1226,7 +1239,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 232709915}
   m_Direction: 2
   m_Value: 1
-  m_Size: 0.9999999
+  m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
