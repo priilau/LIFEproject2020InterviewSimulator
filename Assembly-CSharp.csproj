@@ -62,7 +62,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\Dialogue\Dialogue.cs" />
     <Compile Include="Assets\Scripts\Dialogue\DialogueBehaviour.cs" />
+    <Compile Include="Assets\Scripts\Dialogue\DialogueNode.cs" />
+    <Compile Include="Assets\Scripts\Dialogue\DialogueOption.cs" />
     <Compile Include="Assets\Scripts\NPC\NPCBehaviour.cs" />
     <Compile Include="Assets\Scripts\NPC\NPCData.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerData.cs" />
@@ -81,7 +84,7 @@
     <Compile Include="Assets\Scripts\UI\ItemSelection\Items.cs" />
     <Compile Include="Assets\Scripts\UI\MainMenu\MainMenuBehaviour.cs" />
     <Compile Include="Assets\Scripts\UI\Music\Music.cs" />
-    <None Include="Assets\Resources\Dialogues\dialogue_judy.xml" />
+    <None Include="Assets\StreamingAssets\Dialogues\dialogue_judy.xml" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>C:/Users/0000/Desktop/Kool/ELU/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
