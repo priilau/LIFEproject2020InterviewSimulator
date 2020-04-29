@@ -28,7 +28,7 @@ public class ItemSelection : MonoBehaviour
         itemCheckFinished = false;
         foreach (Item item in itemList.items)
         {
-            GameObject itemGameObject = GameObject.Find(item.gameObjectName);
+            GameObject itemGameObject = GameObject.Find(item.itemName);
             if (itemGameObject)
             {
                 if (itemGameObject.GetComponent<Toggle>().isOn && !PlayerData.selectedItems.Contains(item))
@@ -37,7 +37,7 @@ public class ItemSelection : MonoBehaviour
                 }
                 if (!itemGameObject.GetComponent<Toggle>().isOn && PlayerData.selectedItems.Contains(item))
                 {
-                    Item itemToRemove = itemList.items.SingleOrDefault(i => i.gameObjectName == item.gameObjectName);
+                    Item itemToRemove = itemList.items.SingleOrDefault(i => i.itemName == item.itemName);
                     if (itemToRemove != null)
                     {
                         PlayerData.selectedItems.Remove(itemToRemove);

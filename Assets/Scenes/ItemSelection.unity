@@ -206,7 +206,7 @@ GameObject:
   - component: {fileID: 146571101}
   - component: {fileID: 146571102}
   m_Layer: 5
-  m_Name: Book
+  m_Name: book
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -364,7 +364,7 @@ GameObject:
   - component: {fileID: 244281088}
   - component: {fileID: 244281089}
   m_Layer: 5
-  m_Name: Grapes
+  m_Name: grapes
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -749,7 +749,7 @@ GameObject:
   - component: {fileID: 322313011}
   - component: {fileID: 322313012}
   m_Layer: 5
-  m_Name: Camera
+  m_Name: camera
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -996,7 +996,7 @@ GameObject:
   - component: {fileID: 453594718}
   - component: {fileID: 453594719}
   m_Layer: 5
-  m_Name: EmergencyKit
+  m_Name: emergencykit
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1153,7 +1153,7 @@ GameObject:
   - component: {fileID: 537635504}
   - component: {fileID: 537635505}
   m_Layer: 5
-  m_Name: Notepad
+  m_Name: notepad
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1237,7 +1237,7 @@ GameObject:
   - component: {fileID: 539743406}
   - component: {fileID: 539743407}
   m_Layer: 5
-  m_Name: Coffee
+  m_Name: coffee
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1550,7 +1550,7 @@ GameObject:
   - component: {fileID: 730512706}
   - component: {fileID: 730512707}
   m_Layer: 5
-  m_Name: Violin
+  m_Name: violin
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1773,7 +1773,7 @@ GameObject:
   - component: {fileID: 800533655}
   - component: {fileID: 800533656}
   m_Layer: 5
-  m_Name: Dictaphone
+  m_Name: dictaphone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2341,7 +2341,7 @@ GameObject:
   - component: {fileID: 1227314579}
   - component: {fileID: 1227314580}
   m_Layer: 5
-  m_Name: Chips
+  m_Name: chips
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

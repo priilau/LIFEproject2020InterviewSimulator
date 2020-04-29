@@ -239,7 +239,7 @@
     <DialogueNode>
       <NodeID>69</NodeID>
       <Info></Info>
-      <Text>...</Text>
+      <Text></Text>
       <Pro></Pro>
       <Con>1</Con>
       <Thoughts>Right to business? A bit rude perhaps.</Thoughts>
@@ -725,7 +725,7 @@
     <DialogueNode>
       <NodeID>70</NodeID>
       <Info></Info>
-      <Text>...</Text>
+      <Text></Text>
       <Pro></Pro>
       <Con></Con>
       <Thoughts>I am not comfortable with this.</Thoughts>
@@ -1118,8 +1118,8 @@
     </DialogueNode>
     <DialogueNode>
       <NodeID>33</NodeID>
-      <Info></Info>
-      <Text>Well, this is the main reason...[PAUSE] I also like shopping online, because I can do it from my own home and there are no distractions. I often get distracted when going to a store and buy things I don’t need.</Text>
+      <Info>16</Info>
+      <Text>Yes, perhaps...[PAUSE] But I am not always so sure, because it is more comfortable online and I might buy even more things when I see all of these different categories listed just a mouseclick away.</Text>
       <Pro></Pro>
       <Con></Con>
       <Thoughts></Thoughts>

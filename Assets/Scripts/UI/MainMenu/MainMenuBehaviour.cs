@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
@@ -19,7 +17,7 @@ public class MainMenuBehaviour : MonoBehaviour
         playBtn = GameObject.Find("PlayBtn");
         playBtn.GetComponent<Button>().onClick.AddListener(delegate
         {
-            SceneManager.LoadScene("Introduction");
+            SceneManager.LoadScene("HowToPlay");
         });
 
         aboutBtn = GameObject.Find("AboutBtn");
