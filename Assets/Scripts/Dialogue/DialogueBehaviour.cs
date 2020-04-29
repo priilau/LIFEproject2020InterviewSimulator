@@ -1,9 +1,9 @@
 ﻿using System;
+using System.IO;
 using System.Collections;
 using System.Linq;
 using UnityEngine;
 using UnityEngine.UI;
-using DialogueTree;
 using UnityEngine.SceneManagement;
 using Assets.Scripts.UI.ItemSelection;
 using Assets.Scripts.UI.Feedback.FeedbackInfo;
@@ -11,7 +11,6 @@ using Assets.Scripts.UI.Feedback.FeedbackInfo;
 public class DialogueBehaviour : MonoBehaviour
 {
     private Dialogue dia;
-
     private GameObject npcSpeechBubble;
     private GameObject npcText;
     private GameObject npcThoughtsBubble;
@@ -26,13 +25,19 @@ public class DialogueBehaviour : MonoBehaviour
     private bool mouseClicked = false;
     private int selectedOption = -2;  // exit node is -1
     private FeedbackData feedbackData;
+    private string diaPath;
 
-    public string DialogueDataFilePath;
+    public TextAsset dialogueFile;
     public TextAsset feedbackDataJsonFile;
+
+    private void Awake()
+    {
+        diaPath = Path.Combine(Application.streamingAssetsPath, "Dialogues/dialogue_judy.xml");
+    }
 
     void Start()
     {
-        dia = Dialogue.LoadDialogue("Assets/Resources/Dialogues/" + DialogueDataFilePath);
+        dia = Dialogue.LoadDialogue(diaPath);
         feedbackData = JsonUtility.FromJson<FeedbackData>(feedbackDataJsonFile.text);
         npcSpeechBubble = GameObject.Find("SpeechBubble");
         npcText = GameObject.Find("SpeechBubbleText");

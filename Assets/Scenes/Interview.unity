@@ -1294,7 +1294,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cb5baf0c9a000bd458c2a23731909b01, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DialogueDataFilePath: dialogue_judy.xml
+  dialogueFile: {fileID: 4900000, guid: 5d17ba1a592ed8543aeef3d22fd59cd3, type: 3}
   feedbackDataJsonFile: {fileID: 4900000, guid: 97efd4c6b7cae4640b7b1f73c5f514c7,
     type: 3}
 --- !u!114 &735237638
