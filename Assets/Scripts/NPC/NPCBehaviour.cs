@@ -28,7 +28,7 @@ public class NPCBehaviour : MonoBehaviour
             if (NPCData.isComfortValPositive)
             {
                 System.Random r = new System.Random();
-                int randomInt = r.Next(1, 2);
+                int randomInt = r.Next(1, 3); // range 1 - 2
                 npcAudioClip = Resources.Load<AudioClip>("Sounds/approving" + randomInt);
             } 
             else

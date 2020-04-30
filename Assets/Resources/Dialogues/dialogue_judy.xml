@@ -142,6 +142,22 @@
           <RightOption>true</RightOption>
           <DestNodeID>4</DestNodeID>
         </DialogueOption>
+        <DialogueOption>
+          <Text>Is it okay that i record our conversation? Only I will use this later to make sure i don’t miss any details.</Text>
+          <Pro>2</Pro>
+          <Con></Con>
+          <SpecialInteractionItems>camera,dictaphone</SpecialInteractionItems>
+          <RightOption>true</RightOption>
+          <DestNodeID>5</DestNodeID>
+        </DialogueOption>
+        <DialogueOption>
+          <Text>*set up your [ITEM_LIST]* Let's begin.</Text>
+          <Pro></Pro>
+          <Con>17</Con>
+          <SpecialInteractionItems>camera,dictaphone</SpecialInteractionItems>
+          <RightOption>true</RightOption>
+          <DestNodeID>68</DestNodeID>
+        </DialogueOption>
       </Options>
     </DialogueNode>
     <DialogueNode>
@@ -214,6 +230,14 @@
           <SpecialInteractionItems></SpecialInteractionItems>
           <RightOption>true</RightOption>
           <DestNodeID>74</DestNodeID>
+        </DialogueOption>
+        <DialogueOption>
+          <Text>I am doing this interview to create a new online shopping application so anything you can tell me about your experience with any such applications will be of tremendous use.</Text>
+          <Pro>3</Pro>
+          <Con></Con>
+          <SpecialInteractionItems></SpecialInteractionItems>
+          <RightOption>true</RightOption>
+          <DestNodeID>77</DestNodeID>
         </DialogueOption>
       </Options>
     </DialogueNode>
@@ -516,12 +540,39 @@
           <DestNodeID>14</DestNodeID>
         </DialogueOption>
         <DialogueOption>
-          <Text>Luckily, she's getting by. But let's get back to you. What kind of work do you do?</Text>
+          <Text>Luckily, she's getting by. But let's get back to you.</Text>
           <Pro>10</Pro>
           <Con></Con>
           <SpecialInteractionItems></SpecialInteractionItems>
           <RightOption>false</RightOption>
-          <DestNodeID>19</DestNodeID>
+          <DestNodeID>78</DestNodeID>
+        </DialogueOption>
+      </Options>
+    </DialogueNode>
+    <DialogueNode>
+      <NodeID>78</NodeID>
+      <Info></Info>
+      <Text>Hm, okay.</Text>
+      <Pro></Pro>
+      <Con></Con>
+      <Thoughts></Thoughts>
+      <ScaleValue>0</ScaleValue>
+      <Options>
+        <DialogueOption>
+          <Text>Can you specify your salary? It is just for the research and I am only looking to see, whether it is above, below or around the average wage.</Text>
+          <Pro>9</Pro>
+          <Con></Con>
+          <SpecialInteractionItems></SpecialInteractionItems>
+          <RightOption>false</RightOption>
+          <DestNodeID>20</DestNodeID>
+        </DialogueOption>
+        <DialogueOption>
+          <Text>Do you earn above average wage?</Text>
+          <Pro>14</Pro>
+          <Con>11</Con>
+          <SpecialInteractionItems></SpecialInteractionItems>
+          <RightOption>false</RightOption>
+          <DestNodeID>21</DestNodeID>
         </DialogueOption>
       </Options>
     </DialogueNode>
@@ -1967,6 +2018,22 @@
           <RightOption>true</RightOption>
           <DestNodeID>64</DestNodeID>
         </DialogueOption>
+        <DialogueOption>
+          <Text>Goodbye!</Text>
+          <Pro>13</Pro>
+          <Con></Con>
+          <SpecialInteractionItems></SpecialInteractionItems>
+          <RightOption>true</RightOption>
+          <DestNodeID>65</DestNodeID>
+        </DialogueOption>
+        <DialogueOption>
+          <Text>*just leave without saying anything*</Text>
+          <Pro></Pro>
+          <Con>20</Con>
+          <SpecialInteractionItems></SpecialInteractionItems>
+          <RightOption>false</RightOption>
+          <DestNodeID>72</DestNodeID>
+        </DialogueOption>
       </Options>
     </DialogueNode>
     <DialogueNode>
@@ -1993,6 +2060,14 @@
           <SpecialInteractionItems></SpecialInteractionItems>
           <RightOption>true</RightOption>
           <DestNodeID>64</DestNodeID>
+        </DialogueOption>
+        <DialogueOption>
+          <Text>Goodbye!</Text>
+          <Pro>13</Pro>
+          <Con></Con>
+          <SpecialInteractionItems></SpecialInteractionItems>
+          <RightOption>true</RightOption>
+          <DestNodeID>65</DestNodeID>
         </DialogueOption>
       </Options>
     </DialogueNode>
