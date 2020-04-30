@@ -39,7 +39,7 @@ public class ListInfo : MonoBehaviour
                 Vector3 pos = new Vector3(0, -spawnY, 0);
                 GameObject spawnedItem = Instantiate(item, pos, spawnPoint.rotation);
                 spawnedItem.transform.SetParent(spawnPoint, false);
-                spawnedItem.GetComponent<Image>().color = new Color32(220, 220, 220, 100);
+                spawnedItem.GetComponent<Image>().color = new Color32(220, 220, 220, 255);
                 InfoItemDetails itemDetails = spawnedItem.GetComponent<InfoItemDetails>();
                 itemDetails.itemInfo.text = info.info;
                 count++;

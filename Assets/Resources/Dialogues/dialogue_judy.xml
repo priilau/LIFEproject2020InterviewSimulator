@@ -177,6 +177,22 @@
           <RightOption>true</RightOption>
           <DestNodeID>4</DestNodeID>
         </DialogueOption>
+        <DialogueOption>
+          <Text>Is it okay that i record our conversation? Only I will use this later to make sure i don’t miss any details.</Text>
+          <Pro>2</Pro>
+          <Con></Con>
+          <SpecialInteractionItems>camera,dictaphone</SpecialInteractionItems>
+          <RightOption>true</RightOption>
+          <DestNodeID>5</DestNodeID>
+        </DialogueOption>
+        <DialogueOption>
+          <Text>*set up your [ITEM_LIST]* Let's begin.</Text>
+          <Pro></Pro>
+          <Con>17</Con>
+          <SpecialInteractionItems>camera,dictaphone</SpecialInteractionItems>
+          <RightOption>true</RightOption>
+          <DestNodeID>68</DestNodeID>
+        </DialogueOption>
       </Options>
     </DialogueNode>
     <DialogueNode>
@@ -617,7 +633,7 @@
       <Text>Good idea.</Text>
       <Pro></Pro>
       <Con></Con>
-      <Thoughts>What a horrible thing to hear. Wait why am I here?</Thoughts>
+      <Thoughts></Thoughts>
       <ScaleValue>1</ScaleValue>
       <Options>
         <DialogueOption>
@@ -1691,11 +1707,11 @@
     <DialogueNode>
       <NodeID>51</NodeID>
       <Info></Info>
-      <Text>Understandable.</Text>
+      <Text>Yes, I get dinner ready so much faster then.</Text>
       <Pro></Pro>
       <Con></Con>
       <Thoughts>They understand what i was trying to say.</Thoughts>
-      <ScaleValue>0</ScaleValue>
+      <ScaleValue>1</ScaleValue>
       <Options>
         <DialogueOption>
           <Text>Do you also have a budget when grocery shopping?</Text>
@@ -1704,6 +1720,14 @@
           <SpecialInteractionItems></SpecialInteractionItems>
           <RightOption>true</RightOption>
           <DestNodeID>52</DestNodeID>
+        </DialogueOption>
+        <DialogueOption>
+          <Text>What would you say, is the online shopping application lacking that you’d like there to be?</Text>
+          <Pro>9</Pro>
+          <Con></Con>
+          <SpecialInteractionItems></SpecialInteractionItems>
+          <RightOption>true</RightOption>
+          <DestNodeID>60</DestNodeID>
         </DialogueOption>
       </Options>
     </DialogueNode>
@@ -1737,7 +1761,7 @@
     <DialogueNode>
       <NodeID>53</NodeID>
       <Info>31</Info>
-      <Text>I try to keep it to about 15€.</Text>
+      <Text>I try to keep it to about 15 euros.</Text>
       <Pro></Pro>
       <Con></Con>
       <Thoughts></Thoughts>
@@ -1830,7 +1854,7 @@
       <Pro></Pro>
       <Con></Con>
       <Thoughts></Thoughts>
-      <ScaleValue>1</ScaleValue>
+      <ScaleValue>0</ScaleValue>
       <Options>
         <DialogueOption>
           <Text>How would you compare finding discounted items in an online store to finding them in physical store?</Text>
