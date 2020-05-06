@@ -10,7 +10,6 @@ public class MainMenuBehaviour : MonoBehaviour
     private GameObject about;
     private GameObject title;
 
-
     void Start()
     {
         PlayerData.ResetData();
