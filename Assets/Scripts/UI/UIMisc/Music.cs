@@ -2,6 +2,7 @@
 
 public class Music : MonoBehaviour
 {
+    public static bool muted = false;
     private static Music instance = null;
     public static Music Instance
     {

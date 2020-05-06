@@ -27,7 +27,7 @@ public class HowToPlayBehaviour : MonoBehaviour
         continueBtn.GetComponent<Button>().onClick.AddListener(delegate
         {
             PlayerData.playerName = playerName;
-            SceneManager.LoadScene("ItemSelection");
+            SceneManager.LoadScene("Explination");
         });
     }
 

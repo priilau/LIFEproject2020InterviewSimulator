@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Feedback.unity
     guid: 71f69e4384480494194791aed9cccb15
+  - enabled: 1
+    path: Assets/Scenes/Explination.unity
+    guid: 64d1a2a759890484a9300d19a0eac27d
   m_configObjects: {}

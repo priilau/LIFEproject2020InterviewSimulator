@@ -9,7 +9,6 @@ public class ItemSelection : MonoBehaviour
 {
     public TextAsset jsonFile;
     public Items itemList;
-
     private GameObject continueBtn;
     private bool itemCheckFinished;
 

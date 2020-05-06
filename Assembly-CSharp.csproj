@@ -70,6 +70,7 @@
     <Compile Include="Assets\Scripts\NPC\NPCBehaviour.cs" />
     <Compile Include="Assets\Scripts\NPC\NPCData.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerData.cs" />
+    <Compile Include="Assets\Scripts\UI\Explination\ExplinationBehaviour.cs" />
     <Compile Include="Assets\Scripts\UI\Feedback\FeedBackBehaviour.cs" />
     <Compile Include="Assets\Scripts\UI\Feedback\FeedbackInfo\FeedbackData.cs" />
     <Compile Include="Assets\Scripts\UI\Feedback\FeedbackInfo\Info.cs" />
@@ -86,8 +87,27 @@
     <Compile Include="Assets\Scripts\UI\ItemSelection\ItemSelection.cs" />
     <Compile Include="Assets\Scripts\UI\ItemSelection\Items.cs" />
     <Compile Include="Assets\Scripts\UI\MainMenu\MainMenuBehaviour.cs" />
-    <Compile Include="Assets\Scripts\UI\Music\Music.cs" />
+    <Compile Include="Assets\Scripts\UI\UIMisc\Music.cs" />
+    <Compile Include="Assets\Scripts\UI\UIMisc\UIButtonsBehaviour.cs" />
+    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro.cginc" />
+    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Overlay.shader" />
+    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap.shader" />
+    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface-Mobile.shader" />
+    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface.shader" />
+    <None Include="Assets\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
+    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
+    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF.shader" />
+    <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
+    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro_Properties.cginc" />
+    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro_Surface.cginc" />
+    <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
+    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Masking.shader" />
     <None Include="Assets\Resources\Dialogues\dialogue_judy.xml" />
+    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF Overlay.shader" />
+    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap-Mobile.shader" />
+    <None Include="Assets\TextMesh Pro\Fonts\LiberationSans - OFL.txt" />
+    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile.shader" />
+    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Sprite.shader" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>C:/Users/Priit/Desktop/ELUprojekt/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
@@ -116,7 +136,11 @@
       <HintPath>C:/Users/Priit/Desktop/ELUprojekt/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
+<<<<<<< HEAD
       <HintPath>C:/Program Files/Unity/2019.3.10f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
+=======
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.10f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
+>>>>>>> 036c3aaa003085844197bcb3060e2c67d055ad87
     </Reference>
     <Reference Include="UnityEngine.AccessibilityModule">
       <HintPath>C:/Program Files/Unity/2019.3.10f1/Editor/Data/Managed/UnityEngine/UnityEngine.AccessibilityModule.dll</HintPath>
@@ -134,7 +158,11 @@
       <HintPath>C:/Program Files/Unity/2019.3.10f1/Editor/Data/Managed/UnityEngine/UnityEngine.AudioModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.ClothModule">
+<<<<<<< HEAD
       <HintPath>C:/Program Files/Unity/2019.3.10f1/Editor/Data/Managed/UnityEngine/UnityEngine.ClothModule.dll</HintPath>
+=======
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.10f1/Editor/Data/Managed/UnityEngine/UnityEngine.ClothModule.dll</HintPath>
+>>>>>>> 036c3aaa003085844197bcb3060e2c67d055ad87
     </Reference>
     <Reference Include="UnityEngine.CoreModule">
       <HintPath>C:/Program Files/Unity/2019.3.10f1/Editor/Data/Managed/UnityEngine/UnityEngine.CoreModule.dll</HintPath>
@@ -276,9 +304,6 @@
     </Reference>
     <Reference Include="UnityEngine.VideoModule">
       <HintPath>C:/Program Files/Unity/2019.3.10f1/Editor/Data/Managed/UnityEngine/UnityEngine.VideoModule.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.WebGLModule">
-      <HintPath>C:/Program Files/Unity/2019.3.10f1/Editor/Data/PlaybackEngines/WebGLSupport/Managed/UnityEngine.WebGLModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.WindModule">
       <HintPath>C:/Program Files/Unity/2019.3.10f1/Editor/Data/Managed/UnityEngine/UnityEngine.WindModule.dll</HintPath>
