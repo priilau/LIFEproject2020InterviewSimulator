@@ -4,6 +4,13 @@
     private static int npcComfort = 1;
     private static int maxNpcComfort = 4;
     private static int minNpcComfort = -4;
+
+    public static void ResetData()
+    {
+        npcComfort = 1;
+        maxNpcComfort = 4;
+        minNpcComfort = -4;
+    }
     public static void AddToComfortValue(int additionalVal)
     {
         if(additionalVal > 0)

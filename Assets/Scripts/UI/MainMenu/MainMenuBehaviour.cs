@@ -13,6 +13,9 @@ public class MainMenuBehaviour : MonoBehaviour
 
     void Start()
     {
+        PlayerData.ResetData();
+        NPCData.ResetData();
+
         title = GameObject.Find("Title");
         playBtn = GameObject.Find("PlayBtn");
         playBtn.GetComponent<Button>().onClick.AddListener(delegate
