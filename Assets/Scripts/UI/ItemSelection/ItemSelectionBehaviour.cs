@@ -5,7 +5,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public class ItemSelection : MonoBehaviour
+public class ItemSelectionBehaviour : MonoBehaviour
 {
     public TextAsset jsonFile;
     public Items itemList;

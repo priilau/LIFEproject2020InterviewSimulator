@@ -84,7 +84,7 @@
     <Compile Include="Assets\Scripts\UI\HowToPlay\HowToPlayBehaviour.cs" />
     <Compile Include="Assets\Scripts\UI\Interview\InterviewBehaviour.cs" />
     <Compile Include="Assets\Scripts\UI\ItemSelection\Item.cs" />
-    <Compile Include="Assets\Scripts\UI\ItemSelection\ItemSelection.cs" />
+    <Compile Include="Assets\Scripts\UI\ItemSelection\ItemSelectionBehaviour.cs" />
     <Compile Include="Assets\Scripts\UI\ItemSelection\Items.cs" />
     <Compile Include="Assets\Scripts\UI\MainMenu\MainMenuBehaviour.cs" />
     <Compile Include="Assets\Scripts\UI\UIMisc\Music.cs" />
@@ -136,11 +136,7 @@
       <HintPath>C:/Users/Priit/Desktop/ELUprojekt/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
-<<<<<<< HEAD
       <HintPath>C:/Program Files/Unity/2019.3.10f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
-=======
-      <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.10f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
->>>>>>> 036c3aaa003085844197bcb3060e2c67d055ad87
     </Reference>
     <Reference Include="UnityEngine.AccessibilityModule">
       <HintPath>C:/Program Files/Unity/2019.3.10f1/Editor/Data/Managed/UnityEngine/UnityEngine.AccessibilityModule.dll</HintPath>
@@ -158,11 +154,7 @@
       <HintPath>C:/Program Files/Unity/2019.3.10f1/Editor/Data/Managed/UnityEngine/UnityEngine.AudioModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.ClothModule">
-<<<<<<< HEAD
       <HintPath>C:/Program Files/Unity/2019.3.10f1/Editor/Data/Managed/UnityEngine/UnityEngine.ClothModule.dll</HintPath>
-=======
-      <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.10f1/Editor/Data/Managed/UnityEngine/UnityEngine.ClothModule.dll</HintPath>
->>>>>>> 036c3aaa003085844197bcb3060e2c67d055ad87
     </Reference>
     <Reference Include="UnityEngine.CoreModule">
       <HintPath>C:/Program Files/Unity/2019.3.10f1/Editor/Data/Managed/UnityEngine/UnityEngine.CoreModule.dll</HintPath>
@@ -304,6 +296,9 @@
     </Reference>
     <Reference Include="UnityEngine.VideoModule">
       <HintPath>C:/Program Files/Unity/2019.3.10f1/Editor/Data/Managed/UnityEngine/UnityEngine.VideoModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.WebGLModule">
+      <HintPath>C:/Program Files/Unity/2019.3.10f1/Editor/Data/PlaybackEngines/WebGLSupport/Managed/UnityEngine.WebGLModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.WindModule">
       <HintPath>C:/Program Files/Unity/2019.3.10f1/Editor/Data/Managed/UnityEngine/UnityEngine.WindModule.dll</HintPath>

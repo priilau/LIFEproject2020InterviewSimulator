@@ -12,12 +12,11 @@ public class InterviewBehaviour : MonoBehaviour
     void Start()
     {
         itemList = JsonUtility.FromJson<Items>(jsonFile.text);
-        backBtn = GameObject.Find("backBtn");
+        backBtn = GameObject.Find("BackBtn");
         backBtn.GetComponent<Button>().onClick.AddListener(delegate
         {
             SceneManager.LoadScene("MainMenu");
         });
-
 
         foreach (Item item in itemList.items)
         {

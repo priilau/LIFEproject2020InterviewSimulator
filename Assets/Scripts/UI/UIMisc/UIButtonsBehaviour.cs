@@ -11,7 +11,7 @@ public class UIButtonsBehaviour : MonoBehaviour
 
     void Start()
     {
-        muteBtn = GameObject.Find("muteBtn");
+        muteBtn = GameObject.Find("MuteBtn");
         unmuteSprite = Resources.Load<Sprite>("Images/Icons/unmute");
         muteSprite = Resources.Load<Sprite>("Images/Icons/mute");
         if (Music.muted)

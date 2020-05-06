@@ -670,7 +670,7 @@ GameObject:
   - component: {fileID: 849171404}
   - component: {fileID: 849171403}
   m_Layer: 5
-  m_Name: muteBtn
+  m_Name: MuteBtn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -886,8 +886,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 29.099976}
-  m_SizeDelta: {x: -200, y: -458.26425}
+  m_AnchoredPosition: {x: 0, y: 59.116}
+  m_SizeDelta: {x: -200, y: -398.23206}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1193040400
 MonoBehaviour:

@@ -244,7 +244,7 @@
       <ScaleValue>-1</ScaleValue>
       <Options>
         <DialogueOption>
-          <Text>I'm terribly sorry! Did I just start the interview without like that? It must be the nerves. I am [PLAYER_NAME]</Text>
+          <Text>I'm terribly sorry! Did I just start the interview without like that? It must be the nerves. I am [PLAYER_NAME].</Text>
           <Pro></Pro>
           <Con></Con>
           <SpecialInteractionItems></SpecialInteractionItems>

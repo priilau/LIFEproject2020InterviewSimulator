@@ -103,7 +103,6 @@ public class DialogueBehaviour : MonoBehaviour
 
     public void RunDialogue()
     {
-        CheckForDistractingItems();
         CheckForRequiredItems();
         StartCoroutine(Run());
     }
@@ -186,6 +185,11 @@ public class DialogueBehaviour : MonoBehaviour
         {
             npcThoughtsText.GetComponent<Text>().text = node.Thoughts;
             npcThoughtsBubble.SetActive(true);
+        }
+
+        if(node.NodeID == 0)
+        {
+            CheckForDistractingItems();
         }
 
         if (node.ScaleValue != 0)
