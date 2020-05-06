@@ -30,8 +30,12 @@ MonoBehaviour:
   m_MinSize: {x: 679, y: 492}
   m_MaxSize: {x: 14002, y: 14042}
   vertical: 0
+<<<<<<< HEAD
   controlID: 432
 >>>>>>> 5109206f0e203dac8c3e44f6299d1e85a40a5266
+=======
+  controlID: 107
+>>>>>>> 49e0d1db2ec69e69b085807d8f2e92ea0924c185
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -153,8 +157,12 @@ MonoBehaviour:
   m_MinSize: {x: 403, y: 492}
   m_MaxSize: {x: 10001, y: 14042}
   vertical: 1
+<<<<<<< HEAD
   controlID: 433
 >>>>>>> 5109206f0e203dac8c3e44f6299d1e85a40a5266
+=======
+  controlID: 108
+>>>>>>> 49e0d1db2ec69e69b085807d8f2e92ea0924c185
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -180,10 +188,14 @@ MonoBehaviour:
   m_MaxSize: {x: 8003, y: 4021}
   vertical: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
   controlID: 595
 =======
   controlID: 434
 >>>>>>> 5109206f0e203dac8c3e44f6299d1e85a40a5266
+=======
+  controlID: 109
+>>>>>>> 49e0d1db2ec69e69b085807d8f2e92ea0924c185
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -242,10 +254,14 @@ MonoBehaviour:
       m_SelectedIDs: 
       m_LastClickedID: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
       m_ExpandedIDs: 7af8ffffeef9ffff
 =======
       m_ExpandedIDs: 70fbffffb8330000ca330000f8330000
 >>>>>>> 5109206f0e203dac8c3e44f6299d1e85a40a5266
+=======
+      m_ExpandedIDs: 70fbffffb8330000f8330000
+>>>>>>> 49e0d1db2ec69e69b085807d8f2e92ea0924c185
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -512,16 +528,17 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Resources
+    - Assets/Resources/Dialogues
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Resources/Dialogues
+  - Assets/StreamingAssets/Dialogues
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\0000\Desktop\Kool\ELU
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
+<<<<<<< HEAD
     scrollPos: {x: 0, y: 0}
 <<<<<<< HEAD
     m_SelectedIDs: ce350000
@@ -532,6 +549,12 @@ MonoBehaviour:
     m_LastClickedID: 13572
     m_ExpandedIDs: 000000000435000006350000083500000a3500000c3500000e35000000ca9a3b
 >>>>>>> 5109206f0e203dac8c3e44f6299d1e85a40a5266
+=======
+    scrollPos: {x: 0, y: 43}
+    m_SelectedIDs: 40350000
+    m_LastClickedID: 13632
+    m_ExpandedIDs: 000000000435000006350000083500000a3500000c3500000e3500003e35000000ca9a3b
+>>>>>>> 49e0d1db2ec69e69b085807d8f2e92ea0924c185
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -560,10 +583,14 @@ MonoBehaviour:
     m_SelectedIDs: 
     m_LastClickedID: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_ExpandedIDs: 00000000a4350000a6350000a8350000aa350000ac350000ae35000000ca9a3b
 =======
     m_ExpandedIDs: 000000000435000006350000083500000a3500000c3500000e35000000ca9a3b
 >>>>>>> 5109206f0e203dac8c3e44f6299d1e85a40a5266
+=======
+    m_ExpandedIDs: 000000000435000006350000083500000a3500000c3500000e350000
+>>>>>>> 49e0d1db2ec69e69b085807d8f2e92ea0924c185
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -589,6 +616,7 @@ MonoBehaviour:
       m_ResourceFile: 
   m_ListAreaState:
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
     m_HadKeyboardFocusLastEvent: 1
@@ -597,6 +625,11 @@ MonoBehaviour:
     m_LastClickedInstanceID: 13270
     m_HadKeyboardFocusLastEvent: 0
 >>>>>>> 5109206f0e203dac8c3e44f6299d1e85a40a5266
+=======
+    m_SelectedInstanceIDs: f8330000
+    m_LastClickedInstanceID: 13304
+    m_HadKeyboardFocusLastEvent: 1
+>>>>>>> 49e0d1db2ec69e69b085807d8f2e92ea0924c185
     m_ExpandedInstanceIDs: c6230000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -670,8 +703,8 @@ MonoBehaviour:
     y: 0
     width: 389
     height: 947
-  m_MinSize: {x: 276, y: 71}
-  m_MaxSize: {x: 4001, y: 4021}
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 14}
   m_Panes:
   - {fileID: 14}
@@ -713,5 +746,5 @@ MonoBehaviour:
     m_ControlHash: -371814159
     m_PrefName: Preview_InspectorPreview
   m_PreviewWindow: {fileID: 0}
-  m_LastInspectedObjectInstanceID: 13270
+  m_LastInspectedObjectInstanceID: 13304
   m_LastVerticalScrollValue: 0

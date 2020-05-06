@@ -25,19 +25,17 @@ public class DialogueBehaviour : MonoBehaviour
     private bool mouseClicked = false;
     private int selectedOption = -2;  // exit node is -1
     private FeedbackData feedbackData;
-    private string diaPath;
 
     public TextAsset dialogueFile;
     public TextAsset feedbackDataJsonFile;
 
     private void Awake()
     {
-        diaPath = Path.Combine(Application.streamingAssetsPath, "Dialogues/dialogue_judy.xml");
+        dia = Dialogue.LoadDialogue(dialogueFile);
     }
 
     void Start()
     {
-        dia = Dialogue.LoadDialogue(diaPath);
         feedbackData = JsonUtility.FromJson<FeedbackData>(feedbackDataJsonFile.text);
         npcSpeechBubble = GameObject.Find("SpeechBubble");
         npcText = GameObject.Find("SpeechBubbleText");
