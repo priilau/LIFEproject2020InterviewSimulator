@@ -8,8 +8,6 @@ public class DialogueNode
     public int ScaleValue;
     public string PlayerText;
     public string Info;
-    public string Pro;
-    public string Con;
 
     public DialogueNode() // for serialization
     {

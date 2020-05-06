@@ -1,9 +1,5 @@
 sceneSetups:
-<<<<<<< HEAD
 - path: Assets/Scenes/Feedback.unity
-=======
-- path: Assets/Scenes/MainMenu.unity
->>>>>>> 79886f09132eb23280908856b3775defdcfbd173
   isLoaded: 1
   isActive: 1
   isSubScene: 0

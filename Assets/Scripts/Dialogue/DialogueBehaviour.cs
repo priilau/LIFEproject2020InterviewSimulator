@@ -63,21 +63,48 @@ public class DialogueBehaviour : MonoBehaviour
         {
             if (item.distracting)
             {
+                npcThoughtsText.GetComponent<Text>().text = item.comment;
                 distractingItemCount++;
             }
         }
-        NPCData.SetMaxComfortValue(distractingItemCount);
         if (distractingItemCount > 0)
         {
+            if (distractingItemCount > 1 && PlayerData.selectedItems.Count == distractingItemCount)
+            {
+                npcThoughtsText.GetComponent<Text>().text = "This is weird, why do they need all of these items for the interview?";
+            }
+            else if (distractingItemCount > 1)
+            {
+                npcThoughtsText.GetComponent<Text>().text = "This is weird, why do they need some of these items for the interview?";
+            }
+            NPCData.SetMaxComfortValue(distractingItemCount);
             InfoCon conToAdd = feedbackData.cons.SingleOrDefault(i => i.id == "3");
             PlayerData.cons.Add(conToAdd);
-            npcThoughtsText.GetComponent<Text>().text = "This is weird, why do they need all of these items for the interview?";
             npcThoughtsBubble.SetActive(true);
+        }
+    }
+
+    private void CheckForRequiredItems()
+    {
+        int requiredItemsCount = 0;
+        foreach(Item item in PlayerData.selectedItems)
+        {
+            if (item.required)
+            {
+                requiredItemsCount++;
+            }
+        }
+        if(requiredItemsCount == 0)
+        {
+            InfoCon conToAdd = feedbackData.cons.SingleOrDefault(i => i.id == "16");
+            PlayerData.cons.Add(conToAdd);
         }
     }
 
     public void RunDialogue()
     {
+        CheckForDistractingItems();
+        CheckForRequiredItems();
         StartCoroutine(Run());
     }
 
@@ -155,10 +182,6 @@ public class DialogueBehaviour : MonoBehaviour
         StartCoroutine(displayTextCoroutine);
 
         npcThoughtsBubble.SetActive(false);
-        if(node.NodeID == 0)
-        {
-            CheckForDistractingItems();
-        }
         if (node.Thoughts.Length > 0)
         {
             npcThoughtsText.GetComponent<Text>().text = node.Thoughts;
@@ -168,30 +191,6 @@ public class DialogueBehaviour : MonoBehaviour
         if (node.ScaleValue != 0)
         {
             NPCData.AddToComfortValue(node.ScaleValue);
-        }
-
-        if (node.Pro.Length > 0)
-        {
-            string[] proIds = node.Pro.Split(',');
-            foreach (InfoPro pro in feedbackData.pros)
-            {
-                if(Array.IndexOf(proIds, pro.id) > -1 && !PlayerData.pros.Contains(pro))
-                {
-                    PlayerData.pros.Add(pro);
-                }
-            }
-        }
-
-        if (node.Con.Length > 0)
-        {
-            string[] conIds = node.Con.Split(',');
-            foreach (InfoCon con in feedbackData.cons)
-            {
-                if (Array.IndexOf(conIds, con.id) > -1 && !PlayerData.cons.Contains(con))
-                {
-                    PlayerData.cons.Add(con);
-                }
-            }
         }
 
         if (node.Info.Length > 0)

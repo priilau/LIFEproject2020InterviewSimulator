@@ -8,5 +8,6 @@ namespace Assets.Scripts.UI.ItemSelection
         public string itemName;
         public bool required;
         public bool distracting;
+        public string comment;
     }
 }
