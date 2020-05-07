@@ -25,19 +25,22 @@ public class NPCBehaviour : MonoBehaviour
         if(currentComfortValue != NPCData.GetComfortValue())
         {
             SetNPCImage();
-            if (NPCData.isComfortValPositive)
+            if (!Sound.muted)
             {
-                System.Random r = new System.Random();
-                int randomInt = r.Next(1, 3); // range 1 - 2
-                npcAudioClip = Resources.Load<AudioClip>("Sounds/approving" + randomInt);
-            } 
-            else
-            {
-                npcAudioClip = Resources.Load<AudioClip>("Sounds/disapproving2");
+                if (NPCData.isComfortValPositive)
+                {
+                    System.Random r = new System.Random();
+                    int randomInt = r.Next(1, 3); // range 1 - 2
+                    npcAudioClip = Resources.Load<AudioClip>("Sounds/approving" + randomInt);
+                }
+                else
+                {
+                    npcAudioClip = Resources.Load<AudioClip>("Sounds/disapproving2");
+                }
+                npcAudioSource.clip = npcAudioClip;
+                npcAudioSource.Play();
             }
-            currentComfortValue = NPCData.GetComfortValue();
-            npcAudioSource.clip = npcAudioClip;
-            npcAudioSource.Play();
         }
+        currentComfortValue = NPCData.GetComfortValue();
     }
 }

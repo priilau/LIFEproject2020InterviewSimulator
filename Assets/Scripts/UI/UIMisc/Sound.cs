@@ -1,10 +1,10 @@
 ﻿using UnityEngine;
 
-public class Music : MonoBehaviour
+public class Sound : MonoBehaviour
 {
     public static bool muted = false;
-    private static Music instance = null;
-    public static Music Instance
+    private static Sound instance = null;
+    public static Sound Instance
     {
         get { return instance; }
     }
