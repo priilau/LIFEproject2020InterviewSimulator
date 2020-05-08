@@ -14,11 +14,11 @@ public class UIButtonsBehaviour : MonoBehaviour
         mutedSprite = Resources.Load<Sprite>("Images/Icons/mute");
         if (Sound.muted)
         {
-            muteBtn.GetComponent<UnityEngine.UI.Image>().sprite = mutedSprite;
+            muteBtn.GetComponent<Image>().sprite = mutedSprite;
         }
         else
         {
-            muteBtn.GetComponent<UnityEngine.UI.Image>().sprite = unmutedSprite;
+            muteBtn.GetComponent<Image>().sprite = unmutedSprite;
         }
         
         muteBtn.GetComponent<Button>().onClick.AddListener(delegate
@@ -27,13 +27,13 @@ public class UIButtonsBehaviour : MonoBehaviour
             {
                 Sound.muted = false;
                 AudioListener.volume = 1;
-                muteBtn.GetComponent<UnityEngine.UI.Image>().sprite = unmutedSprite;
+                muteBtn.GetComponent<Image>().sprite = unmutedSprite;
             }
             else
             {
                 Sound.muted = true;
                 AudioListener.volume = 0;
-                muteBtn.GetComponent<UnityEngine.UI.Image>().sprite = mutedSprite;
+                muteBtn.GetComponent<Image>().sprite = mutedSprite;
             }
         });
     }

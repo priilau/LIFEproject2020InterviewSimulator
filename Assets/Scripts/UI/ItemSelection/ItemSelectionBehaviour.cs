@@ -1,6 +1,4 @@
 ﻿using Assets.Scripts.UI.ItemSelection;
-using System.Collections;
-using System.Linq;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -10,57 +8,31 @@ public class ItemSelectionBehaviour : MonoBehaviour
     public TextAsset jsonFile;
     public Items itemList;
     private GameObject continueBtn;
-    private bool itemCheckFinished;
 
     void Start()
     {
         itemList = JsonUtility.FromJson<Items>(jsonFile.text);
+
         continueBtn = GameObject.Find("ContinueButton");
         continueBtn.GetComponent<Button>().onClick.AddListener(delegate
         {
-            StartCoroutine(WaitUntilItemCheckFinished());
+            SceneManager.LoadScene("Interview");
         });
-        CheckForSelectedItems();
-    }
-    public void CheckForSelectedItems()
-    {
-        itemCheckFinished = false;
-        foreach (Item item in itemList.items)
+
+        foreach(Item item in itemList.items)
         {
             GameObject itemGameObject = GameObject.Find(item.itemName);
-            if (itemGameObject)
+            itemGameObject.GetComponent<Toggle>().onValueChanged.AddListener(delegate
             {
-                if (itemGameObject.GetComponent<Toggle>().isOn && !PlayerData.selectedItems.Contains(item))
+                if (itemGameObject.GetComponent<Toggle>().isOn)
                 {
                     PlayerData.selectedItems.Add(item);
                 }
-                if (!itemGameObject.GetComponent<Toggle>().isOn && PlayerData.selectedItems.Contains(item))
+                else
                 {
-                    Item itemToRemove = itemList.items.SingleOrDefault(i => i.itemName == item.itemName);
-                    if (itemToRemove != null)
-                    {
-                        PlayerData.selectedItems.Remove(itemToRemove);
-                    }
+                    PlayerData.selectedItems.Remove(item);
                 }
-            }
-        }
-        itemCheckFinished = true;
-    }
-
-    private IEnumerator WaitUntilItemCheckFinished() 
-    {
-        while (!itemCheckFinished)
-        {
-            yield return null;
-        }
-        SceneManager.LoadScene("Interview");
-    }
-
-    void Update()
-    {
-        if (itemCheckFinished)
-        {
-            CheckForSelectedItems();
+            });
         }
     }
 }
