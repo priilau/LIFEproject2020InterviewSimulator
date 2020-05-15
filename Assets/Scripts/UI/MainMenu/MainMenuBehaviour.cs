@@ -9,6 +9,7 @@ public class MainMenuBehaviour : MonoBehaviour
     private GameObject backBtn;
     private GameObject about;
     private GameObject title;
+    private GameObject logos;
 
     void Start()
     {
@@ -16,6 +17,7 @@ public class MainMenuBehaviour : MonoBehaviour
         NPCData.ResetData();
 
         title = GameObject.Find("Title");
+        logos = GameObject.Find("Logos");
         playBtn = GameObject.Find("PlayBtn");
         playBtn.GetComponent<Button>().onClick.AddListener(delegate
         {
@@ -30,6 +32,7 @@ public class MainMenuBehaviour : MonoBehaviour
             playBtn.SetActive(false);
             aboutBtn.SetActive(false);
             title.SetActive(false);
+            logos.SetActive(false);
         });
 
         backBtn = GameObject.Find("BackBtn");
@@ -39,6 +42,7 @@ public class MainMenuBehaviour : MonoBehaviour
             playBtn.SetActive(true);
             aboutBtn.SetActive(true);
             title.SetActive(true);
+            logos.SetActive(true);
         });
         about.SetActive(false);
     }
